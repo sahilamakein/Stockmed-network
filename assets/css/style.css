@@ -2251,7 +2251,7 @@ button.btn.btn-solid:active, button.btn.btn-outline:active {
     margin-top: -15px; }
   .full-banner .banner-contain h3 {
     font-size: 60px;
-    color: #333333;
+    color: #ffffff;
     text-transform: uppercase;
     font-weight: 700; }
   .full-banner .banner-contain h4 {
@@ -26017,6 +26017,46 @@ body.rtl .account-setting {
 
 
     .custom-padding{
-                      padding: 0px;
+                      padding: 0px;}
+    
 
+    .home-service img{
+                       max-width: 150px;}
+
+    .service-button img{
+      margin-top: -2px;
+      margin-left: 10px;
     }
+    
+    .buttonstyle .btn {
+      text-transform: none;
+    }
+
+    .home-service-sec{
+      background-color: #00297e;}
+
+      .form-select1 .form-select{
+        border-radius: 0px;
+        color: #696b6c;
+      }
+
+      .container .contact-form-home{
+        background-color: white;
+      }
+
+      .h4home{
+        color: black;
+      }
+
+      .homep{
+        font-size: 20px;
+        color: white;
+      }
+
+      .homepara{
+        color: white;
+      }
+
+      .bannermargin{
+        margin-top: 5%;
+      }
