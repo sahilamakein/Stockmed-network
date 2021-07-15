@@ -4399,13 +4399,13 @@ footer.pet-layout-footer .social-white {
   border: solid 2px;
   border-color: #ccc;
   background-color: #fff;
-  border-right: 0px;
 }
 .menu-left {
   width: 8%;
 }
 .form-right {
   float: left;
+  width: 30%;
 }
 .menu-center {
   width: 70%;
@@ -6953,7 +6953,7 @@ header {
 
 .main-menu {
   position: relative;
-  width: 87%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
