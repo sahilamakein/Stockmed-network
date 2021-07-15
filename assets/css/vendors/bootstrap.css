@@ -7650,7 +7650,11 @@ progress {
 
 @media (min-width: 1200px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
+<<<<<<< HEAD
     max-width: 1140px; } }
+=======
+    max-width: 1310px; } }
+>>>>>>> 17a771bfa5626f45a2ee54646f58ac1bd2c039cf
 
 @media (min-width: 1400px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {

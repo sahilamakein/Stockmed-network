@@ -1,8 +1,13 @@
 :root {
   --theme-deafult: #ff4c3b; }
 
+<<<<<<< HEAD
 /**=====================
     63.  Document CSS Start
+=======
+/**=====================
+    63.  Document CSS Start
+>>>>>>> 17a771bfa5626f45a2ee54646f58ac1bd2c039cf
 ==========================**/
 .pl-40 {
   padding-left: 40px; }

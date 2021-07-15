@@ -4376,14 +4376,58 @@ footer.pet-layout-footer .social-white {
   display: block;
   margin-top: 40px;
   margin-bottom: 30px; }
+<<<<<<< HEAD
 
+=======
+  
+  #s-category {
+    float: left;
+    height: 45px;
+    border: solid 2px;
+    border-color: #f35c51;
+    background-color: #fff;
+    border-right: 0px;
+}
+#s-currency {
+  float: left;
+  height: 45px;
+  border: solid 2px;
+  border-color: #ccc;
+  background-color: #fff;
+  border-right: 0px;
+}
+#s-language {
+  float: left;
+  height: 45px;
+  border: solid 2px;
+  border-color: #ccc;
+  background-color: #fff;
+  border-right: 0px;
+}
+.menu-left {
+  width: 8%;
+}
+.form-right {
+  float: left;
+}
+.menu-center {
+  width: 70%;
+}
+>>>>>>> 17a771bfa5626f45a2ee54646f58ac1bd2c039cf
 .form_search {
   height: 45px;
   -webkit-box-shadow: 0 0 0 1px #e2e2e2;
           box-shadow: 0 0 0 1px #e2e2e2;
   overflow: hidden;
   position: relative;
+<<<<<<< HEAD
   width: 700px;
+=======
+  width: 530px;
+  float: left;
+  border: solid 2px;
+  border-color: #f35c51;
+>>>>>>> 17a771bfa5626f45a2ee54646f58ac1bd2c039cf
   background-color: #f5f5f5;
   border-radius: 25px; }
   .form_search input {
@@ -4399,7 +4443,11 @@ footer.pet-layout-footer .social-white {
     position: absolute;
     top: 5px;
     right: 5px;
+<<<<<<< HEAD
     width: 40px;
+=======
+    width: 80px;
+>>>>>>> 17a771bfa5626f45a2ee54646f58ac1bd2c039cf
     height: 35px;
     padding: 0;
     border: none;
@@ -6917,6 +6965,10 @@ header {
 
 .main-menu {
   position: relative;
+<<<<<<< HEAD
+=======
+  width: 87%;
+>>>>>>> 17a771bfa5626f45a2ee54646f58ac1bd2c039cf
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
