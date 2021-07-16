@@ -2790,7 +2790,9 @@ button.btn.btn-solid:active, button.btn.btn-outline:active {
   .classic-effect:hover span:before, .classic-effect:hover span:after {
     bottom: 0;
     opacity: 0.5; }
-
+    div#toggle-sidebar {
+      padding: 7px 12px;
+  }
 .basic-effect {
   position: relative;
   overflow: hidden; }
@@ -4379,37 +4381,50 @@ footer.pet-layout-footer .social-white {
   
   #s-category {
     float: left;
-    height: 35px;
+    height: 30px;
     border: solid 2px;
     border-color: #f35c51;
     background-color: #fff;
     border-right: 0px;
+    font-weight: 600;
+    padding: 0px 17px 0px 10px;
 }
 #s-currency {
   float: left;
-  height: 35px;
+  height: 30px;
   border: solid 2px;
   border-color: #ccc;
-  background-color: #fff;
-  margin: 0px 15px;
+  background-color: #f3f3f3;
+  margin: 0px 18px 0 20px;
   padding: 0 13px;
+  font-weight: 600;
 }
 #s-language {
-  float: left;
-  height: 35px;
+  height: 30px;
   border: solid 2px;
   border-color: #ccc;
-  background-color: #fff;
+  background-color: #f3f3f3;
+  font-weight: 600;
+  padding: 0 55px 0 0px;
+  font-size: 12px;
 }
 .menu-left {
-  width: 8%;
+  width: 9%;
 }
 .form-right {
   float: left;
   width: 30%;
+  border-left: solid 2px #f7f7f7;
+  border-right: solid 2px #f7f7f7;
+  padding-right: 10px;
+}
+.form-right div {
+  border-left: solid 2px #f7f7f7;
+  width: auto;
+  float: right;
 }
 .menu-center {
-  width: 70%;
+  width: 72%;
 }
 .menu-center .btn-search {
   background-color: #f35c51;
@@ -4418,22 +4433,23 @@ footer.pet-layout-footer .social-white {
   font-size: 12px;
 }
 .form_search {
-  height: 35px;
+  height: 30px;
   -webkit-box-shadow: 0 0 0 1px #e2e2e2;
           box-shadow: 0 0 0 1px #e2e2e2;
   overflow: hidden;
   position: relative;
-  width: 531px;
+  width: 500px;
   float: left;
   border: solid 2px;
   border-color: #f35c51;
   background-color: #f5f5f5;
-  border-radius: 25px; }
+  border-radius: 25px;
+  margin-right: 30px; }
   .form_search input {
     width: 100%;
-    height: 35px;
+    height: 25px;
     font-size: 16px;
-    color: darkgrey;
+    color: #000;
     border: none;
     outline: none;
     background: none;
@@ -4441,7 +4457,7 @@ footer.pet-layout-footer .social-white {
     background-color: #fff; }
   .form_search button {
     position: absolute;
-    top: 0px;
+    top: -2px;
     right: 0px;
     width: 100px;
     height: 31px;
@@ -4462,12 +4478,21 @@ footer.pet-layout-footer .social-white {
         color: #fff;
     }
     .icon-nav li p {
-      font-size: 13px;
+      font-size: 11px;
       color: #777777;
       font-weight: 600;
       line-height: 1;
       margin-bottom: 3px;
   }
+  .icon-nav li img {
+    width: 50%;
+}
+.menu-center .form-right img {
+  width: 20%;
+}
+.icon-nav li:last-child img {
+  width: 60%;
+}
 
 .blog.blog_box .blog-details {
   text-align: left;
@@ -6778,7 +6803,7 @@ header {
   .onhover-div i {
     cursor: pointer; }
   .onhover-div .show-div {
-    top: 103px;
+    top: 66px;
     position: absolute;
     z-index: 9;
     background-color: #ffffff;
@@ -6979,6 +7004,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 10px 0px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -7021,6 +7047,7 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    text-align: center;
     float: right; }
     .main-menu .menu-right .icon-nav {
       display: inline-block; }
@@ -7280,15 +7307,17 @@ header {
       padding-top: 18px;
       color: white;
       cursor: pointer; }
-      .header-style-5 .bottom-part .category-menu .toggle-sidebar i {
+      .container-fluid .toggle-sidebar i {
         display: inline-block;
         margin-right: 10px;
-        font-size: 16px; }
-      .header-style-5 .bottom-part .category-menu .toggle-sidebar h5 {
+        font-size: 16px;
+      color: #0096da; }
+      .container-fluid .toggle-sidebar h5 {
         display: inline-block;
-        color: white;
-        font-size: 19px;
-        text-transform: capitalize; }
+        color: #000;
+        font-size: 14px;
+        font-weight: 800;
+         }
   .header-style-5 .bottom-part .pixelstrap > li > a {
     color: white; }
     .header-style-5 .bottom-part .pixelstrap > li > a:hover, .header-style-5 .bottom-part .pixelstrap > li > a:active {
@@ -7456,14 +7485,14 @@ header {
     height: auto;
     overflow-y: unset !important; }
   .marketplace-sidebar.sidenav .pixelstrap > li > a {
-    padding: 8px 30px 8px 30px; }
+    padding: 4px 4px 4px 10px; }
     .marketplace-sidebar.sidenav .pixelstrap > li > a:hover, .marketplace-sidebar.sidenav .pixelstrap > li > a:focus {
-      padding: 8px 30px 8px 30px; }
+      padding: 4px 4px 4px 10px; }
   .marketplace-sidebar.sidenav .pixelstrap.sm-vertical a .sub-arrow {
     margin-top: -14px; }
   .marketplace-sidebar.sidenav .sm-vertical {
-    background-color: #f8f8f8;
-    padding: 10px 0; }
+    background-color: #fff;
+    padding: 0; }
   .marketplace-sidebar.sidenav.fixed-sidebar {
     position: absolute;
     top: 66px;
@@ -7966,7 +7995,7 @@ header.stickycls {
       color: #000000; }
 
 .small-slider .home-slider .home {
-  height: 455px !important; }
+  height: 410px !important; }
   .small-slider .home-slider .home .slider-contain {
     height: 455px !important; }
     .small-slider .home-slider .home .slider-contain h4,
@@ -8788,7 +8817,7 @@ header.stickycls {
   font-weight: 400;
   line-height: 23px;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: capitalize;
   padding-top: 42px;
   padding-bottom: 42px;
   letter-spacing: 0.03em; }
@@ -9093,7 +9122,8 @@ header.stickycls {
   .pixelstrap a {
     white-space: nowrap; }
   .pixelstrap ul a, .pixelstrap.sm-vertical a {
-    white-space: normal; }
+    white-space: normal; 
+    font-size: 12px;}
   .pixelstrap .sm-nowrap > li > a, .pixelstrap .sm-nowrap > li > :not(ul) a {
     white-space: nowrap; }
     .pixelstrap .sm-nowrap > li > a.highlighted, .pixelstrap .sm-nowrap > li > :not(ul) a.highlighted {
@@ -9223,7 +9253,8 @@ header.stickycls {
       font-family: FontAwesome;
       position: absolute; }
   .pixelstrap.sm-vertical > li {
-    border-left: 0 !important; }
+    border-left: 0 !important; 
+    border-top: solid 2px #f7f7f7;}
   .main-nav-center > nav {
     text-align: center; }
   .main-nav-center .sm {
