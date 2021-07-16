@@ -1,0 +1,94 @@
+/* Banner CSS Start */
+.banner-wapper {
+  padding: 0;
+}
+
+.banner-wapper .breadcrumb-section.title-wpper {
+  padding: 40px 0px 50px 0px;
+}
+
+.breadcrumb-section {
+  background-color: transparent;
+  padding: 0px 0;
+}
+
+.breadcrumb-section .breadcrumb {
+  justify-content: flex-start;
+}
+
+.banner-wapper .breadcrumb-section.title-wpper .page-title h2 {
+  font-size: 50px;
+  width: 100%;
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+.banner-wapper .breadcrumb-section.title-wpper .title-border {
+  height: 3px;
+  width: 100px;
+  background: #f35c51;
+  display: inline-block;
+}
+
+.banner-nev .nav-item a {
+  position: relative;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+.banner-nev .nav-item a:after {
+  content: '';
+  height: 40%;
+  width: 1px;
+  position: absolute;
+  right: 0;
+  top: 12px;
+  background-color: #000000;
+}
+
+/* Banner CSS End */
+
+.about-page-bgimg {
+  padding: 5rem 1rem;
+  background-position: center;
+  background-size: 100%;
+}
+
+.about-page-bgimg .abour-content-wapper {
+  padding: 3rem;
+  background: white;
+}
+
+.service-block+.service-block {
+  border-left: none;
+}
+
+.testimonial-slider .slick-slide .media {
+  flex-direction: column;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid #dddddd;
+}
+
+.testimonial .testimonial-slider .slick-track .slick-slide:nth-child(even) .media {
+  padding-left: 1rem;
+}
+
+.testimonial .testimonial-slider .media img {
+  float: left;
+  width: 30%;
+  display: inline-block;
+  height: auto;
+}
+
+.testimonial .testimonial-slider .media .slider-content {
+  float: left;
+  width: 70%;
+  display: inline-block;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.testimonial .testimonial-slider .media .slider-content .srat-rating-wapper .checked {
+  color: orange;
+}
