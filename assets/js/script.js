@@ -372,8 +372,9 @@
 
     $('.slide-2').slick({
         infinite: true,
-        slidesToShow: 2,
-        slidesToScroll: 2,
+        autoplay: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
         responsive: [{
             breakpoint: 991,
             settings: {

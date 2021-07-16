@@ -1,0 +1,11 @@
+.about-page.privacypolicy {
+  padding-top: 0px !important;
+}
+
+.about-page.privacypolicy .about-page-bgimg {
+  padding: 1rem 0rem;
+}
+
+.about-page.privacypolicy .about-page-bgimg .abour-content-wapper h2 {
+  padding-top: 2rem;
+}
