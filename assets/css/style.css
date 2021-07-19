@@ -11984,12 +11984,16 @@ header.stickycls {
     .addtocart_btn p{
       float: left;
     }
-    .addtocart_btn p{
-      float: left;
+    .addtocart_btn p span{
+      color: #e21b21;
     }
     .quantity-box p {
-      width: 60%;
+      width: 53%;
       float: left;
+      margin: 0px;
+      background-color: #e21b21;
+      color: #fff;
+      padding: 7px 8px;
     }
     .product-detail .text-center h6 {
       float: left;
