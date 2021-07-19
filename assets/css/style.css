@@ -10705,7 +10705,7 @@ header.stickycls {
   margin-right: -12px; }
 
 .product-m .slick-slide > div {
-  margin: 0 12px; }
+  margin: 0 0px; }
 
 .color-variant li {
   display: inline-block;
@@ -11974,6 +11974,27 @@ header.stickycls {
   padding: 10px; }
   .product-style-1.product-box .product-detail h6 {
     padding-bottom: 10px; }
+
+    .addtocart_btn h4 {
+      font-size: 15px;
+      font-weight: 800;
+      width: 86%;
+      float: left;
+    }
+    .addtocart_btn p{
+      float: left;
+    }
+    .addtocart_btn p{
+      float: left;
+    }
+    .quantity-box p {
+      width: 60%;
+      float: left;
+    }
+    .product-detail .text-center h6 {
+      float: left;
+     }
+
 
 .product-style-2.product-box .product-info .color-variant, .product-style-2 .product-wrap .product-info .color-variant {
   -webkit-transition: all 0.5s ease;
@@ -23564,7 +23585,7 @@ body.dark {
     margin-left: -10px;
     margin-right: -10px; }
   .product-m .slick-slide > div {
-    margin: 0 10px; }
+    margin: 0 0px; }
   .product-box .cart-detail i,
   .product-wrap .cart-detail i {
     padding-top: 5px;
