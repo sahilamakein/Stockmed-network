@@ -12112,6 +12112,24 @@ header.stickycls {
       -ms-flex-align: center;
       align-items: center;
     }
+    .side-title-one .sec-one { 
+      float: left;
+      width: 10%;
+     }
+    .side-title-one .sec-two { 
+      float: left; 
+      width: 70%;
+    }
+        .side-title-one .sec-two li {
+          width: 19%;
+           }
+
+    .side-title-one .sec-three {
+       float: left;
+       width: 20%;
+    }
+
+    
 
 .product-style-2.product-box .product-info .color-variant, .product-style-2 .product-wrap .product-info .color-variant {
   -webkit-transition: all 0.5s ease;
