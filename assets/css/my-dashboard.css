@@ -23,8 +23,8 @@
             background-color: white;
             border-right: none;
         }
-
-
+        
+        
 
         .dashboard-section .dashboard-sidebar.mydashboardsidebar {
             position: sticky;
@@ -36,6 +36,7 @@
 
         .dashboard-section .row.my-dashboardpadding > *{
             padding-left: calc(var(--bs-gutter-x) / 0);
+            padding-right: calc(var(--bs-gutter-y) / 0);
             }
 
         .dashboard-section .dashboard-table .table th, .dashboard-section .dashboard-table .table td {
@@ -166,3 +167,39 @@
                 -moz-transition: All 0.3s ease;
                 -o-transition: All 0.3s ease;
             }
+
+
+
+
+            .tab-pane .card .card-body .top-sec h3 .fa.fa-th-large {
+                color: #d22027;
+                margin-right: 20px;
+                margin-left: 10px;
+                }
+
+                .dashboard-section .dashboard-table .table th, .dashboard-section .dashboard-table .table td {
+                    padding-left: 20px !important;
+                }
+
+
+
+
+                .dashboard-section .dashboard-user {
+                   padding-top: 200px;
+                    background-color: #000b31;
+        
+                }
+                .dashboard-section .user-text {
+                    color:white;
+                    padding-bottom: 30px;
+        
+                }
+
+                .tab-pane .dashboard-box .row.mid-sec .custom-colorpara {
+                    color:#00239b;
+                }
+
+                .tab-pane .dashboard-box .row.mid-sec .custom-line{
+                    opacity: 1 !important;
+                    color:#00239b;
+                }
