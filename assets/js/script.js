@@ -1766,7 +1766,7 @@
      20.Add to wishlist
      ==========================*/
     $('.product-box a .ti-heart , .product-box a .fa-heart').on('click', function () {
-
+        jQuery(this).addClass( "wish-added" );
         $.notify({
             icon: 'fa fa-check',
             title: 'Success!',
