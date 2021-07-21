@@ -1941,3 +1941,5 @@ $('#cartEffect').on('click', function (e) {
 $('.add-extent .animated-btn').on('click', function (e) {
     $(this).parents(".add-extent").toggleClass("show");
 });
+
+

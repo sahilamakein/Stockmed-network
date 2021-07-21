@@ -203,3 +203,44 @@
                     opacity: 1 !important;
                     color:#00239b;
                 }
+
+                .form-label{
+                    font-weight: 600;
+                }
+
+
+
+                .dashboard-box .custombuttondash .btn{
+                    line-height: 12px;
+                font-size: 11px;
+                }
+                
+                .dashboard-box .custombuttondash .btn.btn-light{
+                  border-color: #b5b5b5}
+
+
+                  .btn.btn-primarynew {
+                    background-color: #00239b;
+                    border-color:none;
+                    outline: none;
+                    color: #fff;
+                  }
+                  
+                  .card.mydasboardcard{
+                    padding: 1rem 3rem;
+                  }
+
+                  .dashboard-box .dasboardbtnlong.btn.btn-primary
+                  {background-color:#00239b;
+                   width: 200px;    
+                }
+
+                .dashboard-box .dasboardbtn.btn.btn-primary
+                {background-color:#00239b;}
+
+                .form-control:disabled, .form-control[readonly] {
+                    background-color: white;}
+
+                    .form-select{
+                        border-radius: 0px;
+                        }
