@@ -11708,7 +11708,7 @@
    background-color: #fff;
    background-clip: padding-box;
    border: 1px solid rgba(0, 0, 0, 0.2);
-   border-radius: 0.3rem;
+   border-radius: 0rem;
    outline: 0; }
  
  .modal-backdrop {
@@ -11785,7 +11785,7 @@
  
  @media (min-width: 576px) {
    .modal-dialog {
-     max-width: 500px;
+     max-width: 650px;
      margin: 1.75rem auto; }
    .modal-dialog-scrollable {
      height: calc(100% - 3.5rem); }

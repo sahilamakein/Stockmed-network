@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+.login-popup .modal .leftside{
+
+    background-color: #0197da;
+    padding-top: 50px;
+    padding-bottom:30px;
+}
+
+.login-popup .modal .rightside{
+
+    background-color:none;
+    padding: 21px;
+}
+
+
+.login-popup .modal .leftside .image-wrapper .fa.fa-user{
+    font-size: 48px;
+    color: white;
+    }
+
+
+
+    .login-popup .modal .leftside .login-text h5{
+        color: white;
+        font-weight: 800;
+    }
+    .login-popup .modal .leftside .login-text hr{
+        
+        height: 2px;
+        color: #02c8ef;
+        opacity: 1;
+        width: 100px;
+        margin-left: 69px;
+    
+    }
+
+    .login-popup .modal .leftside .image-wrapper2 img{
+
+        max-width: 100%;
+        width: 90%;
+    }
+
+
+
+    .login-popup .modal .rightside .loginform .logintext{
+
+        color:#595959;
+        font-weight: bold;
+        font-size:13.5px;
+    }
+
+    .login-popup .modal .rightside .loginform .btn.btnlogin{
+
+        background-color:#0a3ca7;
+        margin-top: 30px;
+        border: none;
+    }
+    .login-popup .modal .rightside .lineform::before {
+        
+        content: "";
+        display: block;
+        width: 120px;
+        height: 2px;
+        background: #c0c0c0;
+        left: 58px;
+        top: 68%;
+        position: absolute;
+      }
+
+
+    .login-popup .modal .rightside .lineform::after {
+        content: "";
+        display: block;
+        width: 120px;
+        height: 2px;
+        background: #c0c0c0;
+        right: 58px;
+        top: 68%;
+        position: absolute;
+    }
+   
+    .login-popup .modal .rightside  .lineformwrapper{
+        width:100%;
+        overflow: hidden;
+        display: inline-block;
+    }
+
+    .login-popup .modal .rightside  .lineformwrapper .lineform {
+
+    color:#777777;
+    font-size: 12px;
+    font-weight: bold;
+    }
+
+
+    .login-popup .modal .rightside .socialmediaicons img {
+        max-width: 100%;
+        width: 10%;
+        margin-top: 16px;
+    }
+
+    .modal-body {
+        padding: 0px;
+    }
+
+
+    .login-popup .modal .rightside .closebtn .fa.fa-times.close{
+        background-color: red;
+    color: white;
+    font-size: 18px;
+    border-radius: 50%;
+    padding: 2px 4px;
+    }
+
+    .login-popup .modal .rightside .closebtn .btn-close{
+        opacity: 1;
+        margin-right: 7px;
+    }
+
+
+
+
+
+    .password-popup .modal .leftside{
+
+        background-color: #f35f51;
+        padding-top: 50px;
+        padding-bottom:30px;
+    }
+
+    .password-popup .modal .rightside .closebtn .fa.fa-times.close{
+        background-color: red;
+    color: white;
+    font-size: 18px;
+    border-radius: 50%;
+    padding: 2px 4px;
+    }
+
+    .password-popup .modal .rightside .closebtn .btn-close{
+        opacity: 1;
+        margin-right: 7px;
+    }
+  
+    .password-popup .modal .rightside .socialmediaicons img {
+        max-width: 100%;
+        width: 10%;
+        margin-top: 16px;
+    }
+    
+    .password-popup .modal .rightside{
+
+        background-color:none;
+        padding: 21px;
+    }
+
+    .password-popup .modal .leftside .image-wrapper .fa.fa-key{
+        font-size: 48px;
+        color: white;
+        }
+
+        .password-popup .modal .leftside .password-text h5{
+            color: white;
+            font-weight: 800;
+            font-size: 21px;
+            padding: 0px 20px;
+        }
+        
+        .password-popup .modal .leftside .password-text hr{
+        
+            height: 2px;
+            color: #f46f62;
+            opacity: 1;
+            width: 120px;
+            margin-left: 69px;
+            margin-top: -6px;
+        
+        }
+
+
+        .password-popup .modal .rightside .passwordform .btn.btnlogin{
+
+            background-color:#0a3ca7;
+            margin-top: 30px;
+            border: none;
+        }
+
+        .password-popup .modal .rightside .passwordform .passtext{
+
+            color:#595959;
+            font-weight: bold;
+            font-size:13.5px;
+            margin-top: 40px;
+        }
+
+        .password-popup .modal .rightside .passwordform .passtext2{
+
+            color:#595959;
+            font-weight: bold;
+            font-size:13.5px;
+           line-height: 1.3px;
+           margin-top: 20px;
+        }
