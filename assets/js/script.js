@@ -961,8 +961,9 @@
         responsive: [{
             breakpoint: 1367,
             settings: {
-                slidesToShow: 4,
-                slidesToScroll: 4
+                arrows: true,
+                slidesToShow: 6,
+                slidesToScroll: 1
             }
         },
         {
@@ -1766,7 +1767,7 @@
      20.Add to wishlist
      ==========================*/
     $('.product-box a .ti-heart , .product-box a .fa-heart').on('click', function () {
-
+        jQuery(this).addClass( "wish-added" );
         $.notify({
             icon: 'fa fa-check',
             title: 'Success!',
@@ -1941,3 +1942,5 @@ $('#cartEffect').on('click', function (e) {
 $('.add-extent .animated-btn').on('click', function (e) {
     $(this).parents(".add-extent").toggleClass("show");
 });
+
+
