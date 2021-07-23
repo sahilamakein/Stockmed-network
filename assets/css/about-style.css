@@ -17,6 +17,7 @@
 }
 
 .banner-wapper .breadcrumb-section.title-wpper .page-title h2 {
+  color: #dddddd;
   font-size: 50px;
   width: 100%;
   display: inline-block;
@@ -59,8 +60,40 @@
   background: white;
 }
 
+.about-page .abour-content-wapper h2{
+  text-transform:none;
+}
+.about-cls section.service.small-section {
+  margin: 0 auto;
+  width: 75%;
+  padding: 60px 0px;
+}
+
+.about-page .abour-content-wapper p{
+ line-height: 19.8px;
+ color: black;
+ font-size: 16px;}
+
 .service-block+.service-block {
   border-left: none;
+}
+
+.about-cls .service-block img {
+  margin-right: 30px;
+}
+
+.about-cls .service-block .icon-vison h3{
+  color: #000000;
+  font-weight: bold;
+}
+
+
+.about-cls .service-block .icon-vison p{
+  line-height: 19.8px;
+ color: black;
+ font-size: 14px;
+ font-weight: 400;
+ 
 }
 
 .testimonial-slider .slick-slide .media {

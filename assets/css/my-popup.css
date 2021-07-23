@@ -193,11 +193,330 @@
             margin-top: 40px;
         }
 
-        .password-popup .modal .rightside .passwordform .passtext2{
+        .password-popup .modal .rightside .passwordform .passtext2 p{
 
             color:#595959;
             font-weight: bold;
             font-size:13.5px;
-           line-height: 1.3px;
+           line-height:18.3px;
            margin-top: 20px;
         }
+
+        .password-popup .modal .leftside .image-wrapper2 img {
+
+        width: 70%;
+        }
+
+  
+    .addproduct-popup .modal  .modal-dialog.cust-addprdt-width {    max-width: 520px;
+    margin-top: 150px;
+     }
+    
+     .addproduct-popup .modal  .mainaddproduct {    padding: 40px 126px;
+     }
+     
+
+     .addproduct-popup .modal  .mainaddproduct .image-wrapper  .fa.fa-check-circle{     
+        font-size: 90px;
+        color: #00b41e;}
+
+        .addproduct-popup .modal .mainaddproduct .btn.btnaddproduct{
+
+            background-color:#0a3ca7;
+            margin-top: 30px;
+            border: none;
+        }
+
+        .addproduct-popup .modal .mainaddproduct .addprdttext h3{
+
+            color:#0a3ca7;
+           line-height:23.3px;
+           margin-top: 20px;
+           font-weight: bold;
+        }
+
+
+        .addproduct-popup .modal .mainaddproduct .addproducttext p{
+
+            color:737373;
+            font-weight: bold;
+            font-size:13.5px;
+           line-height:18.3px;
+           margin-top: 20px;
+        }
+
+        .addproduct-popup .modal .mainaddproduct .skip p{
+            color: black;
+            font-weight: bold;
+            margin-bottom: 0px;
+        }
+
+
+        .Seller-login-popup .modal .leftside{
+
+            background-color: #f35f51;
+            padding-top: 50px;
+            padding-bottom:30px;
+        }
+
+        .Seller-login-popup .modal .rightside{
+
+            background-color:none;
+            padding: 21px;
+        }
+
+
+        .Seller-login-popup .modal .leftside .image-wrapper .fa.fa-user{
+            font-size: 48px;
+            color: white;
+            }
+
+            
+    .Seller-login-popup .modal .leftside .Seller-login-text h5{
+        color: white;
+        font-weight: 800;
+        font-size: 20px;
+    }
+    .Seller-login-popup .modal .leftside .Seller-login-text hr{
+        
+        height: 3px;
+        color: #f46f62;
+        opacity: 1;
+        width: 110px;
+        margin-left: 69px;
+    
+    }
+
+    .Seller-login-popup .modal .leftside .image-wrapper2 img{
+
+        max-width: 100%;
+        width: 90%;
+    }
+
+
+    .Seller-login-popup .modal .rightside .Seller-loginform .logintext{
+
+        color:#595959;
+        font-weight: bold;
+        font-size:13.5px;
+    }
+
+    .Seller-login-popup .modal .rightside .Seller-loginform .btn.btnlogin{
+
+        background-color:#0a3ca7;
+        margin-top: 30px;
+        border: none;
+    }
+    .Seller-login-popup .modal .rightside .lineform::before {
+        
+        content: "";
+        display: block;
+        width: 120px;
+        height: 2px;
+        background: #c0c0c0;
+        left: 58px;
+        top: 68%;
+        position: absolute;
+      }
+
+
+    .Seller-login-popup .modal .rightside .lineform::after {
+        content: "";
+        display: block;
+        width: 120px;
+        height: 2px;
+        background: #c0c0c0;
+        right: 58px;
+        top: 68%;
+        position: absolute;
+    }
+
+
+
+    .Seller-login-popup .modal .rightside .lineformwrapper{
+        width:100%;
+        overflow: hidden;
+        display: inline-block;
+    }
+
+    .Seller-login-popup .modal .rightside  .lineformwrapper .lineform {
+
+    color:#777777;
+    font-size: 12px;
+    font-weight: bold;
+    }
+
+
+    .Seller-login-popup .modal .rightside .socialmediaicons img {
+        max-width: 100%;
+        width: 10%;
+        margin-top: 16px;
+    }
+
+    .Seller-login-popup .modal .rightside .closebtn .fa.fa-times.close{
+        background-color: red;
+    color: white;
+    font-size: 18px;
+    border-radius: 50%;
+    padding: 2px 4px;
+    }
+
+    .Seller-login-popup .modal .rightside .closebtn .btn-close{
+        opacity: 1;
+        margin-right: 7px;
+    }
+
+
+
+
+
+
+
+    .Enquire-popup .modal .leftside{
+
+            background-color: #f35f51;
+            padding-top: 50px;
+            padding-bottom:30px;
+        }
+
+        .Enquire-popup .modal .rightside{
+
+            background-color:none;
+            padding: 21px;
+        }
+
+
+        .Enquire-popup .modal .leftside .image-wrapper .fa.fa-question-circle{
+            font-size: 68px;
+            color: white;
+            }
+
+            
+    .Enquire-popup .modal .leftside .Enquire-text h5{
+        color: white;
+        font-weight: 800;
+        font-size: 20px;
+        margin-top: 8px;
+    }
+
+
+    .Enquire-popup .modal .leftside .Enquire-text hr{
+        
+        height: 3px;
+        color: #f46f62;
+        opacity: 1;
+        width: 110px;
+        margin-left: 69px;
+    
+    }
+
+    .Enquire-popup .modal .leftside .image-wrapper2 img{
+
+        max-width: 100%;
+        width: 80%;
+        margin-top: 30px;
+    }
+
+    .Enquire-popup .modal .rightside .Enquire-form .Enquiretext{
+
+        color:#595959;
+        font-weight: bold;
+        font-size:13.5px;
+    }
+
+    .Enquire-popup .modal .rightside .Enquire-form .btn.btnlogin{
+
+        background-color:#0a3ca7;
+        margin-top: 30px;
+        border: none;
+    }
+
+
+    .Enquire-popup .modal .rightside .closebtn .fa.fa-times.close{
+        background-color: red;
+    color: white;
+    font-size: 18px;
+    border-radius: 50%;
+    padding: 2px 4px;
+    }
+
+    .Enquire-popup .modal .rightside .closebtn .btn-close{
+        opacity: 1;
+        margin-right: 7px;
+    }
+
+
+
+    
+    .Post-popup .modal .leftside{
+
+        background-color: #f35f51;
+        padding-top: 85px;
+        padding-bottom:30px;
+    }
+
+    .Post-popup .modal .rightside{
+
+        background-color:none;
+        padding: 21px;
+    }
+
+    .Post-popup .modal .leftside .image-wrapper .fa.fa-question-circle{
+        font-size: 68px;
+        color: white;
+        }
+
+        
+        .Post-popup .modal .leftside .Post-text h5{
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+
+.Post-popup .modal .leftside .Post-text hr{
+    
+    height: 3px;
+    color: #f46f62;
+    opacity: 1;
+    width: 110px;
+    margin-left: 69px;
+
+}
+
+.Post-popup .modal .leftside .image-wrapper2 img{
+
+    max-width: 100%;
+    width: 88%;
+    margin-top: 30px;
+}
+
+.Post-popup .modal .rightside .Post-form .Posttext{
+
+    color:#595959;
+    font-weight: bold;
+    font-size:13.5px;
+}
+
+.Post-popup .modal .rightside .Post-form .btn.btnlogin{
+
+    background-color:#0a3ca7;
+    margin-top: 30px;
+    border: none;
+}
+
+
+.Post-popup .modal .rightside .closebtn .fa.fa-times.close{
+    background-color: red;
+color: white;
+font-size: 18px;
+border-radius: 50%;
+padding: 2px 4px;
+}
+
+.Post-popup .modal .rightside .closebtn .btn-close{
+    opacity: 1;
+    margin-right: 7px;
+}
+
