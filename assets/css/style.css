@@ -26615,5 +26615,8 @@ select#s-category {
   line-height: 1;
   margin-bottom: 3px;
 }
+  li.onhover-div.mobile-search {
+    display: none;
+}
 
 } 
