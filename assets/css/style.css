@@ -26579,6 +26579,19 @@ display: block;
 position: static;
 margin: 0 auto 15px;
 }
+.menu-center {
+  display: none;
+}
+.brand-logo img {
+  max-width: 100px !important;
+}
+.brand-logo img {
+  height: 50px;
+}
+div#toggle-sidebar {
+  display: none;
+}
+
 } 
 
 
