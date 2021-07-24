@@ -26571,6 +26571,9 @@ a.tm-footer {
 .col-lg-6.text-end {
   display: none;
 }
+  li.onhover-div.mobile-search {
+    display: none;
+}
 @media only screen and (max-width: 767px){
 .testimonial{
 padding: 20px;
@@ -26615,8 +26618,6 @@ select#s-category {
   line-height: 1;
   margin-bottom: 3px;
 }
-  li.onhover-div.mobile-search {
-    display: none;
-}
+
 
 } 
