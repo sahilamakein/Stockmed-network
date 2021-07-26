@@ -125,3 +125,14 @@
 .testimonial .testimonial-slider .media .slider-content .srat-rating-wapper .checked {
   color: orange;
 }
+
+.testimonial .testimonialtext h2 {
+  color:#000000;
+  font-weight: 800;
+  text-transform: none;
+}
+
+.testimonial .review-button-wapper .btn-outline-secondary {
+  color: #6c757d;
+  border: 2px solid #1a75cd !important;
+}

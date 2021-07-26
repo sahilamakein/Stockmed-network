@@ -9,3 +9,21 @@
 .about-page.privacypolicy .about-page-bgimg .abour-content-wapper h2 {
   padding-top: 2rem;
 }
+
+.banner-wapper .breadcrumb-section .container{
+  max-width: 1400px;
+  padding: 0px 150px;
+}
+
+.about-page-bgimg .abour-content-wapper {
+  padding: 0rem;
+  background: white;
+  width: 81%;
+  margin: 0px auto;
+}
+
+.about-page.privacypolicy .abour-content-wapper p {
+    line-height: 19.8px;
+    color: black;
+    font-size: 17px;
+}
