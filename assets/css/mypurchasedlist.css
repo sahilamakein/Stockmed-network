@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+section.purchasedlist-page {
+    background-color:#f0f1f2 !important;
+}
+section, .section-t-space {
+    padding: 20px 0px;
+    pa
+}
+
+.breadcrumb-section .breadcrumb {
+    justify-content: flex-start;
+  }
+
+
+
+  .purchasedlist-page .block1 .textsec{
+      background-color:white;
+      padding: 20px 10px;
+  }
+  .purchasedlist-page .block1{
+      width: 96%;
+      margin: 0px auto;
+  }
+  
+
+  .purchasedlist-page .product .firstsec .imagewrapper img{
+
+max-width: 100%;
+width: 100%;
+  }
