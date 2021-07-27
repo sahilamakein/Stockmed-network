@@ -15,7 +15,10 @@ section, .section-t-space {
 
   .purchasedlist-page .block1 .textsec{
       background-color:white;
-      padding: 20px 10px;
+      padding: 20px;
+      width: 98.3%;
+      margin: 0px 13px;
+  }
   }
   .purchasedlist-page .block1{
       width: 96%;
@@ -23,8 +26,89 @@ section, .section-t-space {
   }
   
 
+  .purchasedlist-page .product .firstsec {
+      background-color: white;
+      border: 1px solid #d9d9d9;
+      border-bottom: none;
+  }
+
+  .purchasedlist-page .product .firstsec .iconwrapper .fa.fa-heart{
+    color: gray;
+    background-color: lightgray;
+    padding-top: 7px;
+    padding-bottom: 4px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 50%;
+  }
+
   .purchasedlist-page .product .firstsec .imagewrapper img{
 
 max-width: 100%;
 width: 100%;
   }
+
+
+
+  .purchasedlist-page .product .firstsec .headtxt h6{
+    color: black;
+    font-weight: bold;
+  }
+
+
+  
+
+  .purchasedlist-page .product .firstsec  .pricetxt h5{
+      color:#2874f0;
+      font-weight: 900;
+  }
+
+  .purchasedlist-page .product .firstsec .desctext p{
+      color:black;
+      font-size: 13px;
+  }
+
+  .purchasedlist-page .product .firstsec .prdtbtn .btn{
+    line-height: 12px;
+     text-transform: none; 
+    font-size: 12px;
+  }
+
+  .purchasedlist-page .product .secondsec .userimg{
+      width: 100%;
+      max-width: 40%;
+      display: inline-block;
+  }
+
+  .purchasedlist-page .product .secondsec{
+
+  background-color:#f3f3f3;
+  border: 1px solid #d9d9d9;}
+
+  .purchasedlist-page .product .secondsec .userimg img{
+  vertical-align: text-bottom;
+  margin-left: 15px;
+  }
+
+  .purchasedlist-page .product .secondsec .sellersec{
+   max-width: 60%;
+    display: inline-block;
+}
+
+.purchasedlist-page .product .secondsec .sellersec .para1{
+ color:red;
+ margin-bottom: 5px;
+ font-weight: 400;
+}
+
+.purchasedlist-page .product .secondsec .sellersec .para2{
+    color:black;
+    font-weight: 600;
+   }
+   
+
+.purchasedlist-page .product .secondsec .right-sec .btmtxt{
+    color: black;
+    font-weight: 600;
+    font-size: 13px;
+}
