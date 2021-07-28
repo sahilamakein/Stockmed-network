@@ -520,3 +520,179 @@ padding: 2px 4px;
     margin-right: 7px;
 }
 
+
+
+.writereview-popup .topsec{
+    background-color: #3377f0;
+}
+
+
+.writereview-popup .topsec .textsec h4{
+
+    color:white;
+    text-transform: none;
+
+
+}
+
+
+.writereview-popup .topsec .closebtn .fa.fa-times.close{
+    background-color:white;
+color:#3377f0;
+font-size: 18px;
+border-radius: 50%;
+padding: 2px 4px;
+}
+
+.writereview-popup .topsec  .closebtn .btn-close{
+    opacity: 1;
+    margin-right: 25px;
+    margin-top: 10px;
+}
+
+.writereview-popup .btmsec .imgwrapper img{
+    max-width: 100%;
+    width: 25%;
+}
+
+.writereview-popup .btmsec{
+    padding: 0px 50px;
+    padding-bottom: 20px;
+}
+
+.star-container {
+    display: flex;
+    width: 104%;
+    flex-direction: row-reverse;
+  }
+  
+  .star { margin-right: 18px;
+  }
+  
+  .star:before {
+    content: "\f005";
+    font-family: fontAwesome;
+    font-size: 32px;
+    position: relative;
+    display: block;
+    color: #aaa;
+  }
+  
+  .star:after {
+    content: "\f005";
+    font-family: fontAwesome;
+    position: absolute;
+    top: 16px;
+    font-size: 32px;
+    color: gold;
+    opacity: 0;
+  }
+  .star:hover:after,
+  .star:hover ~ .star:after,
+  .star.star__checked:after,
+  .star.star__checked ~ .star:after{
+    opacity: 1;
+  }
+  
+  .ratingbox {
+    width: 23%;
+    background-color: #6eac5a;
+    border-width: 2px 4px;
+    border-radius: 40px;
+}
+
+.writereview-popup .btmsec .ratingbox h3{
+    color:white;
+    padding: 5px;
+    margin-left: 6px;
+    font-size: 18px;
+}
+
+.writereview-popup .btmsec .btnreview{
+
+    background-color:#0a3ca7;
+    margin-top: 15px;
+    border: none;
+  
+}
+
+
+.writereview-popup .btmsec .btnreview.btn-primary{
+    width: 35%;
+}
+
+
+
+.writereview-popup .modal-dialog {
+    max-width: 580px;
+    
+}
+
+
+.writereview-popup .topsec.seller{
+    background-color:#f35f51;
+}
+
+
+.writereview-popup .topsec .closebtn .fa.fa-times.close.sell {
+    background-color: white;
+    color: #f35f51;
+    font-size: 18px;
+    border-radius: 50%;
+    padding: 2px 4px;
+}
+
+
+
+.sellersignup-popup .modal-dialog {
+    max-width: 666px;
+    
+}
+
+.sellersignup-popup .topsec.seller{
+    background-color:#f35f51;
+}
+
+.sellersignup-popup .topsec .closebtn .fa.fa-times.close.sell {
+    background-color: white;
+    color: #f35f51;
+    font-size: 18px;
+    border-radius: 50%;
+    padding: 2px 4px;
+}
+
+.sellersignup-popup .topsec .closebtn .btn-close{
+    opacity: 1;
+    margin-right: 22px;
+    margin-top: 25px;
+}
+
+.sellersignup-popup .topsec .textsec h4{
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.sellersignup-popup .topsec .textsec .fa.fa-user-plus{
+    font-size: 35px;
+}
+
+.sellersignup-popup .btmsec .sellersignupform{
+
+    padding: 0px 30px 30px 30px;
+
+}
+
+
+.sellersignup-popup .btmsec .btnreview.btn-primary{
+    width: 35%;
+    margin-top: 20px;}
+
+.sellersignup-popup .btmsec .btnreview{
+
+    background-color:#0a3ca7;
+    margin-top: 15px;
+    border: none;
+  
+}
