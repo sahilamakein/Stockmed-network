@@ -1008,8 +1008,78 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="profile">
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+                            <script>
+                                    $(document).ready(function () {
+                                        var current_fs, next_fs, previous_fs; //fieldsets
+                                        var opacity;
+                                        $(".next").click(function () {
+
+                                            current_fs = $(this).parent();
+                                            next_fs = $(this).parent().next();
+
+                                            //Add Class Active
+                                            $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+
+                                            //show the next fieldset
+                                            next_fs.show();
+                                            //hide the current fieldset with style
+                                            current_fs.animate({ opacity: 0 }, {
+                                                step: function (now) {
+                                                    // for making fielset appear animation
+                                                    opacity = 1 - now;
+
+                                                    current_fs.css({
+                                                        'display': 'none',
+                                                        'position': 'relative'
+                                                    });
+                                                    next_fs.css({ 'opacity': opacity });
+                                                },
+                                                duration: 600
+                                            });
+                                        });
+
+                                        $(".previous").click(function () {
+
+                                            current_fs = $(this).parent();
+                                            previous_fs = $(this).parent().prev();
+
+                                            //Remove class active
+                                            $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+
+                                            //show the previous fieldset
+                                            previous_fs.show();
+
+                                            //hide the current fieldset with style
+                                            current_fs.animate({ opacity: 0 }, {
+                                                step: function (now) {
+                                                    // for making fielset appear animation
+                                                    opacity = 1 - now;
+
+                                                    current_fs.css({
+                                                        'display': 'none',
+                                                        'position': 'relative'
+                                                    });
+                                                    previous_fs.css({ 'opacity': opacity });
+                                                },
+                                                duration: 600
+                                            });
+                                        });
+
+                                        $('.radio-group .radio').click(function () {
+                                            $(this).parent().find('.radio').removeClass('selected');
+                                            $(this).addClass('selected');
+                                        });
+
+                                        $(".submit").click(function () {
+                                            return false;
+                                        })
+
+                                    });                                
+                            </script>
                             
-                               <form>
+                               <div>
                                 
                                     <div class="card mydasboardcard mt-0">
                                         <div class="card-body">
@@ -1027,538 +1097,508 @@
                                                 </div>
 
 
-                                                <div class="row mid-sec">
-                                                    <div class="col-2 pt-2">
-                                                        <p class="custom-colorpara"><strong>BASIC INFO </strong></p>
+                                                <div class="container-fluid" id="grad1">
+                                                    <div class="row justify-content-center mt-0">
+                                                        <div class="row">
+                                                            <div class="col-md-12 mx-0">
+                                                                <form id="msform">
+                                                                    <fieldset>
+                                                                        <div class="form-card">
+                                                                            <h2 class="fs-title">Account Information</h2>
+                                                                            <div class="row mid-sec">
+                                                                                <div class="col-2 pt-2">
+                                                                                    <p class="custom-colorpara"><strong>BASIC INFO </strong></p>
+                                                                                </div>
+                                                                                <div class="col-10 ">
+                                                                                    <hr class="custom-line">
+                                                                                </div>                                                
+                                                                                <div class="row">
+                                                                                    <div class="mb-3 col-lg-6 col-sm-12">                                                
+                                                                                        <label for="exampleInputName" class="form-label">Name*</label>
+                                                                                        <input type="text*" class="form-control" id="exampleInputName">
+                                                                                    </div>
+                                                                                    <div class="mb-3 col-lg-6 col-sm-12">
+                                                                                        <label for="exampleInputDesignation"
+                                                                                            class="form-label">Designation*</label>
+                                                                                        <input type="text*" class="form-control" id="exampleInputDesignation">
+                                                                                    </div>
+                                        
+                                                                                    <div class="mb-3 col-lg-6 col-sm-12">
+                                                                                        <label for="exampleInputEmail" class="form-label">Email
+                                                                                            ID*</label>
+                                                                                        <input type="email*" class="form-control" id="exampleInputEmail">
+                                                                                    </div>
+                                                                                    <div class="mb-3 col-lg-6 col-sm-12">
+                                                                                        <label for="exampleInputEmail2" class="form-label">Alternate
+                                                                                            Email</label>
+                                                                                        <input type="email" class="form-control" id="exampleInputEmail2">
+                                                                                    </div>
+                                        
+                                                                                    <div class="mb-3 col-lg-6 col-sm-12">
+                                                                                        <label for="exampleInputMobileNo" class="form-label">Mobile
+                                                                                            No.*</label>
+                                                                                        <input type="tel*" class="form-control" id="exampleInputMobileNo">
+                                                                                    </div>
+                                                                                    <div class="mb-3 col-lg-6 col-sm-12">
+                                                                                        <label for="exampleInputMobileNo2" class="form-label">Alternate Mobile
+                                                                                            No.</label>
+                                                                                        <input type="tel" class="form-control" id="exampleInputMobileNo2">
+                                                                                    </div>
+                                        
+                                                                                    <div class="mb-3 col-lg-6 col-sm-12">
+                                                                                        <label for="exampleInputLandlineNo" class="form-label">Landline
+                                                                                            Number</label>
+                                                                                        <input type="tel" class="form-control" id="exampleInputLandlineNo">
+                                                                                    </div>
+                                                                                    <div class="mb-3 col-lg-6 col-sm-12">
+                                                                                        <label for="exampleInputWhatsAppNo" class="form-label">WhatsApp
+                                                                                            Number</label>
+                                                                                        <input type="tel" class="form-control" id="exampleInputWhatsAppNo">
+                                                                                    </div>                                                
+                                                                                </div>
+                                                                                <div class=" row">
+                                                                                    <div class="col-2 pt-2">
+                                                                                        <p class="custom-colorpara"><strong>ABOUT US </strong></p>
+                                                                                    </div>
+                                                                                    <div class="col-10 ">
+                                                                                        <hr class="custom-line">                                                
+                                                                                    </div>                                                
+                                                                                    <div class="mb-3 col-lg-6 col-sm-12">                                                
+                                                                                        <label for="exampleInputTitle" class="form-label">Title</label>
+                                        
+                                                                                        <div class="form-group">
+                                        
+                                                                                            <div class="input-group mb-1">
+                                        
+                                                                                                <input type="text" class="form-control" disabled
+                                                                                                    placeholder="Upload File" aria-label="Upload File"
+                                                                                                    aria-describedby="basic-addon1">
+                                                                                                <div class="input-group-append">
+                                                                                                    <button class="browse input-group-text btn btn-primarynew"
+                                                                                                        id="basic-addon2">Browse</button>
+                                                                                                </div>
+                                        
+                                                                                            </div>
+                                                                                            <div class="form-text float-end mt-0">JPEG or PNG, no larger than 10
+                                                                                                MB.</div>
+                                                                                        </div>
+                                        
+                                        
+                                                                                    </div>
+                                        
+                                                                                    <div class="mb-3 col-lg-6 col-sm-12">
+                                                                                        <label for="exampleInputTitle" class="form-label">Title</label>
+                                                                                        <input type="text*" class="form-control" id="exampleInputTitle">
+                                                                                    </div>
+                                        
+                                                                                    <div class="mb-3 col-lg-12 col-sm-12">
+                                                                                        <label for="exampleInputDescription"
+                                                                                            class="form-label">Description</label>
+                                                                                        <textarea class="form-control" id="exampleInputDescription"
+                                                                                            rows="3"></textarea>
+                                                                                    </div>
+                                        
+                                                                                </div>
+                                        
+                                                                                <div class=" row">
+                                                                                    <div class="col-2 pt-2">
+                                                                                        <p class="custom-colorpara"><strong>PDF's </strong></p>
+                                                                                    </div>
+                                                                                    <div class="col-10 ">
+                                                                                        <hr class="custom-line">
+                                        
+                                                                                    </div>
+                                        
+                                                                                    <div class="mb-3 col-lg-12 col-sm-12">                                     
+                                        
+                                        
+                                                                                        <label for="exampleInputPdf" class="form-label">Upload PDF</label>
+                                        
+                                                                                        <div class="form-group">
+                                        
+                                                                                            <div class="input-group mb-1">
+                                        
+                                                                                                <input type="text" accept=".pdf," class="form-control" disabled
+                                                                                                    placeholder="Upload File" aria-label="Upload File"
+                                                                                                    aria-describedby="basic-addon1">
+                                                                                                <div class="input-group-append">
+                                                                                                    <button class="browse input-group-text btn btn-primarynew"
+                                                                                                        id="basic-addon2">Browse</button>
+                                                                                                </div>
+                                        
+                                                                                            </div>
+                                                                                            <div class="form-text float-end mt-0">No larger than 10 MB.</div>
+                                                                                        </div>
+                                        
+                                        
+                                        
+                                                                                    </div>
+                                        
+                                        
+                                        
+                                        
+                                        
+                                                                                </div>
+                                        
+                                                                                <div class=" row">
+                                                                                    <div class="col-2 pt-2">
+                                                                                        <p class="custom-colorpara"><strong>VIDEO </strong></p>
+                                                                                    </div>
+                                                                                    <div class="col-10 ">
+                                                                                        <hr class="custom-line">
+                                        
+                                                                                    </div>
+                                        
+                                                                                    <div class="mb-3 col-lg-6 col-sm-12">
+                                                                                        <label for="exampleInputTitle" class="form-label">Title</label>
+                                                                                        <input type="text*" class="form-control" id="exampleInputTitle">
+                                                                                    </div>
+                                        
+                                                                                    <div class="mb-3 col-lg-6 col-sm-12">
+                                                                                        <label for="exampleInputVideo" class="form-label">Upload Video</label>
+                                        
+                                        
+                                                                                        <div class="form-group">
+                                        
+                                                                                            <div class="input-group mb-1">
+                                        
+                                                                                                <input type="text" accept=".pdf," class="form-control" disabled
+                                                                                                    placeholder="Upload File" aria-label="Upload File"
+                                                                                                    aria-describedby="basic-addon1">
+                                                                                                <div class="input-group-append">
+                                                                                                    <button class="browse input-group-text btn btn-primarynew"
+                                                                                                        id="basic-addon2">Browse</button>
+                                                                                                </div>
+                                        
+                                                                                            </div>
+                                                                                            <div class="form-text float-end mt-0">No larger than 10 MB.</div>
+                                                                                        </div>
+                                        
+                                        
+                                        
+                                                                                    </div>
+                                        
+                                                                                </div>
+                                        
+                                                                                <div class=" row">
+                                                                                    <div class="col-2 pt-2">
+                                                                                        <p class="custom-colorpara"><strong>CERTIFICATION </strong></p>
+                                                                                    </div>
+                                                                                    <div class="col-10 ">
+                                                                                        <hr class="custom-line">
+                                        
+                                                                                    </div>
+                                        
+                                                                                    <div class="mb-3 col-lg-6 col-sm-12">
+                                                                                        <label for="exampleInputTitle" class="form-label">Title</label>
+                                                                                        <select class="form-select customformselect mb-3 "
+                                                                                            aria-label=".form-select example">
+                                                                                            <option selected>Please Select a Certificate</option>
+                                                                                            <option value="1">One</option>
+                                                                                            <option value="2">Two</option>
+                                                                                            <option value="3">Three</option>
+                                                                                        </select>
+                                                                                    </div>
+                                        
+                                                                                    <div class="mb-3 col-lg-6 col-sm-12">
+                                                                                        <label for="exampleInputCertificatetext"
+                                                                                            class="form-label">Image</label>
+                                                                                        <input type="text" class="form-control"
+                                                                                            id="exampleInputCertificatetext">
+                                                                                    </div>
+                                        
+                                                                                    <div class="mb-3 col-lg-11 col-sm-11">
+                                                                                        <div class="form-group">
+                                        
+                                                                                            <div class="input-group mb-1">
+                                        
+                                                                                                <input type="text" accept=".pdf," class="form-control" disabled
+                                                                                                    placeholder="Upload File" aria-label="Upload File"
+                                                                                                    aria-describedby="basic-addon1">
+                                                                                                <div class="input-group-append">
+                                                                                                    <button class="browse input-group-text btn btn-primarynew"
+                                                                                                        id="basic-addon2">Browse</button>
+                                                                                                </div>
+                                        
+                                                                                            </div>
+                                                                                            <div class="form-text float-end mt-0">No larger than 10 MB.</div>
+                                                                                        </div>
+                                                                                    </div>
+                                        
+                                                                                    <div class="mb-3 col-lg-1 col-sm-1 custombuttondash">
+                                                                                        <button type="button" class="btn btn-light">Add more</button>
+                                                                                    </div>
+                                        
+                                                                                    <!-- <div class="col-lg-12 col-sm-12 text-center "> <a href="#"
+                                                                                            class="dasboardbtnlong btn btn-primary   ">NEXT</a>
+                                                                                    </div> -->
+                                        
+                                                                                </div>                                        
+                                                                            </div>
+                                                                        </div>
+                                                                        <input type="button" name="next" class="next action-button" value="Next Step" />                                                                      
+                                                                    </fieldset>
+                                                                    <fieldset>
+                                                                        <div class="form-card">
+                                                                            <h2 class="fs-title">Personal Information</h2>
+                                                                            <div class="card mydasboardcard mt-0">
+                                                                                <div class="card-body">
+                                                                                    <div class="dashboard-box">
+                                                                                        <div class=" row top-sec">
+                                                                                            <div class="col-8">
+                                                                                                <h3> <i class="fa fa-user-circle" aria-hidden="true"></i></i>
+                                                                                                    <strong>COMPANY PROFILE22</strong>
+                                                                                                </h3>
+                                                                                            </div>
+                                                                                            <div class="col-2 "> <a href="#" class="dasboardbtn btn btn-primary float-end">Business Profile</a>
+                                                                                            </div>
+                                                                                            <div class="col-2  "><a href="#" class="dasboardbtn btn btn-primary ">Personal
+                                                                                                    Deatil</a></div>
+                                                                                        </div>
+                                                                            
+                                                                            
+                                                                                        <div class="row mid-sec">
+                                                                                            <div class="col-2 pt-2">
+                                                                                                <p class="custom-colorpara"><strong>BASIC INFO </strong></p>
+                                                                                            </div>
+                                                                                            <div class="col-10 ">
+                                                                                                <hr class="custom-line">                                                                            
+                                                                                            </div>                                                                            
+                                                                                            <div class="row">
+                                                                                                <div class="mb-3 col-lg-6 col-sm-12">
+                                                                            
+                                                                                                    <label for="exampleInputName2" class="form-label">Company Name*</label>
+                                                                                                    <input type="text*" class="form-control" id="exampleInputName2">
+                                                                                                </div>
+                                                                                                <div class="mb-3 col-lg-6 col-sm-12">
+                                                                                                    <label for="exampleInputDesignation2" class="form-label">Nature of Business</label>
+                                                                                                    <input type="text" class="form-control" id="exampleInputDesignation2">
+                                                                                                </div>
+                                                                            
+                                                                                                <div class="mb-3 col-lg-6 col-sm-12">
+                                                                                                    <label for="exampleInputAnnual" class="form-label">Annual Turnover
+                                                                                                    </label>
+                                                                                                    <select class="form-select  mb-3" aria-label=".form-select example">
+                                                                                                        <option selected>Rs.1-2 Crore</option>
+                                                                                                        <option value="1">Rs.3-4 Crore</option>
+                                                                                                        <option value="2">Rs.5-6 Crore</option>
+                                                                                                    </select>
+                                                                                                </div>
+                                                                                                <div class="mb-3 col-lg-6 col-sm-12">
+                                                                                                    <label for="exampleInputEmail2" class="form-label">Total number of employees</label>
+                                                                                                    <select class="form-select  mb-3" aria-label=".form-select example">
+                                                                                                        <option selected>1-10</option>
+                                                                                                        <option value="1">10-20</option>
+                                                                                                        <option value="2">20-30</option>
+                                                                                                    </select>
+                                                                                                </div>
+                                                                            
+                                                                                                <div class="mb-3 col-lg-6 col-sm-12">
+                                                                                                    <label for="exampleInputestablishment" class="form-label">Year of establishment</label>
+                                                                                                    <select class="form-select  mb-3" aria-label=".form-select example">
+                                                                                                        <option selected>2004</option>
+                                                                                                        <option value="1">2005</option>
+                                                                                                        <option value="2">2006</option>
+                                                                                                    </select>
+                                                                                                </div>
+                                                                                                <div class="mb-3 col-lg-6 col-sm-12">
+                                                                                                    <label for="exampleInputUrl" class="form-label">Website URL</label>
+                                                                                                    <input type="text" class="form-control" id="exampleInputUrl">
+                                                                                                </div>
+                                                                            
+                                                                                                <div class="mb-3 col-lg-6 col-sm-12">
+                                                                                                    <label for="exampleInputCompanyEmail" class="form-label">Company Email ID*</label>
+                                                                                                    <input type="email*" class="form-control" id="exampleInputCompanyEmail">
+                                                                                                </div>
+                                                                                                <div class="mb-3 col-lg-3 col-sm-12">
+                                                                                                    <label for="exampleInputBusinesstype" class="form-label">Type of Business*</label>
+                                                                                                    <select class="form-select  mb-3" aria-label=".form-select example">
+                                                                                                        <option selected>Select your Business</option>
+                                                                                                        <option value="1">Business1</option>
+                                                                                                        <option value="2">Business2</option>
+                                                                                                    </select>
+                                                                                                </div>
+                                                                            
+                                                                                                <div class="mb-3 col-lg-3 col-sm-12">
+                                                                                                    <label for="exampleInputLei" class="form-label">LEI Registration Number*</label>
+                                                                                                    <input type="number" class="form-control" id="exampleInputLei">
+                                                                                                </div>
+                                                                            
+                                                                                            </div>                                                                       
+                                                                            
+                                                                                            <div class=" row">
+                                                                                                <div class="col-2 pt-2">
+                                                                                                    <p class="custom-colorpara"><strong>ADDRESS </strong></p>
+                                                                                                </div>
+                                                                                                <div class="col-10 ">
+                                                                                                    <hr class="custom-line">
+                                                                            
+                                                                                                </div>
+                                                                            
+                                                                                                <div class="mb-3 col-lg-6 col-sm-12">
+                                                                            
+                                                                                                    <label for="exampleInputAddress1" class="form-label">Address1*</label>
+                                                                                                    <input type="text*" class="form-control" id="exampleInputAddress1">
+                                                                            
+                                                                            
+                                                                                                </div>
+                                                                            
+                                                                                                <div class="mb-3 col-lg-6 col-sm-12">
+                                                                                                    <label for="exampleInputAddress2" class="form-label">Address2*</label>
+                                                                                                    <input type="text*" class="form-control" id="exampleInputAddress2">
+                                                                                                </div>
+                                                                            
+                                                                                                <div class="mb-3 col-lg-6 col-sm-12">
+                                                                            
+                                                                                                    <label for="exampleInputCity" class="form-label">City*</label>
+                                                                                                    <input type="text*" class="form-control" id="exampleInputCity">
+                                                                            
+                                                                            
+                                                                                                </div>
+                                                                            
+                                                                                                <div class="mb-3 col-lg-6 col-sm-12">
+                                                                                                    <label for="exampleInputState" class="form-label">State/Province*</label>
+                                                                                                    <select class="form-select  mb-3" aria-label=".form-select example">
+                                                                                                        <option selected>Please select a region</option>
+                                                                                                        <option value="1">Region1</option>
+                                                                                                        <option value="2">Region2</option>
+                                                                                                    </select>
+                                                                                                </div>
+                                                                            
+                                                                            
+                                                                            
+                                                                                                <div class="mb-3 col-lg-6 col-sm-12">
+                                                                            
+                                                                                                    <label for="exampleInputCode" class="form-label">Zip/Postal Code*</label>
+                                                                                                    <input type="number" class="form-control" id="exampleInputCode">
+                                                                            
+                                                                            
+                                                                                                </div>
+                                                                            
+                                                                                                <div class="mb-3 col-lg-6 col-sm-12">
+                                                                                                    <label for="exampleInputState" class="form-label">Country*</label>
+                                                                                                    <select class="form-select  mb-3" aria-label=".form-select example">
+                                                                                                        <option selected>Select country </option>
+                                                                                                        <option value="1">Country1</option>
+                                                                                                        <option value="2">Country2</option>
+                                                                                                    </select>
+                                                                                                </div>
+                                                                            
+                                                                                            </div>
+                                                                            
+                                                                                            <div class=" row">
+                                                                                                <div class="col-2 pt-2">
+                                                                                                    <p class="custom-colorpara"><strong>STATUTORY DETAILS</strong></p>
+                                                                                                </div>
+                                                                                                <div class="col-10 ">
+                                                                                                    <hr class="custom-line">
+                                                                            
+                                                                                                </div>
+                                                                            
+                                                                                                <div class="mb-3 col-lg-6 col-sm-12">
+                                                                            
+                                                                                                    <label for="exampleInputgstin" class="form-label">GSTIN*</label>
+                                                                                                    <input type="number" class="form-control" id="exampleInputgstin">
+                                                                            
+                                                                            
+                                                                                                </div>
+                                                                            
+                                                                                                <div class="mb-3 col-lg-6 col-sm-12">
+                                                                            
+                                                                                                    <label for="exampleInputpan" class="form-label">Pan Card*</label>
+                                                                                                    <input type="number" class="form-control" id="exampleInputpan">
+                                                                            
+                                                                            
+                                                                                                </div>
+                                                                            
+                                                                                                <div class="mb-3 col-lg-6 col-sm-12">
+                                                                            
+                                                                                                    <label for="exampleInputCIN" class="form-label">CIN</label>
+                                                                                                    <input type="number" class="form-control" id="exampleInputCIN">
+                                                                            
+                                                                            
+                                                                                                </div>
+                                                                            
+                                                                                                <div class="mb-3 col-lg-6 col-sm-12">
+                                                                            
+                                                                                                    <label for="exampleInputpan" class="form-label">Import/Export Code (IEC)*</label>
+                                                                                                    <input type="number" class="form-control" id="exampleInputpan">
+                                                                            
+                                                                            
+                                                                                                </div>
+                                                                            
+                                                                            
+                                                                            
+                                                                                            </div>
+                                                                            
+                                                                                            <div class=" row">
+                                                                                                <div class="col-2 pt-2">
+                                                                                                    <p class="custom-colorpara"><strong>BANK ACCOUNT </strong></p>
+                                                                                                </div>
+                                                                                                <div class="col-10 ">
+                                                                                                    <hr class="custom-line">
+                                                                            
+                                                                                                </div>
+                                                                            
+                                                                                                <div class="mb-3 col-lg-6 col-sm-12">
+                                                                                                    <label for="exampleInputAccount" class="form-label">Bank Account Details</label>
+                                                                                                    <input type="text*" class="form-control" id="exampleInputAccount">
+                                                                                                </div>
+                                                                            
+                                                                                                <div class="mb-3 col-lg-6 col-sm-12">
+                                                                                                    <label for="exampleInputIFSC" class="form-label">IFSC</label>
+                                                                                                    <input type="number" class="form-control" id="exampleInputIFSC">
+                                                                                                </div>
+                                                                            
+                                                                                                <div class="mb-3 col-lg-6 col-sm-12">
+                                                                                                    <label for="exampleInputBankname" class="form-label">Bank Name</label>
+                                                                                                    <input type="text*" class="form-control" id="exampleInputBankname">
+                                                                                                </div>
+                                                                            
+                                                                                                <div class="mb-3 col-lg-6 col-sm-12">
+                                                                                                    <label for="exampleInputBranchname" class="form-label">Branch Name</label>
+                                                                                                    <input type="number" class="form-control" id="exampleInputBranchname">
+                                                                                                </div>
+                                                                            
+                                                                            
+                                                                                                <!-- <div class="col-lg-12 col-sm-12 text-center mt-2 "> <a href="#"
+                                                                                                        class="dasboardbtnlong btn btn-primary ">SUBMIT</a>
+                                                                                                </div> -->
+                                                                            
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                            
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                                                                        <input type="button" name="next" class="next action-button" value="SUBMIT" />
+                                                                    </fieldset>
+                                                                    <fieldset>
+                                                                        <div class="form-card">
+                                                                            <h2 class="fs-title text-center">Success !</h2> <br><br>
+                                                                            <div class="row justify-content-center">
+                                                                                <div class="col-3"> <img src="https://img.icons8.com/color/96/000000/ok--v2.png" class="fit-image"> </div>
+                                                                            </div> <br><br>
+                                                                            <div class="row justify-content-center">
+                                                                                <div class="col-7 text-center">
+                                                                                    <h5>You Have Successfully Signed Up</h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </fieldset>
+                                                                </form>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div class="col-10 ">
-                                                        <hr class="custom-line">
-
-                                                    </div>
-
-                                                    <div class="row">
-
-
-                                                        <div class="mb-3 col-lg-6 col-sm-12">
-
-                                                            <label for="exampleInputName"
-                                                                class="form-label">Name*</label>
-                                                            <input type="text*" class="form-control"
-                                                                id="exampleInputName">
-                                                        </div>
-                                                        <div class="mb-3 col-lg-6 col-sm-12">
-                                                            <label for="exampleInputDesignation"
-                                                                class="form-label">Designation*</label>
-                                                            <input type="text*" class="form-control"
-                                                                id="exampleInputDesignation">
-                                                        </div>
-
-                                                        <div class="mb-3 col-lg-6 col-sm-12">
-                                                            <label for="exampleInputEmail" class="form-label">Email
-                                                                ID*</label>
-                                                            <input type="email*" class="form-control"
-                                                                id="exampleInputEmail">
-                                                        </div>
-                                                        <div class="mb-3 col-lg-6 col-sm-12">
-                                                            <label for="exampleInputEmail2" class="form-label">Alternate
-                                                                Email</label>
-                                                            <input type="email" class="form-control"
-                                                                id="exampleInputEmail2">
-                                                        </div>
-
-                                                        <div class="mb-3 col-lg-6 col-sm-12">
-                                                            <label for="exampleInputMobileNo" class="form-label">Mobile
-                                                                No.*</label>
-                                                            <input type="tel*" class="form-control"
-                                                                id="exampleInputMobileNo">
-                                                        </div>
-                                                        <div class="mb-3 col-lg-6 col-sm-12">
-                                                            <label for="exampleInputMobileNo2"
-                                                                class="form-label">Alternate Mobile No.</label>
-                                                            <input type="tel" class="form-control"
-                                                                id="exampleInputMobileNo2">
-                                                        </div>
-
-                                                        <div class="mb-3 col-lg-6 col-sm-12">
-                                                            <label for="exampleInputLandlineNo"
-                                                                class="form-label">Landline Number</label>
-                                                            <input type="tel" class="form-control"
-                                                                id="exampleInputLandlineNo">
-                                                        </div>
-                                                        <div class="mb-3 col-lg-6 col-sm-12">
-                                                            <label for="exampleInputWhatsAppNo"
-                                                                class="form-label">WhatsApp Number</label>
-                                                            <input type="tel" class="form-control"
-                                                                id="exampleInputWhatsAppNo">
-                                                        </div>
-
-                                                    </div>
-
-
-                                                    <div class=" row">
-                                                        <div class="col-2 pt-2">
-                                                            <p class="custom-colorpara"><strong>ABOUT US </strong></p>
-                                                        </div>
-                                                        <div class="col-10 ">
-                                                            <hr class="custom-line">
-
-                                                        </div>
-
-                                                        <div class="mb-3 col-lg-6 col-sm-12">
-                                                            
-                                                            <label for="exampleInputTitle"
-                                                           class="form-label">Title</label>
-
-                                                            <div class="form-group">
-                                                              
-                                                                <div class="input-group mb-1">
-                                                                  
-                                                                  <input type="text" class="form-control" disabled placeholder="Upload File" aria-label="Upload File" aria-describedby="basic-addon1">
-                                                                  <div class="input-group-append">
-                                                                    <button class="browse input-group-text btn btn-primarynew" id="basic-addon2">Browse</button>
-                                                                  </div>
-                                                                  
-                                                                </div>
-                                                                <div class="form-text float-end mt-0">JPEG or PNG, no larger than 10 MB.</div>
-                                                              </div>
-
-
-                                                        </div>
-                                                        
-                                                        <div class="mb-3 col-lg-6 col-sm-12">
-                                                        <label for="exampleInputTitle"
-                                                           class="form-label">Title</label>
-                                                          <input type="text*" class="form-control" id="exampleInputTitle">
-                                                        </div>
-
-                                                        <div class="mb-3 col-lg-12 col-sm-12">
-                                                            <label for="exampleInputDescription"
-                                                               class="form-label">Description</label>
-                                                               <textarea class="form-control" id="exampleInputDescription" rows="3"></textarea>
-                                                       </div>
-
-                                                    </div>
-                                                
-                                                    <div class=" row">
-                                                        <div class="col-2 pt-2">
-                                                            <p class="custom-colorpara"><strong>PDF's </strong></p>
-                                                        </div>
-                                                        <div class="col-10 ">
-                                                            <hr class="custom-line">
-
-                                                        </div>
-
-                                                        <div class="mb-3 col-lg-12 col-sm-12">
-                                                            
-                                                         
-
-                                                            <label for="exampleInputPdf"
-                                                                class="form-label">Upload PDF</label> 
-
-                                                            <div class="form-group">
-                                                              
-                                                                <div class="input-group mb-1">
-                                                                  
-                                                                  <input type="text" accept=".pdf,"  class="form-control" disabled placeholder="Upload File" aria-label="Upload File" aria-describedby="basic-addon1">
-                                                                  <div class="input-group-append">
-                                                                    <button class="browse input-group-text btn btn-primarynew" id="basic-addon2">Browse</button>
-                                                                  </div>
-                                                                  
-                                                                </div>
-                                                                <div class="form-text float-end mt-0">No larger than 10 MB.</div>
-                                                              </div>
-
-
-
-                                                        </div>
-                                                        
-
-
-                                                        
-
-                                                    </div>
-                                                
-                                                    <div class=" row">
-                                                        <div class="col-2 pt-2">
-                                                            <p class="custom-colorpara"><strong>VIDEO </strong></p>
-                                                        </div>
-                                                        <div class="col-10 ">
-                                                            <hr class="custom-line">
-
-                                                        </div>
-                                                        
-                                                        <div class="mb-3 col-lg-6 col-sm-12">
-                                                        <label for="exampleInputTitle"
-                                                           class="form-label">Title</label>
-                                                          <input type="text*" class="form-control" id="exampleInputTitle">
-                                                        </div>
-
-                                                        <div class="mb-3 col-lg-6 col-sm-12">
-                                                            <label for="exampleInputVideo"
-                                                                class="form-label">Upload Video</label>
-                                                           
-
-                                                            <div class="form-group">
-                                                              
-                                                                <div class="input-group mb-1">
-                                                                  
-                                                                  <input type="text" accept=".pdf,"  class="form-control" disabled placeholder="Upload File" aria-label="Upload File" aria-describedby="basic-addon1">
-                                                                  <div class="input-group-append">
-                                                                    <button class="browse input-group-text btn btn-primarynew" id="basic-addon2">Browse</button>
-                                                                  </div>
-                                                                  
-                                                                </div>
-                                                                <div class="form-text float-end mt-0">No larger than 10 MB.</div>
-                                                              </div>
-
-
-
-                                                        </div>
-
-                                                    </div>    
-
-                                                    <div class=" row">
-                                                        <div class="col-2 pt-2">
-                                                            <p class="custom-colorpara"><strong>CERTIFICATION </strong></p>
-                                                        </div>
-                                                        <div class="col-10 ">
-                                                            <hr class="custom-line">
-
-                                                        </div>
-                                                        
-                                                        <div class="mb-3 col-lg-6 col-sm-12">
-                                                        <label for="exampleInputTitle"
-                                                           class="form-label">Title</label>
-                                                           <select class="form-select customformselect mb-3 " aria-label=".form-select example">
-                                                            <option selected>Please Select a Certificate</option>
-                                                            <option value="1">One</option>
-                                                            <option value="2">Two</option>
-                                                            <option value="3">Three</option>
-                                                          </select>
-                                                        </div>
-
-                                                        <div class="mb-3 col-lg-6 col-sm-12">
-                                                            <label for="exampleInputCertificatetext"
-                                                                class="form-label">Image</label>
-                                                            <input type="text" class="form-control" id="exampleInputCertificatetext">
-                                                        </div>
-
-                                                        <div class="mb-3 col-lg-11 col-sm-11">
-                                                            <div class="form-group">
-                                                              
-                                                                <div class="input-group mb-1">
-                                                                  
-                                                                  <input type="text" accept=".pdf,"  class="form-control" disabled placeholder="Upload File" aria-label="Upload File" aria-describedby="basic-addon1">
-                                                                  <div class="input-group-append">
-                                                                    <button class="browse input-group-text btn btn-primarynew" id="basic-addon2">Browse</button>
-                                                                  </div>
-                                                                  
-                                                                </div>
-                                                                <div class="form-text float-end mt-0">No larger than 10 MB.</div>
-                                                              </div>
-                                                        </div>
-
-                                                        <div class="mb-3 col-lg-1 col-sm-1 custombuttondash">
-                                                            <button type="button" class="btn btn-light">Add more</button>
-                                                        </div>
-
-                                                        <div class="col-lg-12 col-sm-12 text-center "> <a href="#"
-                                                            class="dasboardbtnlong btn btn-primary   ">NEXT</a>
-                                                    </div>
-
-                                                    </div> 
-                                                
-                                                
-                                                
-                                                
-                                                
-                                                
                                                 </div>
                                             </div>
 
                                         </div>
                                     </div>    
 
-                            </form>
-
-
-                            <form>
-                                
-                                <div class="card mydasboardcard mt-0">
-                                    <div class="card-body">
-                                        <div class="dashboard-box">
-                                            <div class=" row top-sec">
-                                                <div class="col-8">
-                                                    <h3> <i class="fa fa-user-circle" aria-hidden="true"></i></i>
-                                                        <strong>COMPANY PROFILE22</strong> </h3>
-                                                </div>
-                                                <div class="col-2 "> <a href="#"
-                                                        class="dasboardbtn btn btn-primary float-end">Business Profile</a>
-                                                </div>
-                                                <div class="col-2  "><a href="#" class="dasboardbtn btn btn-primary ">Personal
-                                                        Deatil</a></div>
-                                            </div>
-
-
-                                            <div class="row mid-sec">
-                                                <div class="col-2 pt-2">
-                                                    <p class="custom-colorpara"><strong>BASIC INFO </strong></p>
-                                                </div>
-                                                <div class="col-10 ">
-                                                    <hr class="custom-line">
-
-                                                </div>
-
-                                                <div class="row">
-
-
-                                                    <div class="mb-3 col-lg-6 col-sm-12">
-
-                                                        <label for="exampleInputName2"
-                                                            class="form-label">Company Name*</label>
-                                                        <input type="text*" class="form-control"
-                                                            id="exampleInputName2">
-                                                    </div>
-                                                    <div class="mb-3 col-lg-6 col-sm-12">
-                                                        <label for="exampleInputDesignation2"
-                                                            class="form-label">Nature of Business</label>
-                                                        <input type="text" class="form-control"
-                                                            id="exampleInputDesignation2">
-                                                    </div>
-
-                                                    <div class="mb-3 col-lg-6 col-sm-12">
-                                                        <label for="exampleInputAnnual" class="form-label">Annual Turnover
-                                                            </label>
-                                                            <select class="form-select  mb-3" aria-label=".form-select example">
-                                                                <option selected>Rs.1-2 Crore</option>
-                                                                <option value="1">Rs.3-4 Crore</option>
-                                                                <option value="2">Rs.5-6 Crore</option>
-                                                             </select>
-                                                    </div>
-                                                    <div class="mb-3 col-lg-6 col-sm-12">
-                                                        <label for="exampleInputEmail2" class="form-label">Total number of employees</label>
-                                                        <select class="form-select  mb-3" aria-label=".form-select example">
-                                                            <option selected>1-10</option>
-                                                            <option value="1">10-20</option>
-                                                            <option value="2">20-30</option>
-                                                         </select>
-                                                    </div>
-
-                                                    <div class="mb-3 col-lg-6 col-sm-12">
-                                                        <label for="exampleInputestablishment" class="form-label">Year of establishment</label>
-                                                        <select class="form-select  mb-3" aria-label=".form-select example">
-                                                            <option selected>2004</option>
-                                                            <option value="1">2005</option>
-                                                            <option value="2">2006</option>
-                                                         </select>
-                                                    </div>
-                                                    <div class="mb-3 col-lg-6 col-sm-12">
-                                                        <label for="exampleInputUrl"
-                                                            class="form-label">Website URL</label>
-                                                        <input type="text" class="form-control"
-                                                            id="exampleInputUrl">
-                                                    </div>
-
-                                                    <div class="mb-3 col-lg-6 col-sm-12">
-                                                        <label for="exampleInputCompanyEmail" class="form-label">Company Email ID*</label>
-                                                        <input type="email*" class="form-control"
-                                                            id="exampleInputCompanyEmail">
-                                                    </div>
-                                                    <div class="mb-3 col-lg-3 col-sm-12">
-                                                        <label for="exampleInputBusinesstype"
-                                                            class="form-label">Type of Business*</label>
-                                                            <select class="form-select  mb-3" aria-label=".form-select example">
-                                                                <option selected>Select your Business</option>
-                                                                <option value="1">Business1</option>
-                                                                <option value="2">Business2</option>
-                                                             </select>
-                                                    </div>
-
-                                                    <div class="mb-3 col-lg-3 col-sm-12">
-                                                        <label for="exampleInputLei"
-                                                            class="form-label">LEI Registration Number*</label>
-                                                        <input type="number" class="form-control"
-                                                            id="exampleInputLei">
-                                                    </div>
-
-                                                </div>
-
-
-                                                <div class=" row">
-                                                    <div class="col-2 pt-2">
-                                                        <p class="custom-colorpara"><strong>ADDRESS </strong></p>
-                                                    </div>
-                                                    <div class="col-10 ">
-                                                        <hr class="custom-line">
-
-                                                    </div>
-
-                                                    <div class="mb-3 col-lg-6 col-sm-12">
-                                                        
-                                                        <label for="exampleInputAddress1"
-                                                        class="form-label">Address1*</label>
-                                                       <input type="text*" class="form-control" id="exampleInputAddress1">
-
-
-                                                    </div>
-                                                    
-                                                    <div class="mb-3 col-lg-6 col-sm-12">
-                                                        <label for="exampleInputAddress2"
-                                                        class="form-label">Address2*</label>
-                                                       <input type="text*" class="form-control" id="exampleInputAddress2">
-                                                    </div>
-
-                                                    <div class="mb-3 col-lg-6 col-sm-12">
-                                                        
-                                                        <label for="exampleInputCity"
-                                                        class="form-label">City*</label>
-                                                       <input type="text*" class="form-control" id="exampleInputCity">
-
-
-                                                    </div>
-                                                    
-                                                    <div class="mb-3 col-lg-6 col-sm-12">
-                                                        <label for="exampleInputState"
-                                                        class="form-label">State/Province*</label>
-                                                        <select class="form-select  mb-3" aria-label=".form-select example">
-                                                            <option selected>Please select a region</option>
-                                                            <option value="1">Region1</option>
-                                                            <option value="2">Region2</option>
-                                                         </select>
-                                                    </div>
-
-
-
-                                                    <div class="mb-3 col-lg-6 col-sm-12">
-                                                        
-                                                        <label for="exampleInputCode"
-                                                        class="form-label">Zip/Postal Code*</label>
-                                                       <input type="number"class="form-control" id="exampleInputCode">
-
-
-                                                    </div>
-                                                    
-                                                    <div class="mb-3 col-lg-6 col-sm-12">
-                                                        <label for="exampleInputState"
-                                                        class="form-label">Country*</label>
-                                                        <select class="form-select  mb-3" aria-label=".form-select example">
-                                                            <option selected>Select country </option>
-                                                            <option value="1">Country1</option>
-                                                            <option value="2">Country2</option>
-                                                         </select>
-                                                    </div>
-
-                                                </div>
-                                            
-                                                <div class=" row">
-                                                    <div class="col-2 pt-2">
-                                                        <p class="custom-colorpara"><strong>STATUTORY DETAILS</strong></p>
-                                                    </div>
-                                                    <div class="col-10 ">
-                                                        <hr class="custom-line">
-
-                                                    </div>
-
-                                                        <div class="mb-3 col-lg-6 col-sm-12">
-                                                        
-                                                            <label for="exampleInputgstin"
-                                                            class="form-label">GSTIN*</label>
-                                                           <input type="number"class="form-control" id="exampleInputgstin">
-    
-    
-                                                        </div>
-
-                                                        <div class="mb-3 col-lg-6 col-sm-12">
-                                                        
-                                                            <label for="exampleInputpan"
-                                                            class="form-label">Pan Card*</label>
-                                                           <input type="number"class="form-control" id="exampleInputpan">
-    
-    
-                                                        </div>
-
-                                                        <div class="mb-3 col-lg-6 col-sm-12">
-                                                        
-                                                            <label for="exampleInputCIN"
-                                                            class="form-label">CIN</label>
-                                                           <input type="number"class="form-control" id="exampleInputCIN">
-    
-    
-                                                        </div>
-
-                                                        <div class="mb-3 col-lg-6 col-sm-12">
-                                                        
-                                                            <label for="exampleInputpan"
-                                                            class="form-label">Import/Export Code (IEC)*</label>
-                                                           <input type="number"class="form-control" id="exampleInputpan">
-    
-    
-                                                        </div>
-
-
-
-                                                </div>
-                                            
-                                                <div class=" row">
-                                                    <div class="col-2 pt-2">
-                                                        <p class="custom-colorpara"><strong>BANK ACCOUNT </strong></p>
-                                                    </div>
-                                                    <div class="col-10 ">
-                                                        <hr class="custom-line">
-
-                                                      </div>
-                                                    
-                                                      <div class="mb-3 col-lg-6 col-sm-12">
-                                                      <label for="exampleInputAccount"
-                                                       class="form-label">Bank Account Details</label>
-                                                      <input type="text*" class="form-control" id="exampleInputAccount">
-                                                     </div>
-
-                                                     <div class="mb-3 col-lg-6 col-sm-12">
-                                                        <label for="exampleInputIFSC"
-                                                        class="form-label">IFSC</label>
-                                                       <input type="number" class="form-control" id="exampleInputIFSC">
-                                                     </div>
-
-                                                          <div class="mb-3 col-lg-6 col-sm-12">
-                                                         <label for="exampleInputBankname"
-                                                           class="form-label">Bank Name</label>
-                                                          <input type="text*" class="form-control" id="exampleInputBankname">
-                                                          </div>
-    
-                                                          <div class="mb-3 col-lg-6 col-sm-12">
-                                                            <label for="exampleInputBranchname"
-                                                            class="form-label">Branch Name</label>
-                                                           <input type="number" class="form-control" id="exampleInputBranchname">
-                                                         </div>
-                                                         
-
-                                                         <div class="col-lg-12 col-sm-12 text-center mt-2 "> <a href="#"
-                                                            class="dasboardbtnlong btn btn-primary ">SUBMIT</a>
-                                                            </div>
-
-                                                </div>
-
-                                                   
-
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>    
-
-                        </form>
-
-
-
-                        
+                                </div>                       
 
                         </div>
                         <div class="tab-pane fade" id="settings">
