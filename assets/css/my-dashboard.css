@@ -58,11 +58,6 @@
     text-align: left;
 }
 
-
-
-
-
-
 .switch {
     position: relative;
     display: block;
@@ -431,3 +426,10 @@ select.list-dt:focus {
     width: 100%;
     object-fit: cover
 }
+
+
+
+
+
+
+
