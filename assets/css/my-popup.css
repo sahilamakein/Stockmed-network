@@ -679,20 +679,358 @@ padding: 2px 4px;
 }
 
 .sellersignup-popup .btmsec .sellersignupform{
+ padding: 0px 30px 30px 30px;
 
-    padding: 0px 30px 30px 30px;
+}
+
+.sellersignup-popup .btmsec .btmtxt h3 {
+    font-size: 24px;
+    font-weight: 800;
+    color: #010101;
 
 }
 
 
 .sellersignup-popup .btmsec .btnreview.btn-primary{
-    width: 35%;
-    margin-top: 20px;}
+    width: 45%;
+    margin-top: 10px;}
 
 .sellersignup-popup .btmsec .btnreview{
 
     background-color:#0a3ca7;
-    margin-top: 15px;
+    margin-top: 10px;
     border: none;
   
 }
+
+.sellersignup-popup .btmsec .sellersignupform .Posttext{
+    font-weight: 600;
+    font-size: 13px;
+    color: #5c5c5c;
+    margin-bottom: 3px;
+}
+
+
+.sellersignup-popup .btmsec .sellersignupform .form-control{
+border: 2px solid #dbdbdb;
+}
+
+
+
+
+
+
+.choosepackage-popup .modal-dialog {
+    max-width: 666px;
+    
+}
+
+.choosepackage-popup .topsec.choosepack{
+    background-color:#f35f51;
+}
+
+.choosepackage-popup .topsec .closebtn .fa.fa-times.close.pack {
+    background-color: white;
+    color: #f35f51;
+    font-size: 18px;
+    border-radius: 50%;
+    padding: 2px 4px;
+}
+
+.choosepackage-popup .topsec .closebtn .btn-close{
+    opacity: 1;
+    margin-right: 22px;
+    margin-top: 25px;
+}
+
+.choosepackage-popup .topsec .textsec h4{
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.choosepackage-popup .topsec .textsec .fa.fa-times{
+    font-size: 35px;
+}
+
+
+.choosepackage-popup .btmsec .choosepacksec{
+ padding: 20px 40px 40px 40px;
+
+}
+
+.choosepackage-popup .btmsec .choosepacksec .box1{
+
+    border: 5px solid #5b8cf5;
+    padding: 15px;
+}
+
+.choosepackage-popup .btmsec .choosepacksec .box1 h4{
+    color: #5b8cf5;
+    font-weight: bold;
+}
+
+.choosepackage-popup .btmsec .choosepacksec .box1 p{
+    color: #5b8cf5; }
+
+ .choosepackage-popup .btmsec .choosepacksec .box1 .chooseicon p{
+        color: #5b8cf5;
+        margin-bottom: 0px;
+    }
+
+.choosepackage-popup .btmsec .choosepacksec .box2{
+
+    background-color: #b2b2b2;
+    padding: 15px;
+}
+
+.choosepackage-popup .btmsec .choosepacksec .box2 h4{
+    color: white;
+    font-weight: bold;
+}
+
+.choosepackage-popup .btmsec .choosepacksec .box2 p{
+    color: white; }
+
+.choosepackage-popup .btmsec .choosepacksec .box2 .chooseicon p{
+        color: white;
+        margin-bottom: 0px;
+    }
+
+ .choosepackage-popup .btmsec .choosepacksec .box2 .chooseicon{
+        width: 8%;
+        float: left;
+    }
+
+  .choosepackage-popup .btmsec .choosepacksec .box2 .price{
+        width: 60%;
+        margin-left: 115px;
+    }
+
+.choosepackage-popup .btmsec .choosepacksec .box3{
+
+        border: 5px solid #e8b954;
+        padding: 15px;
+    }
+.choosepackage-popup .btmsec .choosepacksec .box3 h4{
+        color: #e8b954;
+        font-weight: bold;
+    }
+    
+.choosepackage-popup .btmsec .choosepacksec .box3 p{
+        color: #e8b954 }
+    
+.choosepackage-popup .btmsec .choosepacksec .box3 .chooseicon p{
+            color: #e8b954;
+            margin-bottom: 0px;
+        }
+.choosepackage-popup .btmsec .choosepacksec .box3 .price h5{
+            color: #e8b954;
+            margin-bottom: 0px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    
+.choosepackage-popup .btmsec .choosepacksec .box3 .chooseicon{
+            width: 8%;
+            float: left;
+        }
+    
+.choosepackage-popup .btmsec .choosepacksec .box3 .price{
+            width: 60%;
+            margin-left: 160px;
+        }
+
+
+
+.choosepackage-popup .btmsec .choosepacksec .box4 {
+
+            border: 5px solid #fd7b6f;
+            padding: 15px;
+        }
+    
+.choosepackage-popup .btmsec .choosepacksec .box4 h4{
+            color: #fd7b6f;
+            font-weight: bold;
+        }
+        
+.choosepackage-popup .btmsec .choosepacksec .box4 p{
+            color: #fd7b6f }
+        
+.choosepackage-popup .btmsec .choosepacksec .box4 .chooseicon p{
+                color: #fd7b6f;
+                margin-bottom: 0px;
+            }
+
+.choosepackage-popup .btmsec .choosepacksec .box4 .price h5{
+                color: #fd7b6f;
+                margin-bottom: 0px;
+                font-size: 18px;
+                font-weight: bold;
+            }
+        
+.choosepackage-popup .btmsec .choosepacksec .box4 .chooseicon{
+                width: 8%;
+                float: left;
+            }
+        
+.choosepackage-popup .btmsec .choosepacksec .box4 .price{
+                width: 60%;
+                margin-left: 160px;
+            }
+
+
+.choosepackage-popup .btmsec .btnreview.btn-primary{
+                width: 45%;
+                margin-top: 25px;}
+            
+.choosepackage-popup .btmsec .btnreview{
+            
+                background-color:#0a3ca7;
+                margin-top: 20px;
+                border: none;
+            }
+
+
+
+
+.buyersignup-popup .modal-dialog {
+                max-width: 666px;
+                
+            }
+            
+.buyersignup-popup .topsec.buyer{
+                background-color:#12ae43;
+            }
+            
+.buyersignup-popup .topsec .closebtn .fa.fa-times.close.sell {
+                background-color: white;
+                color: #12ae43;
+                font-size: 18px;
+                border-radius: 50%;
+                padding: 2px 4px;
+            }
+            
+.buyersignup-popup .topsec .closebtn .btn-close{
+                opacity: 1;
+                margin-right: 10px;
+                margin-top: 2px;
+            }
+
+
+.buyersignup-popup .topsec .profileimg img {
+    max-width: 100%;
+    width:70%;
+
+}
+
+.buyersignup-popup .topsec .textsec h4{
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.buyersignup-popup .topsec .textsec .fa.fa-user-plus{
+    font-size: 35px;
+}
+
+.buyersignup-popup .topsec .editicon .fa{
+    background-color: #1445b2;
+    color: white;
+    border-radius: 50%;
+    font-size: 14px;
+    padding: 9px;
+}
+
+.buyersignup-popup .topsec .editicon{
+position: absolute;
+    top: 73px;
+    right: 44px;
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+    background-color: white;
+}
+
+.form-select {
+    border-radius: 0px;
+}
+
+
+#msform fieldset {
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+#msform fieldset:not(:first-of-type) {
+    display: none;
+}
+
+#msform .action-button {
+    width: 100px;
+    background-color: #00239b;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px
+}
+
+#msform .action-button:hover,
+#msform .action-button:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px skyblue
+}
+
+#msform .action-button-previous {
+    width: 100px;
+    background: #616161;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px
+}
+
+.input-group .btn {
+    position: relative;
+    z-index: 2;
+    background-color: #0a3ca7;
+color: white;}
+
+
+.buyersignup-popup .btmsec .buyersignupform{
+    padding:25px;
+}
+
+.buyersignup-popup .btmsec .buyersignupform .form-control{
+    height: 33px;
+}
+
+
+.buyersignup-popup .btmsec .buyersignupform .Posttext{
+    font-size: 13px;
+    font-weight: 700;
+    }
+
+.buyersignup-popup .btmsec .btnreview.btn-primary{
+        width: 45%;
+        margin-top: 25px;}
+    
+.buyersignup-popup .btmsec .btnreview{
+    
+        background-color:#0a3ca7;
+        margin-top: 20px;
+        border: none;
+    }
