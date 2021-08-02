@@ -490,27 +490,25 @@
     </header>
     <!-- header end -->
 
-    <!-- breadcrumb start -->
-    <div class="breadcrumb-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="page-title">
-                        <h2>vendor dashboard</h2>
+    <section class="banner-wapper">
+        <!-- breadcrumb start -->
+        <div class="breadcrumb-section dark-breadcrumb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <nav aria-label="breadcrumb" class="theme-breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item" aria-current="page">Saler Profile</li>
+                                <li class="breadcrumb-item active" aria-current="page">Manage Profile</li>
+                            </ol>
+                        </nav>
                     </div>
-                </div>
-                <div class="col-sm-6">
-                    <nav aria-label="breadcrumb" class="theme-breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">vendor dashboard</li>
-                        </ol>
-                    </nav>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- breadcrumb End -->
+        <!-- breadcrumb end -->
+    </section>
 
 
     <!--  dashboard section start -->
@@ -563,9 +561,24 @@
                                 <li class="nav-item"><a data-bs-toggle="tab" class="mydashboard-nav nav-link"
                                         href="#buylead"><i class="fa fa-filter" aria-hidden="true"></i> &nbsp; Buy Lead</a>
                                 </li>
-                                <li class="nav-item"><a data-bs-toggle="tab" class="mydashboard-nav nav-link"
-                                        href="#"><i class="fa fa-phone" aria-hidden="true"></i> &nbsp; Seller
-                                        Support</a>
+
+                                <li class="nav-item ">
+                                    <div class="dropdown nav-item ">
+                                        <a class=" mydashboard-nav nav-link dropdown-toggle  " href="#" role="button" id="dropdownMenuLink"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="fa fa-phone" aria-hidden="true"></i> 
+                                            &nbsp; Seller Support
+                                        </a>
+                                
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">                                
+                                            <li class="nav-item ">
+                                                <a data-bs-toggle="tab" class="dropdown-item" href="#sellersupport">&nbsp; Seller Support </a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a data-bs-toggle="tab" class="dropdown-item" href="#myticketslist">&nbsp; My Tickets List </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </li>
                                 <li class="nav-item"><a data-bs-toggle="tab" class="mydashboard-nav nav-link"
                                         href="#settings">settings</a>
@@ -2171,6 +2184,299 @@
                             </div>                     
                         </div>
 
+                        <div class="tab-pane fade" id="sellersupport">
+                            <div class="sellersupport-wapper">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card dashboard-table mt-0">
+                                            <div class="card-body table-responsive-md">
+                                                <div class="top-sec">
+                                                    <h3> 
+                                                        <i class="fa fa-th-large" aria-hidden="true"></i> 
+                                                        <strong>My Tickets List</strong> 
+                                                    </h3>
+                                                </div>
+                                                <div class="sellersupport-form-wapper">
+                                                    <div class="sellersupport-form">
+                                                        <form action="">
+                                                            <div class="top-lavel">
+                                                                <h5><strong>Choose a Ticket</strong></h5>
+                                                            </div>
+                                                            <div class="row">
+                                                                <hr>
+                                                                <div class="col-3">
+                                                                    <div class="sellersupport-group">
+                                                                        <input type="radio" value="" aria-label="Radio button for following text input">
+                                                                        <span>Scrambled it to Make</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-3">
+                                                                    <div class="sellersupport-group">
+                                                                        <input type="radio" value="" aria-label="Radio button for following text input">
+                                                                        <span>Scrambled it to Make</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-3">
+                                                                    <div class="sellersupport-group">
+                                                                        <input type="radio" value="" aria-label="Radio button for following text input">
+                                                                        <span>Scrambled it to Make</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-3">
+                                                                    <div class="sellersupport-group">
+                                                                        <input type="radio" value="" aria-label="Radio button for following text input">
+                                                                        <span>Scrambled it to Make</span>
+                                                                    </div>
+                                                                </div>
+                                                                <hr>
+                                                                <div class="col-12">
+                                                                    <div class="input-group">
+                                                                        <textarea class="form-control" aria-label="With textarea" placeholder="Comment"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="text-center">
+                                                                        <button type="button " class="btn btn-primary">Submit</button>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+
+                                                <div class="sellersupport-faq-wapper">
+                                                    <div class="faq-heading-wapper">
+                                                        <div class="faq-heading">
+                                                            <h4>FAQ's</h4>
+                                                        </div>
+                                                        <div class="faq-icon">
+                                                            <i class="fa fa-caret-up" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="faq-content-wapper">
+                                                        <div id="accordion">
+                                                            <div class="card">
+                                                                <div class="card-header" id="headingOne">
+                                                                    <h5 class="mb-0">
+                                                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                                                            aria-controls="collapseOne">
+                                                                            Collapsible Group Item #1
+                                                                        </button>
+                                                                    </h5>
+                                                                </div>
+                                                        
+                                                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                                                    <div class="card-body">
+                                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                                                                        moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                                                        Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                                                        proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                                                                        aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card">
+                                                                <div class="card-header" id="headingTwo">
+                                                                    <h5 class="mb-0">
+                                                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                                                            aria-expanded="false" aria-controls="collapseTwo">
+                                                                            Collapsible Group Item #2
+                                                                        </button>
+                                                                    </h5>
+                                                                </div>
+                                                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                                                    <div class="card-body">
+                                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                                                                        moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                                                        Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                                                        proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                                                                        aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card">
+                                                                <div class="card-header" id="headingThree">
+                                                                    <h5 class="mb-0">
+                                                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                                                                            aria-expanded="false" aria-controls="collapseThree">
+                                                                            Collapsible Group Item #3
+                                                                        </button>
+                                                                    </h5>
+                                                                </div>
+                                                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                                                    <div class="card-body">
+                                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                                                                        moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                                                        Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                                                        proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                                                                        aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="sellersupport-feedback-form-wapper">
+                                                    <div class="sellersupport-feedback-form">
+                                                        <form action="">
+                                                            <div class="top-lavel">
+                                                                <h5><strong>Feedback</strong></h5>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    <div class="form-group">
+                                                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                                                            placeholder="Email Address">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <div class="form-group">
+                                                                        <input type="tel" class="form-control" id="exampleInputPhome" aria-describedby="phoneHelp"
+                                                                            placeholder="Mobile No:">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="input-group">
+                                                                        <textarea class="form-control" aria-label="With textarea"  placeholder="Comment"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="text-center">
+                                                                        <button type="button " class="btn btn-primary">Submit</button>
+                                                                    </div>
+                                                                </div>
+                                                
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+
+                                                <div class="feedback-calltoaction-wapper">
+                                                    <div class="feedback-calltoaction">
+                                                        <div class="row">
+                                                            <div class="col-6">
+                                                                <div class="left-button">
+                                                                    <a href="#">
+                                                                        <img src="assets/images/Call-icon.png" class="float-end"alt="">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <div class="right-button">
+                                                                    <a href="#">
+                                                                        <img src="assets/images/Chat-icon.png" class="float-start"alt="">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="myticketslist">
+                            <div class="myticketslist-wapper">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card dashboard-table mt-0">
+                                            <div class="card-body table-responsive-md">
+                                                <div class="top-sec">
+                                                    <h3>
+                                                        <i class="fa fa-th-large" aria-hidden="true"></i>
+                                                        <strong>My Tickets List</strong>
+                                                    </h3>
+                                                    <div class="search-form-wapper">
+                                                        <nav class="navbar navbar-light bg-light">
+                                                            <form class="form-inline">
+                                                                <input class="form-control mr-sm-2" type="search" placeholder="Search"
+                                                                    aria-label="Search">
+                                                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                                                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                                                </button>
+                                                            </form>
+                                                        </nav>
+                                                    </div>
+                                                </div>
+                                                <table class="table">
+                                                    <thead>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="table-active"> <strong>Ticket Number: </strong></td>
+                                                            <td colspan="2">#0987654321</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="table-active"> <strong>Subject: </strong> </td>
+                                                            <td colspan="2">N/A </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="table-active"> <strong>Created Date: </strong> </td>
+                                                            <td colspan="2">10/3/3010 </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="table-active"> <strong>Status: </strong> </td>
+                                                            <td colspan="2">Open</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="table-active"> <strong>Seller: </strong> </td>
+                                                            <td colspan="2">Not Modification </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="table-active"> <strong>Seller: </strong> </td>
+                                                            <td colspan="2">1211 </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                        
+                                                <table class="table">
+                                                    <thead>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="table-active"> <strong>Ticket Number: </strong></td>
+                                                            <td colspan="2">#0987654321</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="table-active"> <strong>Subject: </strong> </td>
+                                                            <td colspan="2">N/A </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="table-active"> <strong>Created Date: </strong> </td>
+                                                            <td colspan="2">10/3/3010 </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="table-active"> <strong>Status: </strong> </td>
+                                                            <td colspan="2">Open</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="table-active"> <strong>Seller: </strong> </td>
+                                                            <td colspan="2">Not Modification </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="table-active"> <strong>Seller: </strong> </td>
+                                                            <td colspan="2">1211 </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                        
+                        
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
 
                         <div class="tab-pane fade" id="settings">
                             <div class="row">
@@ -2336,7 +2642,7 @@
     <!-- modal end -->
 
    <!-- footer start -->
-   <footer class="footer-light">
+    <footer class="footer-light">
     <div class="light-layout-footer-top">
         <div class="container">
             <section class="small-section border-section border-top-0">
@@ -2459,7 +2765,7 @@
             </div>
         </div>
     </section>
-</footer>
+    </footer>
 <!-- footer end -->
 
 
