@@ -12022,17 +12022,18 @@ header.stickycls {
       padding: 8px 0px;
   }
     .quantity-box p {
-      width: 60%;
+      width: 130px;
       float: left;
       margin: -3px;
       background-color: #e21b21;
       color: #fff;
       padding: 7px 0px 7px 16px;
+      
     }
     .quantity-box p:after {
       color: #e21b21;
       content: '\25BA';
-      left: 15px;
+      left: 22px;
       position: relative;
       }
       .quantity-box span {
@@ -12941,14 +12942,14 @@ header.stickycls {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #555555;
+    text-transform: none;
+    font-size: 10px;
+    color: #969696;
     font-weight: 600;
     margin: 0;
     padding-right: 0; }
     .breadcrumb-section .breadcrumb a {
-      color: #555555;
+      color: #969696;
       font-weight: 600; }
 
 .about-head {
