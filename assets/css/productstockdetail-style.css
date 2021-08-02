@@ -59,7 +59,7 @@
 
 .horizontel-slider .slider-right-nav .slick-next {
     transform: rotate(90deg);
-    bottom: -30px;
+    bottom: -35px;
     top: unset;
     left: 40%;
     z-index: 9999;
@@ -69,4 +69,227 @@
 .horizontel-slider .slider-right-nav .slick-prev:before,
 .horizontel-slider .slider-right-nav .slick-next:before {
     color: black;
+}
+
+.productstockdetail-wapper .product-title-wapper h3{
+    font-size: 18px;
+    font-weight: 800;
+    color: #070707;}
+
+
+.productstockdetail-wapper .product-price-wapper .price-section{
+font-size: 26px;
+font-weight: 800;}
+
+
+.productstockdetail-wapper .product-price-wapper .price-section .cstmdollar{
+    color:#f35c51;}
+
+.productstockdetail-wapper .product-price-wapper .share-section{
+ font-size: 18px;
+ font-weight: 400;}
+
+.productstockdetail-wapper .product-price-wapper .share-section .fa.fa-share-alt{
+    font-size: 24px;
+    color:#f35c51;}
+
+.productstockdetail-wapper .product-price-wapper .cstmhr{
+    height: 0.5px;}
+
+ .productstockdetail-wapper .product-qty-wapper .qty-heading p{
+     color: #333333;
+ }
+
+.productstockdetail-wapper .product-qty-wapper .qty-main{
+ width: 100%;
+ display: inline-block;}
+
+.productstockdetail-wapper .product-qty-wapper .qty-main .qtynum{
+ width:20%;
+ display: inline-block;}
+
+.productstockdetail-wapper .product-qty-wapper .qty-main .qtymum2{
+    width:30%; 
+    display: inline-block;}
+
+.productstockdetail-wapper .product-qty-wapper .qty-main .qtybtn{
+    width:43%;
+    display: inline-block;}
+
+.productstockdetail-wapper .product-qty-wapper .qty-main .qtynum input{
+   width: 54%;
+   border: 1px solid #8080808a;
+   height: 33px;
+}
+
+.productstockdetail-wapper .product-qty-wapper .qty-main select.form-select.form-select-sm {
+width: 90%;
+height: 33px;
+border: 1px solid #8080808a;
+border-radius: 0px;}
+
+.productstockdetail-wapper .product-qty-wapper .qty-main .qtybtn .btn {
+    width: 48%;
+    line-height: 18px;
+    text-transform: none;
+    font-size: 13px;
+    border-radius: 3px;
+    line-height: 12px;
+    height: 33px; }
+
+ .productstockdetail-wapper .product-qty-wapper .qty-main .qtybtn .btn.btn-primary{
+    background-color: #073aab;
+    border-color: #073aab;
+    padding: 3px 9px;
+ }
+
+ .productstockdetail-wapper .product-qty-wapper .qty-main .qtybtn .btn .cstmquote{
+     font-size: 10px;
+ }
+
+ .productstockdetail-wapper .product-decription-wapper .product-decription .product-decription-heading{
+    color: #a7a7a7;
+    text-transform: uppercase;
+ }
+
+
+ .productstockdetail-wapper .product-decription-wapper .product-decription .product-decription-content p{
+ font-size: 14px;
+ color: #1a1a1a;
+ line-height: 19px;
+ word-spacing: 2px;
+ font-weight: 600; }
+
+ .productstockdetail-wapper .inquery-wapper .profile-info {
+ background-color: #f5f5f5;
+ padding: 25px 14px;
+ }
+ .productstockdetail-wapper .inquery-wapper .profile-info .profile-img{
+    max-width: 100%;
+ }
+
+ .productstockdetail-wapper .inquery-wapper .profile-info .profile-phone p{
+ font-size: 21px;
+ color: #000000; }
+
+ .productstockdetail-wapper .inquery-wapper .profile-info .profile-phone p .fa.fa-phone{
+     color:#f35c51;
+ }
+
+ .productstockdetail-wapper .inquery-wapper .profile-name h3{
+     font-size: 25px;
+    font-weight: 800;
+    color: black;
+    margin-bottom:3px;
+ }
+
+ .productstockdetail-wapper .inquery-wapper .profile-name p{
+    font-size: 18px;
+    color: #000000;
+ }
+
+ .productstockdetail-wapper .inquery-wapper .profile-cta-buttons .enquery-button .fa{
+    font-size: 20px;
+    color: white;
+    background-color: #3c3c3c;
+    border-radius: 50%;
+    padding: 7px 9px;}
+
+    .productstockdetail-wapper .inquery-wapper .profile-cta-buttons .enquery-button .btn1.btn{
+    line-height: 14px;
+    font-size: 12px;
+    text-transform: none;
+    font-weight: 400;
+    margin-top: -7px;
+    margin-left: -12px;
+    padding: 5px 20px;
+    border-radius: 5px;}
+
+    .productstockdetail-wapper .inquery-wapper .profile-cta-buttons .enquery-button .btn1.btn.btn-dark{
+    background-color: #3c3c3c;
+    border-color:#3c3c3c
+}
+
+.productstockdetail-wapper .inquery-wapper .profile-cta-buttons{
+    width: 100%;
+    display: inline-block;}
+
+
+    .productstockdetail-wapper .inquery-wapper .profile-cta-buttons .enquery-button{
+        width: 45%;
+        display: inline-block;
+    }
+
+    .productstockdetail-wapper .inquery-wapper .profile-cta-buttons .enquery-button2{
+        width: 52%;
+        display: inline-block;
+    }
+
+    .productstockdetail-wapper .inquery-wapper .profile-cta-buttons .enquery-button2 .fa{
+        font-size: 20px;
+        color: white;
+        background-color: #6ac259;
+        border-radius: 50%;
+        padding: 8px 9px;}
+        
+        .productstockdetail-wapper .inquery-wapper .profile-cta-buttons .enquery-button2 .btn2.btn{
+            line-height: 14px;
+            font-size: 12px;
+            text-transform: none;
+            font-weight: 400;
+            margin-top: -7px;
+            margin-left: -12px;
+            padding: 5px 20px;
+            border-radius: 5px;}
+
+            .productstockdetail-wapper .inquery-wapper .profile-cta-buttons .enquery-button2 .btn2.btn.btn-dark{
+                background-color: #6ac259;
+                border-color:#6ac259;
+            }
+
+            .productstockdetail-wapper .inquery-wapper .profile-chat-buttons .chat-button .btn3.btn{
+                width: 80%;
+                border-radius: 5px;
+            }
+ .productstockdetail-wapper .inquery-wapper .profile-chat-buttons .chat-button .btn3.btn.btn-dark{
+    background-color: #6ac259;
+    border-color:#6ac259;
+}
+.productstockdetail-wapper .inquery-wapper  .profile-chat-buttons .chat-button .fa {
+    font-size: 20px;
+    color: white;
+    background-color: #6ac259;}
+
+.addtocart_count .chat-button .btn{
+
+    line-height: 16px;
+    font-size: 12px;
+    width: 90%;
+    font-weight:normal;
+}
+
+.addtocart_count .chat-button .btn.btn-dark{
+    background-color: #40ba8e;
+    border-color:#40ba8e;
+
+}
+.addtocart_count .chat-button .fa{
+    font-size: 17px;
+}
+
+
+
+.product-decription-tabs .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #f88600;
+}
+
+.product-decription-tabs .nav-link {
+    border: none;
+background-color: transparent;
+
+}
+
+.product-decription-wapper .product-decription-tabs .cstmprdthr{
+    height: 0.5px;
 }
