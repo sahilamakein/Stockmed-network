@@ -1,0 +1,58 @@
+.about-page.privacypolicy {
+  padding-top: 0px !important;
+}
+
+.about-page.privacypolicy .about-page-bgimg {
+  padding: 1rem 0rem;
+}
+
+.about-page.privacypolicy .about-page-bgimg .abour-content-wapper h2 {
+  padding-top: 2rem;
+}
+
+.about-page-bgimg .abour-content-wapper {
+  padding: 0rem;
+  background: white;
+  width: 81%;
+  margin: 0px auto;
+}
+
+.about-page.privacypolicy .abour-content-wapper p {
+  line-height: 19.8px;
+  color: black;
+  font-size: 17px;
+}
+
+.banner-wapper .breadcrumb-section.title-wpper {
+  padding: 5px 0px 50px 0px;
+}
+
+.sellerpdfslider .sellerpdfslider-wrap {
+  padding: 10px;
+  background: #ebecee;
+}
+
+.sellerpdfslider .sellerpdfslider-wrap .img-wrapper {
+  border: 2px solid #bdbdbd;
+  padding: 10px;
+}
+.sellerpdfslider .sellerpdfslider-box .img-wrapper .front {
+  text-align: center;
+}
+
+.sellerpdfslider .sellerpdfslider-box .img-wrapper .front i {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 55px;
+}
+
+.sellerpdfslider .sellerpdfslider-box .img-wrapper .sellerpdfslider_link a {
+  font-size: 17px;
+  color: black;
+  margin-top: 5px;
+  display: block;
+  font-weight: 500;
+}

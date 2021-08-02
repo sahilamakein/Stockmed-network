@@ -31,7 +31,42 @@
     background-repeat: no-repeat;
 }
 
-
 .technichal-details ol li {
     display: revert;
+}
+
+.productstockdetail-wapper .horizontel-slider {
+    float: left;
+    width: 30%;
+    padding: 0px 10px;
+    margin: 27px 0px;
+}
+
+.productstockdetail-wapper .product-image-wapper {
+    float: left;
+    width: 70%;
+    /* display: inline-block; */
+}
+
+.horizontel-slider .slider-right-nav .slick-prev {
+    transform: rotate(90deg);
+    top: -40px;
+    bottom: unset;
+    left: 40%;
+    z-index: 9999;
+    background-color: unset;
+}
+
+.horizontel-slider .slider-right-nav .slick-next {
+    transform: rotate(90deg);
+    bottom: -30px;
+    top: unset;
+    left: 40%;
+    z-index: 9999;
+    background-color: unset;
+}
+
+.horizontel-slider .slider-right-nav .slick-prev:before,
+.horizontel-slider .slider-right-nav .slick-next:before {
+    color: black;
 }
