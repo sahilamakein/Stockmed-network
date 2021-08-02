@@ -1,0 +1,115 @@
+.purchasedlist-page .product .supplier-membership {
+    -moz-transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    transform: rotate(-45deg);
+    padding: 5px 20px;
+    font-size: 11px;
+    margin-left: -27px;
+    position: absolute;
+    top: 7px;
+    color: white;
+}
+
+.purchasedlist-page .product .normal {
+    background-color: #444444;
+}
+
+.purchasedlist-page .product .gold {
+    background-color: #c69e19;
+}
+
+.purchasedlist-page .product .firstsec {
+    overflow: hidden;
+}
+
+.purchasedlist-page .product .livechat-wapper {
+    position: absolute;
+    right: 35px;
+    bottom: 1rem;
+}
+
+.purchasedlist-page .product .quantity-box p {
+    width: 130px;
+}
+
+.purchasedlist-page .product .quantity-box p:after {
+    left: 22px;
+}
+
+.purchasedlist-page .product .quantity-box span {
+    margin-left: 30px;
+}
+
+.purchasedlist-page .product .secondsec .outersec {
+    padding-left: 20px;
+}
+
+.purchasedlist-page .product .secondsec .outersec .btmtxt {
+    font-weight: bold;
+    color: black;
+}
+
+.purchasedlist-page .product .secondsec .right-sec .buttons-wapper .btn-danger {
+    background: #f35c51;
+}
+
+.purchasedlist-page .product .secondsec .right-sec .buttons-wapper .btn-primary {
+    background: #2973f0;
+}
+
+.purchasedlist-page .product .secondsec .right-sec .buttons-wapper .btn {
+    border-radius: 3px;
+    border: none;
+    padding: 7px 15px;
+    margin-right: 10px;
+}
+
+.purchasedlist-page .product .secondsec .right-sec .buttons-wapper .btn i {
+    margin-right: 7px;
+    font-size: 17px;
+}
+
+.purchasedlist-page .product .product-bottom-wapper {
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    border-top: none;
+    padding: 10px;
+}
+
+.purchasedlist-page .product .product-bottom-wapper .medalmedal-icon {
+    width: 20%;
+    float: left;
+}
+
+.purchasedlist-page .product .product-bottom-wapper .medalmedal-icon i {
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.purchasedlist-page .product .product-bottom-wapper .icon-one i {
+    background-color: #d5eff4;
+    color: #5b9098;
+}
+
+.purchasedlist-page .product .product-bottom-wapper .icon-two i {
+    background-color: #fbbab5;
+    color: #f83c2f;
+}
+
+.purchasedlist-page .product .product-bottom-wapper .icon-three i {
+    background-color: #6856a3;
+    color: #dbd4f4;
+}
+
+.purchasedlist-page .product .firstsec .left-sec .pricetxt a {
+    color: #f35c51;
+    font-weight: 700;
+}
+
+.purchasedlist-page .product .firstsec .prdtbtn a {
+    color: #383838;
+    font-size: 13px;
+    font-weight: 600;
+}
