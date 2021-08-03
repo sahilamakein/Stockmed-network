@@ -36,6 +36,21 @@
   border: 2px solid #bdbdbd;
   padding: 10px;
 }
+
+.sellerpdfslider .sellerpdfslider-wrap .img-wrapper:hover .sellerpdfslider_link a {
+  color: #fff;
+}
+
+.sellerpdfslider .sellerpdfslider-wrap .img-wrapper:hover {
+  background-color: #e7372b;
+  border-color: #e7372b;
+}
+
+.sellerpdfslider .sellerpdfslider-box .img-wrapper:hover .front i {
+  background-color: white;
+  color: #e7372b;
+}
+
 .sellerpdfslider .sellerpdfslider-box .img-wrapper .front {
   text-align: center;
 }
@@ -55,4 +70,80 @@
   margin-top: 5px;
   display: block;
   font-weight: 500;
+}
+
+.breadcrumb-section .breadcrumb {
+  padding: 0;
+}
+
+.breadcrumb-section .breadcrumb-inner-section {
+  padding: 10px 0px;
+}
+
+.breadcrumb-section .breadcrumb a {
+  color: #fff;
+  font-size: 12px;
+}
+
+.breadcrumb-section .breadcrumb-item.active {
+  color: #fff;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.banner-wapper .breadcrumb-section.title-wpper {
+  height: 250px;
+}
+
+.customerprofile-main {
+  padding: 0px;
+  margin-top: -5rem;
+  padding-bottom: 3rem;
+}
+
+.customerprofile-main .container {
+  max-width: 75%;
+}
+
+.customerprofile-main .customerprofile-top-wapper {
+  margin-bottom: 4rem;
+}
+
+.customerprofile-main .customerprofile-info .customerprofile-top-wapper h2 {
+  color: #fff;
+  font-size: 25px;
+  margin-top: 1.5rem;
+}
+
+.customerprofile-main .customerprofile-info .customerprofile-bottom-wapper {
+  margin-top: 1rem;
+}
+
+.customerprofile-main .customerprofile-info .customerprofile-bottom-wapper strong {
+  color: gray;
+  padding: 20px 10px;
+  display: inline-block;
+}
+
+.customerprofile-main .customerprofile-info .customerprofile-bottom-wapper .table th {
+  width: 40%;
+}
+
+.customerprofile-main .customerprofile-info .customerprofile-bottom-wapper .table-striped>tbody>tr {
+  border: none;
+  border-color: transparent;
+}
+
+.customerprofile-main .customerprofile-info .customerprofile-bottom-wapper .table-striped>tbody>tr:nth-of-type(odd) {
+  --bs-table-accent-bg: rgb(0 0 0 / 0%);
+  background-color: #f4f4f4;
+}
+
+.addtocart_count .slick-next,
+.addtocart_count .slick-prev {
+  background-color: transparent;
+}
+
+footer {
+  top: 0px;
 }

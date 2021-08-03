@@ -557,3 +557,43 @@ select.list-dt:focus {
 .feedback-calltoaction-wapper .feedback-calltoaction img {
     width: 75%;
 }
+
+.dashboard-section .top-sec {
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.search-form-wapper .form-inline .form-control.mr-sm-2 {
+    width: 85%;
+    height: 38px;
+}
+
+.dashboard-section .top-sec .btn {
+    width: 15%;
+    height: 38px;
+    padding: 7px;
+    background-color: #3dae4c;
+    border: none;
+    color: white;
+    font-size: 17px;
+}
+
+.dashboard-section .dashboard-table .table td {
+    text-align: left;
+    font-weight: 600;
+}
+
+.dashboard-section .dashboard-table .table td a{
+    color: #f35c51;
+}
+
+.dashboard-section .dashboard-table .table th {
+    width: 35%;
+    background-color: #f4f4f4;
+    background-image: none;
+    text-align: left;
+}
+
+.dashboard-section .dashboard-table .table tr {
+    border: 1px solid #dee2e6;
+}
