@@ -1,0 +1,102 @@
+.banner-wapper {
+    padding: 0;
+  }
+  
+  .banner-wapper .breadcrumb-section.title-wpper {
+    padding: 40px 0px 50px 0px;
+  }
+  
+  .breadcrumb-section {
+    background-color: transparent;
+    padding: 0px 0;
+  }
+  
+  .breadcrumb-section .breadcrumb {
+    justify-content: flex-start;
+  }
+  
+
+  .buyerprofile-page{
+      background: url(/assets/images/Product-list/backgroundimg.jpg);
+      background-position: top;
+      padding-bottom: 50px;
+      
+  } 
+
+  .buyerprofile-page .profileimg img {
+max-width: 100%;
+width:40%;
+margin-left: 45px;
+margin-bottom: -20px;
+
+}
+
+.buyerprofile-page .textsec h4{
+color: white;
+font-size: 22px;
+font-weight: 700;
+margin-top: 20px;
+}
+
+.buyerprofile-page .editicon .fa{
+    background-color: #1445b2;
+    color: white;
+    border-radius: 50%;
+    font-size: 14px;
+    padding: 9px;
+}
+
+
+.buyerprofile-page .editicon{
+position: absolute;
+top: 75px;
+right: 126px;
+}
+
+
+.buyerprofile-page .buyerprofile {
+    max-width: 100%;
+    width:60%;
+    margin: 0px auto;
+    
+}
+
+
+.buyerprofile-page .formsection{
+    background-color: white;
+    padding: 20px 60px;
+}
+
+.buyerprofile-page .formsection2{
+    background-color: #f5f5f5;
+    padding: 20px 60px;
+}
+
+.buyerprofile-page .formsection3{
+    background-color: white;
+    padding: 20px 60px;
+}
+
+
+.buyerprofile-page .formsection .Posttext{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+.buyerprofile-page .formsection .passwrdsec{
+    background-color: red;
+}
+
+
+.buyerprofile-page .formsection3 .btnreview.btn-primary{
+    width: 45%;
+    margin-top: 5px;}
+
+    .buyerprofile-page .formsection3 .btnreview{
+    
+        background-color:#f35c51;
+        margin-top: 20px;
+        border: none;
+        margin-bottom: 15PX;
+    }

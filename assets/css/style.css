@@ -1,4 +1,8 @@
 @charset "UTF-8";
+
+
+
+
 .theme-color-1 {
   --theme-deafult: #ff4c3b; }
 
@@ -335,8 +339,7 @@ label {
 .font-cormorant {
   font-family: Cormorant, sans-serif; }
 
-.font-fraunces {
-  font-family: 'Fraunces', serif; }
+
 
 .font-courgette {
   font-family: 'Courgette', cursive;
@@ -4435,11 +4438,9 @@ footer.pet-layout-footer .social-white {
 }
 .form_search {
   height: 30px;
-  -webkit-box-shadow: 0 0 0 1px #e2e2e2;
-          box-shadow: 0 0 0 1px #e2e2e2;
   overflow: hidden;
   position: relative;
-  width: 500px;
+  width: 538px;
   float: left;
   border: solid 2px;
   border-color: #f35c51;
@@ -4479,8 +4480,8 @@ footer.pet-layout-footer .social-white {
         color: #fff;
     }
     .icon-nav li p {
-      font-size: 11px;
-      color: #777777;
+      font-size: 13px;
+      color: black;
       font-weight: 600;
       line-height: 1;
       margin-bottom: 3px;
@@ -7294,10 +7295,11 @@ header {
   border-radius: 0; }
 
 .header-style-5 .bottom-part {
-  background-image: linear-gradient(#e8e8e8, #fff);
+  background-image: linear-gradient(#f2f2f2, #fff);
   box-shadow: 1px 3px 3px 1px rgb(90 90 90 / 21%);
 -webkit-box-shadow: 1px 3px 3px 1px rgb(90 90 90 / 21%);
 -moz-box-shadow: 1px 3px 3px 1px rgb(90 90 90 / 21%);
+border-top: 1px solid #e1e1e1;
 }
   .header-style-5 .bottom-part .category-menu {
     display: -webkit-box;
@@ -12020,17 +12022,18 @@ header.stickycls {
       padding: 8px 0px;
   }
     .quantity-box p {
-      width: 60%;
+      width: 130px;
       float: left;
       margin: -3px;
       background-color: #e21b21;
       color: #fff;
       padding: 7px 0px 7px 16px;
+      
     }
     .quantity-box p:after {
       color: #e21b21;
       content: '\25BA';
-      left: 15px;
+      left: 22px;
       position: relative;
       }
       .quantity-box span {
@@ -12939,14 +12942,14 @@ header.stickycls {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #555555;
+    text-transform: none;
+    font-size: 10px;
+    color: #969696;
     font-weight: 600;
     margin: 0;
     padding-right: 0; }
     .breadcrumb-section .breadcrumb a {
-      color: #555555;
+      color: #969696;
       font-weight: 600; }
 
 .about-head {
