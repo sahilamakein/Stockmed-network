@@ -537,6 +537,9 @@
                                 <li class="nav-item"><a data-bs-toggle="tab" class="mydashboard-nav nav-link active"
                                         href="#dashboard"> <i class="fa fa-tachometer"></i> &nbsp; dashboard</a>
                                     </li>
+                                <li class="nav-item"><a data-bs-toggle="tab" class="mydashboard-nav nav-link"
+                                        href="#companyprofile"> <i class="fa fa-user"></i> &nbsp; Company Profile</a>
+                                    </li>
                                 <li class="nav-item ">                                    
                                     <div class="dropdown nav-item ">
                                         <a class=" mydashboard-nav nav-link dropdown-toggle  " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
@@ -551,8 +554,8 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li class="nav-item"><a data-bs-toggle="tab" class=" mydashboard-nav nav-link"
-                                        href="#orders">orders</a>
+                                <!-- <li class="nav-item"><a data-bs-toggle="tab" class=" mydashboard-nav nav-link"
+                                        href="#orders">orders</a> -->
                                 </li>
                                 <li class="nav-item"><a data-bs-toggle="tab" class="mydashboard-nav nav-link"
                                         href="#profile"> <i class="fa fa-id-badge" aria-hidden="true"></i> &nbsp; Manage
@@ -580,12 +583,12 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li class="nav-item"><a data-bs-toggle="tab" class="mydashboard-nav nav-link"
+                                <!-- <li class="nav-item"><a data-bs-toggle="tab" class="mydashboard-nav nav-link"
                                         href="#settings">settings</a>
                                 </li>
                                 <li class="nav-item"><a class="mydashboard-nav nav-link" data-toggle="modal"
                                         data-bs-target="#logout" href="">logout</a>
-                                </li>
+                                </li> -->
                             </ul>
                             <div class="dashboard-user">
                                 <div class="col-lg-12">
@@ -2042,7 +2045,7 @@
                         <div class="tab-pane fade" id="buylead">
                             <div class="bylead-wapper">
                                 <div class="d-flex align-items-start">
-                                    <div class="nav flex-column nav-pills me-3 col-4" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                    <div class="nav flex-column nav-pills col-4" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                                         <li class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
                                             type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
                                             <div class="row">
@@ -2060,7 +2063,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="sand-date">
-                                                            10.jan.2010
+                                                            <span> 10.jan.2010</span>
                                                         </div>
                                                     </div>
                                                     <div class="sander-mid">
@@ -2080,40 +2083,143 @@
                                             </div>
                                         </li>
                                         <li class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
-                                            type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</li>
+                                            type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <div class="sender-image">
+                                                        <img src="assets/images/products/Mydashboardprofile.png" alt="" class="img-fluid rounded mx-auto d-block">
+                                                    </div>
+                                                </div>
+                                                <div class="col-9">
+                                                    <div class="sander-top">
+                                                        <div class="sander-name">
+                                                            <h2>lakshaman Kant</h2>
+                                                            <div class="sander-location">
+                                                                <strong>Noida</strong>
+                                                            </div>
+                                                        </div>
+                                                        <div class="sand-date">
+                                                            <span> 10.jan.2010</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="sander-mid">
+                                                        <div class="sand-cart-icon">
+                                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div class="sand-product-name">
+                                                            <p>Product Name</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="sander-bottom">
+                                                        <div class="sander-msg">
+                                                            <i>i am intrusted</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
                                         <li class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
-                                            type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</li>
+                                            type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <div class="sender-image">
+                                                        <img src="assets/images/products/Mydashboardprofile.png" alt="" class="img-fluid rounded mx-auto d-block">
+                                                    </div>
+                                                </div>
+                                                <div class="col-9">
+                                                    <div class="sander-top">
+                                                        <div class="sander-name">
+                                                            <h2>lakshaman Kant</h2>
+                                                            <div class="sander-location">
+                                                                <strong>Noida</strong>
+                                                            </div>
+                                                        </div>
+                                                        <div class="sand-date">
+                                                            <span> 10.jan.2010</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="sander-mid">
+                                                        <div class="sand-cart-icon">
+                                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div class="sand-product-name">
+                                                            <p>Product Name</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="sander-bottom">
+                                                        <div class="sander-msg">
+                                                            <i>i am intrusted</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
                                         <li class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings"
-                                            type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</li>
+                                            type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <div class="sender-image">
+                                                        <img src="assets/images/products/Mydashboardprofile.png" alt="" class="img-fluid rounded mx-auto d-block">
+                                                    </div>
+                                                </div>
+                                                <div class="col-9">
+                                                    <div class="sander-top">
+                                                        <div class="sander-name">
+                                                            <h2>lakshaman Kant</h2>
+                                                            <div class="sander-location">
+                                                                <strong>Noida</strong>
+                                                            </div>
+                                                        </div>
+                                                        <div class="sand-date">
+                                                            <span> 10.jan.2010</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="sander-mid">
+                                                        <div class="sand-cart-icon">
+                                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div class="sand-product-name">
+                                                            <p>Product Name</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="sander-bottom">
+                                                        <div class="sander-msg">
+                                                            <i>i am intrusted</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
                                     </div>
                                     <div class="tab-content col-8" id="v-pills-tabContent">
                                         <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                                             <div class="sander-fullinfo-top-wapper">
                                                 <div class="row">
-                                                    <div class="col-4">
-                                                        <div class="sender-image">
+                                                    <div class="col-8">
+                                                        <div class="fullinfo-sender-image">
                                                             <img src="assets/images/products/Mydashboardprofile.png" alt="" class="img-fluid rounded mx-auto d-block">
                                                         </div>
-                                                        <div class="sander-top">
-                                                            <div class="sander-name">
+                                                        <div class="fullinfo-sander-top">
+                                                            <div class="fullinfo-sander-name">
                                                                 <h2>lakshaman Kant</h2>
-                                                                <div class="sander-location">
+                                                                <div class="fullinfo-sander-location">
                                                                     <strong>Noida</strong>
                                                                 </div>
                                                             </div>
                                                         
                                                         </div>
                                                     </div>
-                                                    <div class="col-8">                                                       
-                                                        <div class="sander-mid">
+                                                    <div class="col-4">                                                       
+                                                        <div class="fullinfo-sander-mid">
                                                             <div class="sander-send-requst-button">
-                                                                <button  type="button" class="btn btn-success" >Send Requst</button>
-                                                            </div>
-                                                            <div class="sand-date-icon">
-                                                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                                <button  type="button" class="btn btn-success" >
+                                                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                                                    Send Requst
+                                                                </button>
                                                             </div>
                                                             <div class="sand-date">
-                                                                10.jan.2010
+                                                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                                <time>10.jan.2010</time>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2132,6 +2238,7 @@
                                                         </div>
                                                         <div class="receive-massage-time-date">
                                                             <p>10.jan.2010</p>
+                                                            <img class="svg-icon" src="assets/images/check-double-solid.svg" alt="">
                                                         </div>
                                                     </div>
                                                     <div class="conversation-send">
@@ -2144,6 +2251,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="send-massage-time-date">
+                                                            <img class="svg-icon" src="assets/images/check-double-solid.svg" alt="">
                                                             <p>10.jan.2010</p>
                                                         </div>
                                                     </div>
@@ -2151,20 +2259,20 @@
                                             </div>
                                             <div class="sander-sendmsg-bottom-wapper">
                                                 <div class="row">
-                                                    <div class="col-2">
+                                                    <div class="col-1">
                                                         <div class="attechment-button-wapper">
                                                             <button type="button" class="btn btn-attechment">
                                                                 <i class="fa fa-paperclip" aria-hidden="true"></i>
                                                             </button>
                                                         </div>
                                                     </div>
-                                                    <div class="col-7">
+                                                    <div class="col-9">
                                                         <div class="massage-input-wapper">
-                                                            <input type="text" aria-label="Last name" class="form-control">
+                                                            <input type="text" aria-label="Last name" class="form-control" placeholder="Type Ypur Massage..">
                                                         </div>
                                                     </div>
-                                                    <div class="col-3">
-                                                        <div class="send-button-wapper">
+                                                    <div class="col-2">
+                                                        <div class="send-button-wapper text-center">
                                                             <button type="button" class="btn btn-primary">
                                                                 Send
                                                                 <i class="fa fa-paper-plane" aria-hidden="true"></i>
@@ -2174,10 +2282,272 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
-                                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...
+                                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                            <div class="sander-fullinfo-top-wapper">
+                                                <div class="row">
+                                                    <div class="col-8">
+                                                        <div class="fullinfo-sender-image">
+                                                            <img src="assets/images/products/Mydashboardprofile.png" alt="" class="img-fluid rounded mx-auto d-block">
+                                                        </div>
+                                                        <div class="fullinfo-sander-top">
+                                                            <div class="fullinfo-sander-name">
+                                                                <h2>lakshaman Kant</h2>
+                                                                <div class="fullinfo-sander-location">
+                                                                    <strong>Noida</strong>
+                                                                </div>
+                                                            </div>
+                                                        
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">                                                       
+                                                        <div class="fullinfo-sander-mid">
+                                                            <div class="sander-send-requst-button">
+                                                                <strong>987654321</strong>
+                                                            </div>
+                                                            <div class="sand-date">
+                                                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                                <time>10.jan.2010</time>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sander-fullmsg-mid-wapper">
+                                                <div class="conversation-wapper">
+                                                    <div class="conversation-receive">
+                                                        <div class="receive-wapper">
+                                                            <div class="receive-image">
+                                                                <img src="assets/images/products/product1.png" alt="">
+                                                            </div>
+                                                            <div class="receive-massage">
+                                                                <p>It is a long established fact that a reader will be distracted by the readable content of</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="receive-massage-time-date">
+                                                            <p>10.jan.2010</p>
+                                                            <img class="svg-icon" src="assets/images/check-double-solid.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="conversation-send">
+                                                        <div class="send-wapper">
+                                                            <div class="send-massage">
+                                                                <p>It is a long established fact that a reader will be distracted by the readable content of</p>
+                                                            </div>
+                                                            <div class="send-image">
+                                                                <img src="assets/images/products/product1.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="send-massage-time-date">
+                                                            <img class="svg-icon" src="assets/images/check-double-solid.svg" alt="">
+                                                            <p>10.jan.2010</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sander-sendmsg-bottom-wapper">
+                                                <div class="row">
+                                                    <div class="col-1">
+                                                        <div class="attechment-button-wapper">
+                                                            <button type="button" class="btn btn-attechment">
+                                                                <i class="fa fa-paperclip" aria-hidden="true"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <div class="massage-input-wapper">
+                                                            <input type="text" aria-label="Last name" class="form-control" placeholder="Type Ypur Massage..">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <div class="send-button-wapper text-center">
+                                                            <button type="button" class="btn btn-primary">
+                                                                Send
+                                                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...
+                                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                            <div class="sander-fullinfo-top-wapper">
+                                                <div class="row">
+                                                    <div class="col-8">
+                                                        <div class="fullinfo-sender-image">
+                                                            <img src="assets/images/products/Mydashboardprofile.png" alt="" class="img-fluid rounded mx-auto d-block">
+                                                        </div>
+                                                        <div class="fullinfo-sander-top">
+                                                            <div class="fullinfo-sander-name">
+                                                                <h2>lakshaman Kant</h2>
+                                                                <div class="fullinfo-sander-location">
+                                                                    <strong>Noida</strong>
+                                                                </div>
+                                                            </div>
+                                                        
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">                                                       
+                                                        <div class="fullinfo-sander-mid">
+                                                            <div class="sander-send-requst-button">
+                                                                <button  type="button" class="btn btn-success" >
+                                                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                                                    Send Requst
+                                                                </button>
+                                                            </div>
+                                                            <div class="sand-date">
+                                                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                                <time>10.jan.2010</time>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sander-fullmsg-mid-wapper">
+                                                <div class="conversation-wapper">
+                                                    <div class="conversation-receive">
+                                                        <div class="receive-wapper">
+                                                            <div class="receive-image">
+                                                                <img src="assets/images/products/product1.png" alt="">
+                                                            </div>
+                                                            <div class="receive-massage">
+                                                                <p>It is a long established fact that a reader will be distracted by the readable content of</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="receive-massage-time-date">
+                                                            <p>10.jan.2010</p>
+                                                            <img class="svg-icon" src="assets/images/check-double-solid.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="conversation-send">
+                                                        <div class="send-wapper">
+                                                            <div class="send-massage">
+                                                                <p>It is a long established fact that a reader will be distracted by the readable content of</p>
+                                                            </div>
+                                                            <div class="send-image">
+                                                                <img src="assets/images/products/product1.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="send-massage-time-date">
+                                                            <img class="svg-icon" src="assets/images/check-double-solid.svg" alt="">
+                                                            <p>10.jan.2010</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sander-sendmsg-bottom-wapper">
+                                                <div class="row">
+                                                    <div class="col-1">
+                                                        <div class="attechment-button-wapper">
+                                                            <button type="button" class="btn btn-attechment">
+                                                                <i class="fa fa-paperclip" aria-hidden="true"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <div class="massage-input-wapper">
+                                                            <input type="text" aria-label="Last name" class="form-control" placeholder="Type Ypur Massage..">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <div class="send-button-wapper text-center">
+                                                            <button type="button" class="btn btn-primary">
+                                                                Send
+                                                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                            <div class="sander-fullinfo-top-wapper">
+                                                <div class="row">
+                                                    <div class="col-8">
+                                                        <div class="fullinfo-sender-image">
+                                                            <img src="assets/images/products/Mydashboardprofile.png" alt="" class="img-fluid rounded mx-auto d-block">
+                                                        </div>
+                                                        <div class="fullinfo-sander-top">
+                                                            <div class="fullinfo-sander-name">
+                                                                <h2>lakshaman Kant</h2>
+                                                                <div class="fullinfo-sander-location">
+                                                                    <strong>Noida</strong>
+                                                                </div>
+                                                            </div>
+                                                        
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">                                                       
+                                                        <div class="fullinfo-sander-mid">
+                                                            <div class="sander-send-requst-button">
+                                                                <button  type="button" class="btn btn-success" >
+                                                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                                                    Send Requst
+                                                                </button>
+                                                            </div>
+                                                            <div class="sand-date">
+                                                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                                <time>10.jan.2010</time>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sander-fullmsg-mid-wapper">
+                                                <div class="conversation-wapper">
+                                                    <div class="conversation-receive">
+                                                        <div class="receive-wapper">
+                                                            <div class="receive-image">
+                                                                <img src="assets/images/products/product1.png" alt="">
+                                                            </div>
+                                                            <div class="receive-massage">
+                                                                <p>It is a long established fact that a reader will be distracted by the readable content of</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="receive-massage-time-date">
+                                                            <p>10.jan.2010</p>
+                                                            <img class="svg-icon" src="assets/images/check-double-solid.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="conversation-send">
+                                                        <div class="send-wapper">
+                                                            <div class="send-massage">
+                                                                <p>It is a long established fact that a reader will be distracted by the readable content of</p>
+                                                            </div>
+                                                            <div class="send-image">
+                                                                <img src="assets/images/products/product1.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="send-massage-time-date">
+                                                            <img class="svg-icon" src="assets/images/check-double-solid.svg" alt="">
+                                                            <p>10.jan.2010</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sander-sendmsg-bottom-wapper">
+                                                <div class="row">
+                                                    <div class="col-1">
+                                                        <div class="attechment-button-wapper">
+                                                            <button type="button" class="btn btn-attechment">
+                                                                <i class="fa fa-paperclip" aria-hidden="true"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <div class="massage-input-wapper">
+                                                            <input type="text" aria-label="Last name" class="form-control" placeholder="Type Ypur Massage..">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <div class="send-button-wapper text-center">
+                                                            <button type="button" class="btn btn-primary">
+                                                                Send
+                                                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -2468,7 +2838,68 @@
                                                         </tr>
                                                     </tbody>
                                                 </table>
-                        
+                                                
+                                                <table class="table">
+                                                    <thead>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th class="table-active"> <strong>Ticket Number: </strong></th>
+                                                            <td colspan="2"><a href="#">#0987654321</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="table-active"> <strong>Subject: </strong> </th>
+                                                            <td colspan="2">N/A </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="table-active"> <strong>Created Date: </strong> </th>
+                                                            <td colspan="2">10/3/3010 </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="table-active"> <strong>Status: </strong> </th>
+                                                            <td colspan="2">Open</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="table-active"> <strong>Seller: </strong> </th>
+                                                            <td colspan="2">Not Modification </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="table-active"> <strong>Seller: </strong> </th>
+                                                            <td colspan="2">1211 </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                
+                                                <table class="table">
+                                                    <thead>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th class="table-active"> <strong>Ticket Number: </strong></th>
+                                                            <td colspan="2"><a href="#">#0987654321</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="table-active"> <strong>Subject: </strong> </th>
+                                                            <td colspan="2">N/A </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="table-active"> <strong>Created Date: </strong> </th>
+                                                            <td colspan="2">10/3/3010 </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="table-active"> <strong>Status: </strong> </th>
+                                                            <td colspan="2">Open</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="table-active"> <strong>Seller: </strong> </th>
+                                                            <td colspan="2">Not Modification </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="table-active"> <strong>Seller: </strong> </th>
+                                                            <td colspan="2">1211 </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                         
                                             </div>
                                         </div>

@@ -583,17 +583,283 @@ select.list-dt:focus {
     font-weight: 600;
 }
 
-.dashboard-section .dashboard-table .table td a{
+.dashboard-section .dashboard-table .table td a {
     color: #f35c51;
 }
 
-.dashboard-section .dashboard-table .table th {
+.dashboard-section #myticketslist .table th {
     width: 35%;
     background-color: #f4f4f4;
     background-image: none;
     text-align: left;
 }
 
-.dashboard-section .dashboard-table .table tr {
+.dashboard-section #myticketslist .table tr {
     border: 1px solid #dee2e6;
+}
+
+#buylead .bylead-wapper .nav-pills .nav-link {
+    padding: 20px 10px;
+    color: #000;
+}
+
+#buylead .bylead-wapper .nav-pills .nav-link.active,
+#buylead .bylead-wapper .nav-pills .show>.nav-link {
+    /* color: #000; */
+    background-color: #e6e6e6;
+    /* padding: 20px 10px; */
+}
+
+#buylead .bylead-wapper .sander-top,
+#buylead .bylead-wapper .sander-bottom,
+#buylead .bylead-wapper .sander-mid {
+    width: 100%;
+    display: inline-block;
+}
+
+#buylead .bylead-wapper .sander-top .sander-name {
+    float: left;
+    width: 70%;
+}
+
+#buylead .bylead-wapper .sander-top .sander-name .sander-location {
+    font-size: 13px;
+    color: #656565;
+    font-style: italic;
+}
+
+#buylead .bylead-wapper .sander-top .sander-name h2 {
+    font-size: 15px;
+}
+
+#buylead .bylead-wapper .sander-top .sand-date {
+    float: left;
+    width: 30%;
+}
+
+#buylead .bylead-wapper .sander-top .sand-date span {
+    font-size: 13px;
+    color: gray;
+    text-align: right;
+    font-style: italic;
+}
+
+#buylead .bylead-wapper .sander-mid .sand-cart-icon {
+    float: left;
+    display: inline-block;
+    width: 8%;
+}
+
+#buylead .bylead-wapper .sander-mid .sand-cart-icon .fa {
+    color: #f35c51;
+}
+
+#buylead .bylead-wapper .sander-mid .sand-product-name {
+    width: 90%;
+    margin-top: 5px;
+    float: left;
+}
+
+#buylead .bylead-wapper .sander-mid .sand-product-name p {
+    margin-bottom: 0px;
+}
+
+.dashboard-section #top-tabContent {
+    padding: 0;
+}
+
+.sander-fullinfo-top-wapper .fullinfo-sender-image {
+    width: 15%;
+    float: left;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.sander-fullinfo-top-wapper .fullinfo-sander-top {
+    width: 85%;
+    float: left;
+    margin-top: 15px;
+}
+
+.sander-fullinfo-top-wapper .fullinfo-sander-top .fullinfo-sander-name h2 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.sander-fullinfo-top-wapper .fullinfo-sander-top .fullinfo-sander-name .fullinfo-sander-location {
+    font-style: italic;
+}
+
+.sander-fullinfo-top-wapper .fullinfo-sander-mid {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: column;
+    margin-top: 15px;
+}
+
+.fullinfo-sander-mid .sander-send-requst-button .btn {
+    font-size: 12px;
+    padding: 5px 15px;
+    background-color: #34a05f;
+    border-color: #34a05f;
+}
+
+.fullinfo-sander-mid .sander-send-requst-button .btn i {
+    margin-right: 5px;
+}
+
+.sander-fullinfo-top-wapper .fullinfo-sander-mid .sand-date i {
+    margin-right: 5px;
+    color: grey;
+}
+
+.sander-fullinfo-top-wapper {
+    border-bottom: 2px solid #f35c51;
+}
+
+.dashboard-section #buylead .tab-content {
+    padding: 10px 0px;
+    padding-bottom: 0px;
+}
+
+.dashboard-section #buylead .tab-content .sander-fullmsg-mid-wapper {
+    padding: 10px 20px;
+    background-image: url('/assets/images/chat.jpg');
+    height: 95vh;
+}
+
+.sander-fullmsg-mid-wapper .conversation-wapper {
+    display: inline-block;
+    width: 100%;
+}
+
+.sander-fullmsg-mid-wapper .conversation-wapper .conversation-receive {
+    width: 60%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.sander-fullmsg-mid-wapper .conversation-wapper .conversation-receive .receive-wapper {
+    padding: 15px;
+    background-color: white;
+    border-radius: 15px;
+    display: inline-block;
+    box-shadow: 1px 2px 20px 10px rgba(0, 0, 0, 0.07);
+}
+
+.sander-fullmsg-mid-wapper .conversation-wapper .conversation-receive .receive-wapper .receive-image {
+    float: left;
+    width: 20%;
+    display: inline-block;
+}
+
+.sander-fullmsg-mid-wapper .conversation-wapper .conversation-receive .receive-wapper .receive-massage {
+    float: left;
+    width: 80%;
+    display: inline-block;
+}
+
+.sander-fullmsg-mid-wapper .conversation-wapper .receive-massage-time-date {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sander-fullmsg-mid-wapper .conversation-wapper .receive-massage-time-date p {
+    margin-bottom: 0px;
+    margin-right: 5px;
+}
+
+.sander-fullmsg-mid-wapper .conversation-wapper .receive-massage-time-date .svg-icon {
+    width: 21px;
+    padding: 4px;
+    background-color: gray;
+    border-radius: 50px;
+}
+
+.sander-fullmsg-mid-wapper .conversation-wapper .conversation-send {
+    width: 60%;
+    float: right;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.sander-fullmsg-mid-wapper .conversation-wapper .conversation-send .send-wapper {
+    padding: 15px;
+    background-color: white;
+    border-radius: 15px;
+    display: inline-block;
+    box-shadow: 1px 2px 20px 10px rgba(0, 0, 0, 0.07);
+}
+
+.sander-fullmsg-mid-wapper .conversation-wapper .conversation-send .send-wapper .send-image {
+    float: left;
+    width: 20%;
+    display: inline-block;
+}
+
+.sander-fullmsg-mid-wapper .conversation-wapper .conversation-send .send-wapper .send-massage {
+    float: left;
+    width: 80%;
+    display: inline-block;
+}
+
+.sander-fullmsg-mid-wapper .conversation-wapper .send-massage-time-date {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sander-fullmsg-mid-wapper .conversation-wapper .send-massage-time-date p {
+    margin-bottom: 0px;
+    margin-right: 5px;
+}
+
+.sander-fullmsg-mid-wapper .conversation-wapper .send-massage-time-date .svg-icon {
+    width: 21px;
+    padding: 4px;
+    background-color: gray;
+    border-radius: 50px;
+}
+
+
+.sander-sendmsg-bottom-wapper .attechment-button-wapper {
+    background-color: #d8d8d8;
+}
+
+.sander-sendmsg-bottom-wapper .attechment-button-wapper .btn-attechment {
+    text-align: center;
+    width: 100%;
+}
+
+.sander-sendmsg-bottom-wapper .col-1 {
+    padding-right: 0;
+}
+
+.sander-sendmsg-bottom-wapper .col-9 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.sander-sendmsg-bottom-wapper .attechment-button-wapper .btn-attechment i {
+    font-size: 20px;
+    padding: 5px 0px;
+    color: gray;
+    font-weight: bold;
+}
+
+.sander-sendmsg-bottom-wapper .massage-input-wapper .form-control {
+    height: 2.7rem;
+    border: none;
+    background-color: #ebebeb;
+}
+
+.sander-sendmsg-bottom-wapper .send-button-wapper {
+    margin-top: 5px;
+}
+
+.sander-sendmsg-bottom-wapper .send-button-wapper .btn-primary {
+    font-size: 12px;
+    padding: 5px 15px;
 }
