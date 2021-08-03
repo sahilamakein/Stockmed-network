@@ -293,3 +293,77 @@ background-color: transparent;
 .product-decription-wapper .product-decription-tabs .cstmprdthr{
     height: 0.5px;
 }
+
+.product-decription-wapper .product-decription-tabs .tab-content .Decription-table .table{
+    border-color: #dee2e6;
+    width: 64%;
+}
+
+.product-decription-wapper .product-decription-tabs .tab-content .Decription-table .Decription-table-title h5{
+    font-weight: 600px;
+    text-transform: uppercase;
+} 
+
+.product-decription-wapper .product-decription-tabs .tab-content .Decription-table .Decription-table-title hr{
+    height:3px;
+    color: #f88f12;
+    opacity: 1;
+}
+
+
+.product-decription-wapper .product-decription-tabs .tab-content .Decription-table .table > :not(caption) > * > * {
+    border: 1px solid #d2d2d2;
+    padding: 4px 10px;
+}
+
+.product-decription-wapper .product-decription-tabs .tab-content .Decription-table .table-active {
+    --bs-table-accent-bg: #fff7ee;
+     width: 35%;
+}
+
+.product-decription-wapper .product-decription-tabs .tab-content .technichal-specfication-table .technichal-specfication-table-title h5{
+    font-weight: 600px;
+    text-transform: uppercase;
+}
+
+.product-decription-wapper .product-decription-tabs .tab-content .technichal-specfication-table hr{
+    height:3px;
+    color: #f88f12;
+    opacity: 1;}
+
+.product-decription-wapper .product-decription-tabs .tab-content .technichal-specfication-table .technichal-specfication-disc .technichal-details .techsec1 h5{
+    font-weight: 600;
+    margin-bottom: 20px;}
+
+.product-decription-wapper .product-decription-tabs .tab-content .technichal-specfication-table .technichal-specfication-disc .technichal-details .techsec1 p{
+    color: black;}
+
+.product-decription-wapper .product-decription-tabs .tab-content .technichal-specfication-table .technichal-specfication-disc .technichal-details .techsec2 h5{
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 30px;}
+
+.product-decription-wapper .product-decription-tabs .tab-content .technichal-specfication-table .technichal-specfication-disc .technichal-details .techsec2 p{
+    color: black;}
+
+
+.product-decription-wapper .product-decription-tabs .tab-content .stock-table .stock-table-tittle h5{
+    font-weight: 600px;
+    text-transform: uppercase;}
+
+    .product-decription-wapper .product-decription-tabs .tab-content .stock-table hr{
+        height:3px;
+        color: #f88f12;
+        opacity: 1;}
+
+.product-decription-wapper .product-decription-tabs .tab-content .stock-table .table{
+    border-color: #dee2e6;
+    width: 90%;}
+
+    .product-decription-wapper .product-decription-tabs .tab-content .stock-table .table > :not(caption) > * > * {
+        border: 1px solid #d2d2d2;
+        padding: 4px 10px;}
+    
+    .product-decription-wapper .product-decription-tabs .tab-content .stock-table .table-active {
+        --bs-table-accent-bg: #fff7ee;}
+    
