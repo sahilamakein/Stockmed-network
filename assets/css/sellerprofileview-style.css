@@ -242,7 +242,7 @@
   border-top: 8px solid #2874f0;
   display: inline-block;
   width: 100%;
-  padding: 15px;
+  padding: 15px 30px;
 }
 
 .review-form-wapper .form-wapper .form-control {
@@ -250,11 +250,106 @@
   border: 2px solid #808080;
 }
 
+.review-form-wapper .form-wapper .from-heading h3{
+  font-weight: 900;
+    color: #000000;
+}
+
 .review-form-wapper .form-wapper .btn{
   text-transform: none;
+  border-radius: 3px;
 }
 
 .formcontainer {
   width: 77%;
   margin: 0px auto;
+}
+
+.review-form-wapper .sellerprofile-info-wapper .star-rating-wapper .fa{
+  color: #e8d500;
+}
+
+.review-form-wapper .sellerprofile-info-wapper .sellerprofile-top .sellerprofile-contact-heading h2{
+  font-size: 22px;
+  text-transform: none;
+  font-weight: 900;
+}
+
+.review-form-wapper .sellerprofile-info-wapper .sellerprofile-mid h4 {
+  color: #2874f0;
+  font-weight: bold;
+}
+
+.review-form-wapper .sellerprofile-info-wapper .sellerprofile-mid .page-title h2{
+  font-size: 26px;
+  text-transform: none;
+  font-weight: 900;
+}
+.review-form-wapper .sellerprofile-info-wapper .sellerprofile-mid .location-wapper .phone-icon{
+  color: #000000;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.review-form-wapper .sellerprofile-info-wapper .sellerprofile-mid .location-wapper .phone-icon .fa.fa-phone{
+  font-size: 22px;
+  color: #2874f0;
+}
+
+.review-form-wapper .sellerprofile-info-wapper .sellerprofile-mid .location-wapper .location-icon {
+  color: #000000;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.review-form-wapper .sellerprofile-info-wapper .sellerprofile-mid .location-wapper .location-icon .fa.fa-map-marker{
+  font-size: 22px;
+  color: #2874f0;
+}
+
+.review-form-wapper .sellerprofile-info-wapper .sellerprofile-mid .location-wapper .location-address{
+  font-size: 17px;
+  margin-left: 35px;
+}
+
+
+.review-form-wapper .sellerprofile-bottom{
+  background-color: #f4f4f4;
+  padding: 22px 30px;
+    border: 1px solid #cccccc;
+    margin-top: 0px;
+}
+
+.review-form-wapper .sellerprofile-info-wapper{
+  padding: 5px;
+  border:2px solid #cccccc;
+  border-top: 8px solid #2874f0;
+  border-bottom: 0px;
+  display: inline-block;
+  width: 100%;
+  padding: 15px 30px;
+}
+
+.review-form-wapper .sellerprofile-bottom .btn{
+  text-transform: none;
+  width: 40%;
+  border-radius: 3px;
+}
+
+
+.testimonial.newseller {
+  background-color: transparent;
+}
+
+.breadcrumb-section .tagright {
+  background-color: #ffea01;
+  border-radius: 37px 0px 0px 37px;
+  padding: 15px 25px;
+  margin-top: 8%;
+  right: -11rem;
+  position: absolute;
+}
+
+.breadcrumb-section .tagright p{
+  color: black;
 }
