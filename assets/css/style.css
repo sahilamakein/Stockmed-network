@@ -26461,7 +26461,7 @@ font-weight: 500;
 
 .testimonial{
 
-padding: 30px 30px 30px 130px;
+padding: 30px 30px 30px 30px;
 margin: 0 15px 30px 15px;
 overflow: hidden;
 position: relative;
@@ -26539,9 +26539,7 @@ border-color:#2873f0 ;
 .light-layout-footer-top {
   background-color: #2873f0;
 }
-footer {
-  top: 30px;
-}
+
 a.apple-button {
   background-color: #4a4a48;
   color: #fff;
