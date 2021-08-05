@@ -100,3 +100,86 @@ right: 126px;
         border: none;
         margin-bottom: 15PX;
     }
+
+
+
+@media (max-width: 992px) { 
+    .buyerprofile-page .editicon {
+     top: 44%;
+     right: 33%;
+     }
+
+.buyerprofile-page .editicon .fa {
+font-size: 10px;
+ padding: 6px;
+    }
+
+
+.buyerprofile-page .formsection {
+        padding: 10px 20px;
+    }
+
+}
+
+@media (max-width: 768px) { 
+
+.buyerprofile-page .editicon {
+top: 30%;
+right: 42%;
+}
+
+.buyerprofile-page .profileimg img {
+    width: 34%;
+}
+
+.buyerprofile-page .buyerprofile {
+    width: 85%;
+}
+
+
+ }
+
+ @media (max-width: 576px) { 
+
+    .buyerprofile-page .profileimg img {
+        width: 39%;
+        margin-bottom: 10px;
+    }
+
+    .buyerprofile-page .textsec h4{
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .buyerprofile-page .editicon {
+        top: 34%;
+        right: 28%;
+    }
+
+    .buyerprofile-page .formsection2 {
+        padding: 20px;
+    } 
+
+    .buyerprofile-page .editicon .fa {
+        font-size: 8px;
+        padding: 5px;
+    }
+ }
+
+
+ @media (max-width: 430px) { 
+
+    .buyerprofile-page .profileimg img {
+        width: 60%;
+    }
+    
+    .buyerprofile-page .editicon {
+        top: 34%;
+        right: 1%;
+    }
+
+    .buyerprofile-page .formsection2 {
+        padding: 20px;
+    }
+
+ }

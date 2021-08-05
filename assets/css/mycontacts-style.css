@@ -65,3 +65,22 @@ background-color: #f1f1f1;
 .mycontacts .mycontacts-heading h3  .fa.fa-users{
     color:#2874f0;
 }
+
+.bottom-buttom-wapper {
+    margin-bottom: 10px;
+}
+
+
+
+@media (max-width: 576px) { 
+    .mycontacts .mycontacts-heading h3 {
+        text-align: left;
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+
+    .bottom-buttom-wapper .left-right-wapper .btn.btn-primary.pull-right {
+        float: none;
+    }
+ }

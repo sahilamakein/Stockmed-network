@@ -95,3 +95,25 @@ padding: 8px 44px;
     
 
 }
+
+.bottom-buttom-wapper {
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 768px) {
+
+    .about-page.myorderlist {
+        text-align:start;
+        margin-top: 15px;
+    }
+
+    .myorderlist .myorderlist-heading h3 {
+        font-size: 15px;
+    }
+
+.myorderlist-page-bgimg {
+    overflow: scroll;
+}
+
+}

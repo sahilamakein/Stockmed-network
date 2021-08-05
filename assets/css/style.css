@@ -12192,19 +12192,16 @@ header.stickycls {
       float: left;
       color: #0d6efd;
       }
-    .col-6.left-part {
+    .ratio_square .left-part {
       border: solid 2px #51a9d1;
       height: max-content;
       float: left;
-      width: 49%;
-      margin-right: 10px;
     }
-    .col-6.right-part {
+    .ratio_square  .right-part {
     border: solid 2px #9cb561;
     height: max-content;
     float: left;
-    width: 49%;
-    margin-left: 10px;
+    margin-top: 10px;
     }
     section.ratio_square.promotion-home-section {
       padding-top: 40px;
@@ -20998,7 +20995,6 @@ body.dark {
     .testimonial .testimonial-slider .media .media-body p {
       margin-bottom: 0; }
   .testimonial .testimonial-slider .slick-track .slick-slide:nth-child(even) .media {
-    border-left: none;
     padding-left: 0; }
   .blog-detail-page .blog-advance ul {
     margin-bottom: 20px; }
@@ -26624,3 +26620,4 @@ select#s-category {
 }
 
 } 
+

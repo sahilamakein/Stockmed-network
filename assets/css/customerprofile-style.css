@@ -148,3 +148,43 @@
 footer {
   top: 0px;
 }
+
+
+
+@media (max-width: 992px) { 
+.banner-wapper .breadcrumb-section.title-wpper {
+  height: 200px;
+}
+  
+    section.addtocart_count.ratio_square {
+      padding: 40px 60px;
+   }
+
+ }
+
+
+ @media (max-width: 768px) {
+  .banner-wapper .breadcrumb-section.title-wpper {
+    height: 150px;
+ }
+
+}
+
+@media (max-width: 576px) { 
+
+  .customerprofile-main {
+    margin-top: -3.5rem;
+  }
+
+  .customerprofile-main .customerprofile-info .customerprofile-top-wapper h2 {
+    font-size: 14px;
+    margin-top: 1rem;
+}
+
+
+.customerprofile-main .customerprofile-info .customerprofile-mid-wapper h2 {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+}
