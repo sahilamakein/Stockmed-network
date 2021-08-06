@@ -37,23 +37,50 @@
     <link rel="stylesheet" type="text/css" href="assets/css/vendors/bootstrap.css">
 
     <!-- Theme css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/about-style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/my-css.css">
     <link rel="stylesheet" type="text/css" href="assets/css/about-style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/termsandconditionsofuse-style.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/myorderslisting-style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/mycontacts-style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/productstockdetail-style.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/my-css.css">
+
+
+    <!-- Theme css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
 
 </head>
 
 <body class="theme-color-11">
 
 
-  
     <!-- header start -->
     <header class="header-style-5">
         <div class="mobile-fix-option"></div>
-        <div class="container">
+
+        <div class="top-header top-header-theme">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 text-end">
+                        <ul class="header-dropdown">
+                            <li class="mobile-wishlist"><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="onhover-dropdown mobile-account buyer-login-mobile">
+                                <p>Buyer Login</p><i class="fa fa-user" aria-hidden="true"></i>
+                                My Account
+                                <ul class="onhover-show-div">
+                                    <li><a href="login.html">Login</a></li>
+                                    <li><a href="register.html">register</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid pr-4 pl-4">
             <div class="row">
                 <div class="col-sm-12">
                     <div class="main-menu">
@@ -70,12 +97,16 @@
                             </div>
                         </div>
                         <div class="menu-center">
+                            <div class="mobile-brand-logo">
+                                <a href="index.html"><img src="assets/images/icon/logo/stockmed-logo.png"
+                                        class="img-fluid blur-up lazyload" alt=""></a>
+                            </div>
                             <select name="search-cat" id="s-category">
                                 <option value="volvo">Medical</option>
                                 <option value="saab">Dressing</option>
                                 <option value="opel">Medicines</option>
                                 <option value="audi">Diagnostic</option>
-                              </select>
+                            </select>
                             <form class="form_search" role="form">
                                 <input id="query search-autocomplete" type="search" placeholder="Search any product..."
                                     class="nav-search nav-search-field" aria-expanded="true">
@@ -83,32 +114,60 @@
                                     <i class="ti-search"></i>SEARCH
                                 </button>
                             </form>
-                                <div class="form-right">
-                                
-                                    <select name="select-currency" id="s-currency">
-                                        <option value="$">$</option>
-                                        <option value="₹">₹</option>
-                                      </select>
-                                    <div>
-                                     <img src="assets/images/new-icons/Language.png"
-                                      class="img-fluid blur-up lazyload" alt="">
-                                      <select name="select-language" id="s-language">
+                            <div class="form-right">
+
+                                <select name="select-currency" id="s-currency">
+                                    <option value="$">$</option>
+                                    <option value="₹">₹</option>
+                                </select>
+                                <div>
+                                    <img src="assets/images/new-icons/Language.png" class="img-fluid blur-up lazyload"
+                                        alt="">
+                                    <select name="select-language" id="s-language">
                                         <option value="volvo">English</option>
                                         <option value="saab">हिन्दी</option>
-                                      </select>
-                                      </div>
-                                      
+                                    </select>
                                 </div>
- 
+
+                            </div>
+
                         </div>
                         <div class="menu-right pull-right">
                             <div>
                                 <div class="icon-nav">
                                     <ul>
+                                        <li class="onhover-div mobile-search">
+                                            <div><img src="../assets/images/icon/search.png" onclick="openSearch()"
+                                                    class="img-fluid blur-up lazyload" alt=""> <i class="ti-search"
+                                                    onclick="openSearch()"></i></div>
+                                            <div id="search-overlay" class="search-overlay">
+                                                <div> <span class="closebtn" onclick="closeSearch()"
+                                                        title="Close Overlay">×</span>
+                                                    <div class="overlay-content">
+                                                        <div class="container">
+                                                            <div class="row">
+                                                                <div class="col-xl-12">
+                                                                    <form>
+                                                                        <div class="form-group">
+                                                                            <input type="text" class="form-control"
+                                                                                id="exampleInputPassword1"
+                                                                                placeholder="Search a Product">
+                                                                        </div>
+                                                                        <button type="submit" class="btn btn-primary"><i
+                                                                                class="fa fa-search"></i></button>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
                                         <li class="onhover-div mobile-setting">
                                             <div><img src="assets/images/new-icons/Seller-login.png"
-                                                    class="img-fluid blur-up lazyload" alt=""><p>Seller Login</p><i
-                                                    class="ti-settings"></i></div>
+                                                    class="img-fluid blur-up lazyload" alt="">
+                                                <p>Seller Login</p><i class="ti-settings"></i>
+                                            </div>
                                             <div class="show-div setting">
                                                 <h6>language</h6>
                                                 <ul>
@@ -124,10 +183,11 @@
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li class="onhover-div mobile-setting">
+                                        <li class="onhover-div mobile-setting buyer-login-desktop">
                                             <div><img src="assets/images/new-icons/Buyer.png"
-                                                    class="img-fluid blur-up lazyload" alt=""><p>Buyer Login</p><i
-                                                    class="ti-settings"></i></div>
+                                                    class="img-fluid blur-up lazyload" alt="">
+                                                <p>Buyer Login</p><i class="ti-settings"></i>
+                                            </div>
                                             <div class="show-div setting">
                                                 <h6>language</h6>
                                                 <ul>
@@ -145,8 +205,9 @@
                                         </li>
                                         <li class="onhover-div mobile-cart">
                                             <div><img src="assets/images/new-icons/Basket.png"
-                                                    class="img-fluid blur-up lazyload" alt=""><p>Basket</p> <i
-                                                    class="ti-shopping-cart"></i></div>
+                                                    class="img-fluid blur-up lazyload" alt="">
+                                                <p>Basket</p> <i class="ti-shopping-cart"></i>
+                                            </div>
                                             <span class="cart_qty_cls">2</span>
                                             <ul class="show-div shopping-cart">
                                                 <li>
@@ -166,7 +227,9 @@
                                                 <li>
                                                     <div class="media">
                                                         <a href="#"><img alt="" class="me-3"
-                                                                src="assets/images/fashion/product/2.jpg"><p>Basket</p></a>
+                                                                src="assets/images/fashion/product/2.jpg">
+                                                            <p>Basket</p>
+                                                        </a>
                                                         <div class="media-body">
                                                             <a href="#">
                                                                 <h4>item name</h4>
@@ -199,11 +262,11 @@
         <div class="bottom-part">
             <div class="container">
                 <div class="row">
-                   
+
                     <div class="col-xl-12">
                         <div class="main-nav-center">
                             <nav id="main-nav" class="text-start">
-                              
+                                <div class="toggle-nav"><i class="fa fa-bars sidebar-bar"></i></div>
                                 <ul id="main-menu" class="sm pixelstrap sm-horizontal">
                                     <li>
                                         <div class="mobile-back text-end">Back<i class="fa fa-angle-right ps-2"
@@ -469,9 +532,10 @@
                                 </ul>
 
                                 <div class="nav-right-section col-xl-4">
-                                        <a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i>Post Your Recruitment</a>
-                                        <a href="#"><i class="fa fa-camera" aria-hidden="true"></i>Sell Your Products</a>
-                                    </div>
+                                    <a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i>Post Your
+                                        Recruitment</a>
+                                    <a href="#"><i class="fa fa-camera" aria-hidden="true"></i>Sell Your Products</a>
+                                </div>
                             </nav>
                         </div>
                     </div>
@@ -480,6 +544,7 @@
         </div>
     </header>
     <!-- header end -->
+
 
     <section class="banner-wapper">
         <!-- breadcrumb start -->
@@ -508,7 +573,7 @@
         <div class="productstockdetail-inner-wapper">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-lg-4 col-md-4 col-sm-5 col-12">
                         <div class="horizontel-slider">
                             <div class="col-12 p-0">
                                 <div class="slider-right-nav">
@@ -529,7 +594,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-5 p-4 ">
+                    <div class="col-lg-5 col-md-5 col-sm-7 col-12 p-4 ">
                         <div class="product-title-wapper">
                             <h3>Aeonmed Shangrila</br>
                                 510s Transportable Ventilator </h3>
@@ -595,7 +660,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3 p-4">
+                    <div class="col-lg-3 col-md-3 col-sm-12 p-4">
                         <div class="inquery-wapper">
                             <div class="profile-info">
                                 <div class="profile-img text-center"><img src="/assets/images/Product-list/user-image.png" alt=""></div>
@@ -638,617 +703,619 @@
         </div>
     </div>
 
-        <!-- product deal section start -->
-        <section class="addtocart_count ratio_square">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="title-basic">
-                            <h2 class="title font-fraunces">Related Products</h2>
+    <!-- product deal section start -->
+    <section class="addtocart_count ratio_square">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="title-basic">
+                        <h2 class="title font-fraunces">Related Products</h2>
                             <a href="#">View All <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
-                         </div>
-                         <div class="product-5 product-m">
-        
-        
-                            <div class="product-box product-wrap product-style-1">
-                                <div class="img-wrapper">
-                                    <div class="lable-block"><span class="lable3">new</span> <span class="lable4">on
-                                            sale</span></div>
-                                    <div class="front">
-                                        <a href="product-page(no-sidebar).html"><img src="assets/images/products/Image1.jpg"
-                                                class="img-fluid blur-up lazyload bg-img" alt=""></a>
-                                    </div>
-                                    <div class="cart-info cart-wrap">
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#quick-view" title="Quick View"><i
-                                                class="ti-search" aria-hidden="true"></i></a>
-                                        <a href="compare.html" title="Compare"><i class="ti-reload" aria-hidden="true"></i></a>
-                                    </div>
-                                    <div class="addtocart_btn">
-        
-                                        <div>
-                                            <h4>$100-200</h4>
-                                            <a href="javascript:void(0)" title="Add to Wishlist"><i class="fa fa-heart"
-                                                    aria-hidden="true"></i></a>
-                                        </div>
-                                        <p> Last updated on: <span>2-1-2021</span></p>
-                                    </div>
+                        </div>
+                        <div class="product-5 product-m">
+    
+    
+                        <div class="product-box product-wrap product-style-1">
+                            <div class="img-wrapper">
+                                <div class="lable-block"><span class="lable3">new</span> <span class="lable4">on
+                                        sale</span></div>
+                                <div class="front">
+                                    <a href="product-page(no-sidebar).html"><img src="assets/images/products/Image1.jpg"
+                                            class="img-fluid blur-up lazyload bg-img" alt=""></a>
                                 </div>
-                                <div class="product-detail text-center">
-                                    <div class="quantity-box">
-                                        <p>Ready-stock</p><span>200</span>
-                                    </div>
-                                    <a href="product-page(no-sidebar).html">
-                                        <p>Maecenas tortor porttitor tincidunt neque</p>
-                                    </a>                                    
+                                <div class="cart-info cart-wrap">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#quick-view" title="Quick View"><i
+                                            class="ti-search" aria-hidden="true"></i></a>
+                                    <a href="compare.html" title="Compare"><i class="ti-reload" aria-hidden="true"></i></a>
                                 </div>
-                                <div class="chat-button text-center">
-                                    <button type="button" class="btn btn-dark">
-                                        <strong class="pull-left">Call Now</strong>
-                                        <i class="fa fa-phone pull-right" aria-hidden="true"></i>
-                                    </button>
-                                </div>   
-                            </div>        
-        
-                            <div class="product-box product-wrap product-style-1">
-                                <div class="img-wrapper">
-                                    <div class="front">
-                                        <a href="product-page(no-sidebar).html"><img src="assets/images/products/Image1.jpg"
-                                                class="img-fluid blur-up lazyload bg-img" alt=""></a>
+                                <div class="addtocart_btn">
+    
+                                    <div>
+                                        <h4>$100-200</h4>
+                                        <a href="javascript:void(0)" title="Add to Wishlist"><i class="fa fa-heart"
+                                                aria-hidden="true"></i></a>
                                     </div>
-                                    <div class="cart-info cart-wrap">
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#quick-view" title="Quick View"><i
-                                                class="ti-search" aria-hidden="true"></i></a>
-                                        <a href="compare.html" title="Compare"><i class="ti-reload" aria-hidden="true"></i></a>
-                                    </div>
-                                    <div class="addtocart_btn">
-        
-                                        <div>
-                                            <h4>$100-200</h4>
-                                            <a href="javascript:void(0)" title="Add to Wishlist"><i class="fa fa-heart"
-                                                    aria-hidden="true"></i></a>
-                                        </div>
-                                        <p> Last updated on: <span>2-1-2021</span></p>
-                                    </div>
+                                    <p> Last updated on: <span>2-1-2021</span></p>
                                 </div>
-                                <div class="product-detail text-center">
-                                    <div class="quantity-box">
-                                        <p>Ready-stock</p><span>200</span>
-                                    </div>
-                                    <a href="product-page(no-sidebar).html">
-                                        <p>Maecenas tortor porttitor tincidunt neque</p>
-                                    </a>
-                                </div>
-                                <div class="chat-button text-center">
-                                    <button type="button" class="btn btn-dark">
-                                        <strong class="pull-left">Call Now</strong>
-                                        <i class="fa fa-phone pull-right" aria-hidden="true"></i>
-                                    </button>
-                                </div>   
                             </div>
-        
-                            <div class="product-box product-wrap product-style-1">
-                                <div class="img-wrapper">
-                                    <div class="front">
-                                        <a href="product-page(no-sidebar).html"><img src="assets/images/products/Image1.jpg"
-                                                class="img-fluid blur-up lazyload bg-img" alt=""></a>
-                                    </div>
-                                    <div class="cart-info cart-wrap">
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#quick-view" title="Quick View"><i
-                                                class="ti-search" aria-hidden="true"></i></a>
-                                        <a href="compare.html" title="Compare"><i class="ti-reload" aria-hidden="true"></i></a>
-                                    </div>
-                                    <div class="addtocart_btn">
-        
-                                        <div>
-                                            <h4>$100-200</h4>
-                                            <a href="javascript:void(0)" title="Add to Wishlist"><i class="fa fa-heart"
-                                                    aria-hidden="true"></i></a>
-                                        </div>
-                                        <p> Last updated on: <span>2-1-2021</span></p>
-                                    </div>
+                            <div class="product-detail text-center">
+                                <div class="quantity-box">
+                                    <p>Ready-stock</p><span>200</span>
                                 </div>
-                                <div class="product-detail text-center">
-                                    <div class="quantity-box">
-                                        <p>Ready-stock</p><span>200</span>
-                                    </div>
-                                    <a href="product-page(no-sidebar).html">
-                                        <p>Maecenas tortor porttitor tincidunt neque</p>
-                                    </a>
-                                </div>
-                                <div class="chat-button text-center">
-                                    <button type="button" class="btn btn-dark">
-                                        <strong class="pull-left">Call Now</strong>
-                                        <i class="fa fa-phone pull-right" aria-hidden="true"></i>
-                                    </button>
-                                </div>   
+                                <a href="product-page(no-sidebar).html">
+                                    <p>Maecenas tortor porttitor tincidunt neque</p>
+                                </a>                                    
                             </div>
-        
-                            <div class="product-box product-wrap product-style-1">
-                                <div class="img-wrapper">
-                                    <div class="front">
-                                        <a href="product-page(no-sidebar).html"><img src="assets/images/products/Image1.jpg"
-                                                class="img-fluid blur-up lazyload bg-img" alt=""></a>
-                                    </div>
-                                    <div class="cart-info cart-wrap">
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#quick-view" title="Quick View"><i
-                                                class="ti-search" aria-hidden="true"></i></a>
-                                        <a href="compare.html" title="Compare"><i class="ti-reload" aria-hidden="true"></i></a>
-                                    </div>
-                                    <div class="addtocart_btn">
-        
-                                        <div>
-                                            <h4>$100-200</h4>
-                                            <a href="javascript:void(0)" title="Add to Wishlist"><i class="fa fa-heart"
-                                                    aria-hidden="true"></i></a>
-                                        </div>
-                                        <p> Last updated on: <span>2-1-2021</span></p>
-                                    </div>
+                            <div class="chat-button text-center">
+                                <button type="button" class="btn btn-dark">
+                                    <strong class="pull-left">Call Now</strong>
+                                    <i class="fa fa-phone pull-right" aria-hidden="true"></i>
+                                </button>
+                            </div>   
+                        </div>        
+    
+                        <div class="product-box product-wrap product-style-1">
+                            <div class="img-wrapper">
+                                <div class="front">
+                                    <a href="product-page(no-sidebar).html"><img src="assets/images/products/Image1.jpg"
+                                            class="img-fluid blur-up lazyload bg-img" alt=""></a>
                                 </div>
-                                <div class="product-detail text-center">
-                                    <div class="quantity-box">
-                                        <p>Ready-stock</p><span>200</span>
-                                    </div>
-                                    <a href="product-page(no-sidebar).html">
-                                        <p>Maecenas tortor porttitor tincidunt neque</p>
-                                    </a>
+                                <div class="cart-info cart-wrap">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#quick-view" title="Quick View"><i
+                                            class="ti-search" aria-hidden="true"></i></a>
+                                    <a href="compare.html" title="Compare"><i class="ti-reload" aria-hidden="true"></i></a>
                                 </div>
-                                <div class="chat-button text-center">
-                                    <button type="button" class="btn btn-dark">
-                                        <strong class="pull-left">Call Now</strong>
-                                        <i class="fa fa-phone pull-right" aria-hidden="true"></i>
-                                    </button>
-                                </div>   
+                                <div class="addtocart_btn">
+    
+                                    <div>
+                                        <h4>$100-200</h4>
+                                        <a href="javascript:void(0)" title="Add to Wishlist"><i class="fa fa-heart"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                    <p> Last updated on: <span>2-1-2021</span></p>
+                                </div>
                             </div>
-        
-                            <div class="product-box product-wrap product-style-1">
-                                <div class="img-wrapper">
-                                    <div class="front">
-                                        <a href="product-page(no-sidebar).html"><img src="assets/images/products/Image1.jpg"
-                                                class="img-fluid blur-up lazyload bg-img" alt=""></a>
-                                    </div>
-                                    <div class="cart-info cart-wrap">
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#quick-view" title="Quick View"><i
-                                                class="ti-search" aria-hidden="true"></i></a>
-                                        <a href="compare.html" title="Compare"><i class="ti-reload" aria-hidden="true"></i></a>
-                                    </div>
-                                    <div class="addtocart_btn">
-        
-                                        <div>
-                                            <h4>$100-200</h4>
-                                            <a href="javascript:void(0)" title="Add to Wishlist"><i class="fa fa-heart"
-                                                    aria-hidden="true"></i></a>
-                                        </div>
-                                        <p> Last updated on: <span>2-1-2021</span></p>
-                                    </div>
+                            <div class="product-detail text-center">
+                                <div class="quantity-box">
+                                    <p>Ready-stock</p><span>200</span>
                                 </div>
-                                <div class="product-detail text-center">
-                                    <div class="quantity-box">
-                                        <p>Ready-stock</p><span>200</span>
-                                    </div>
-                                    <a href="product-page(no-sidebar).html">
-                                        <p>Maecenas tortor porttitor tincidunt neque</p>
-                                    </a>
-                                </div>
-                                <div class="chat-button text-center">
-                                    <button type="button" class="btn btn-dark">
-                                        <strong class="pull-left">Call Now</strong>
-                                        <i class="fa fa-phone pull-right" aria-hidden="true"></i>
-                                    </button>
-                                </div>  
+                                <a href="product-page(no-sidebar).html">
+                                    <p>Maecenas tortor porttitor tincidunt neque</p>
+                                </a>
                             </div>
-        
-                            <div class="product-box product-wrap product-style-1">
-                                <div class="img-wrapper">
-                                    <div class="front">
-                                        <a href="product-page(no-sidebar).html"><img src="assets/images/products/Image1.jpg"
-                                                class="img-fluid blur-up lazyload bg-img" alt=""></a>
-                                    </div>
-                                    <div class="cart-info cart-wrap">
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#quick-view" title="Quick View"><i
-                                                class="ti-search" aria-hidden="true"></i></a>
-                                        <a href="compare.html" title="Compare"><i class="ti-reload" aria-hidden="true"></i></a>
-                                    </div>
-                                    <div class="addtocart_btn">
-        
-                                        <div>
-                                            <h4>$100-200</h4>
-                                            <a href="javascript:void(0)" title="Add to Wishlist"><i class="fa fa-heart"
-                                                    aria-hidden="true"></i></a>
-                                        </div>
-                                        <p> Last updated on: <span>2-1-2021</span></p>
-                                    </div>
+                            <div class="chat-button text-center">
+                                <button type="button" class="btn btn-dark">
+                                    <strong class="pull-left">Call Now</strong>
+                                    <i class="fa fa-phone pull-right" aria-hidden="true"></i>
+                                </button>
+                            </div>   
+                        </div>
+    
+                        <div class="product-box product-wrap product-style-1">
+                            <div class="img-wrapper">
+                                <div class="front">
+                                    <a href="product-page(no-sidebar).html"><img src="assets/images/products/Image1.jpg"
+                                            class="img-fluid blur-up lazyload bg-img" alt=""></a>
                                 </div>
-                                <div class="product-detail text-center">
-                                    <div class="quantity-box">
-                                        <p>Ready-stock</p><span>200</span>
-                                    </div>
-                                    <a href="product-page(no-sidebar).html">
-                                        <p>Maecenas tortor porttitor tincidunt neque</p>
-                                    </a>
+                                <div class="cart-info cart-wrap">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#quick-view" title="Quick View"><i
+                                            class="ti-search" aria-hidden="true"></i></a>
+                                    <a href="compare.html" title="Compare"><i class="ti-reload" aria-hidden="true"></i></a>
                                 </div>
-                                <div class="chat-button text-center">
-                                    <button type="button" class="btn btn-dark">
-                                        <strong class="pull-left">Call Now</strong>
-                                        <i class="fa fa-phone pull-right" aria-hidden="true"></i>
-                                    </button>
-                                </div>   
+                                <div class="addtocart_btn">
+    
+                                    <div>
+                                        <h4>$100-200</h4>
+                                        <a href="javascript:void(0)" title="Add to Wishlist"><i class="fa fa-heart"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                    <p> Last updated on: <span>2-1-2021</span></p>
+                                </div>
                             </div>
-        
-                            <div class="product-box product-wrap product-style-1">
-                                <div class="img-wrapper">
-                                    <div class="front">
-                                        <a href="product-page(no-sidebar).html"><img src="assets/images/products/Image1.jpg"
-                                                class="img-fluid blur-up lazyload bg-img" alt=""></a>
-                                    </div>
-                                    <div class="cart-info cart-wrap">
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#quick-view" title="Quick View"><i
-                                                class="ti-search" aria-hidden="true"></i></a>
-                                        <a href="compare.html" title="Compare"><i class="ti-reload" aria-hidden="true"></i></a>
-                                    </div>
-                                    <div class="addtocart_btn">
-        
-                                        <div>
-                                            <h4>$100-200</h4>
-                                            <a href="javascript:void(0)" title="Add to Wishlist"><i class="fa fa-heart"
-                                                    aria-hidden="true"></i></a>
-                                        </div>
-                                        <p> Last updated on: <span>2-1-2021</span></p>
-                                    </div>
+                            <div class="product-detail text-center">
+                                <div class="quantity-box">
+                                    <p>Ready-stock</p><span>200</span>
                                 </div>
-                                <div class="product-detail text-center">
-                                    <div class="quantity-box">
-                                        <p>Ready-stock</p><span>200</span>
-                                    </div>
-                                    <a href="product-page(no-sidebar).html">
-                                        <p>Maecenas tortor porttitor tincidunt neque</p>
-                                    </a>
-                                </div>
-                                <div class="chat-button text-center">
-                                    <button type="button" class="btn btn-dark">
-                                        <strong class="pull-left">Call Now</strong>
-                                        <i class="fa fa-phone pull-right" aria-hidden="true"></i>
-                                    </button>
-                                </div> 
+                                <a href="product-page(no-sidebar).html">
+                                    <p>Maecenas tortor porttitor tincidunt neque</p>
+                                </a>
                             </div>
-        
-                            <div class="product-box product-wrap product-style-1">
-                                <div class="img-wrapper">
-                                    <div class="front">
-                                        <a href="product-page(no-sidebar).html"><img src="assets/images/products/Image1.jpg"
-                                                class="img-fluid blur-up lazyload bg-img" alt=""></a>
-                                    </div>
-                                    <div class="cart-info cart-wrap">
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#quick-view" title="Quick View"><i
-                                                class="ti-search" aria-hidden="true"></i></a>
-                                        <a href="compare.html" title="Compare"><i class="ti-reload" aria-hidden="true"></i></a>
-                                    </div>
-                                    <div class="addtocart_btn">
-        
-                                        <div>
-                                            <h4>$100-200</h4>
-                                            <a href="javascript:void(0)" title="Add to Wishlist"><i class="fa fa-heart"
-                                                    aria-hidden="true"></i></a>
-                                        </div>
-                                        <p> Last updated on: <span>2-1-2021</span></p>
-                                    </div>
+                            <div class="chat-button text-center">
+                                <button type="button" class="btn btn-dark">
+                                    <strong class="pull-left">Call Now</strong>
+                                    <i class="fa fa-phone pull-right" aria-hidden="true"></i>
+                                </button>
+                            </div>   
+                        </div>
+    
+                        <div class="product-box product-wrap product-style-1">
+                            <div class="img-wrapper">
+                                <div class="front">
+                                    <a href="product-page(no-sidebar).html"><img src="assets/images/products/Image1.jpg"
+                                            class="img-fluid blur-up lazyload bg-img" alt=""></a>
                                 </div>
-                                <div class="product-detail text-center">
-                                    <div class="quantity-box">
-                                        <p>Ready-stock</p><span>200</span>
-                                    </div>
-                                    <a href="product-page(no-sidebar).html">
-                                        <p>Maecenas tortor porttitor tincidunt neque</p>
-                                    </a>
+                                <div class="cart-info cart-wrap">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#quick-view" title="Quick View"><i
+                                            class="ti-search" aria-hidden="true"></i></a>
+                                    <a href="compare.html" title="Compare"><i class="ti-reload" aria-hidden="true"></i></a>
                                 </div>
-                                <div class="chat-button text-center">
-                                    <button type="button" class="btn btn-dark">
-                                        <strong class="pull-left">Call Now</strong>
-                                        <i class="fa fa-phone pull-right" aria-hidden="true"></i>
-                                    </button>
-                                </div>  
+                                <div class="addtocart_btn">
+    
+                                    <div>
+                                        <h4>$100-200</h4>
+                                        <a href="javascript:void(0)" title="Add to Wishlist"><i class="fa fa-heart"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                    <p> Last updated on: <span>2-1-2021</span></p>
+                                </div>
                             </div>
+                            <div class="product-detail text-center">
+                                <div class="quantity-box">
+                                    <p>Ready-stock</p><span>200</span>
+                                </div>
+                                <a href="product-page(no-sidebar).html">
+                                    <p>Maecenas tortor porttitor tincidunt neque</p>
+                                </a>
+                            </div>
+                            <div class="chat-button text-center">
+                                <button type="button" class="btn btn-dark">
+                                    <strong class="pull-left">Call Now</strong>
+                                    <i class="fa fa-phone pull-right" aria-hidden="true"></i>
+                                </button>
+                            </div>   
+                        </div>
+    
+                        <div class="product-box product-wrap product-style-1">
+                            <div class="img-wrapper">
+                                <div class="front">
+                                    <a href="product-page(no-sidebar).html"><img src="assets/images/products/Image1.jpg"
+                                            class="img-fluid blur-up lazyload bg-img" alt=""></a>
+                                </div>
+                                <div class="cart-info cart-wrap">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#quick-view" title="Quick View"><i
+                                            class="ti-search" aria-hidden="true"></i></a>
+                                    <a href="compare.html" title="Compare"><i class="ti-reload" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="addtocart_btn">
+    
+                                    <div>
+                                        <h4>$100-200</h4>
+                                        <a href="javascript:void(0)" title="Add to Wishlist"><i class="fa fa-heart"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                    <p> Last updated on: <span>2-1-2021</span></p>
+                                </div>
+                            </div>
+                            <div class="product-detail text-center">
+                                <div class="quantity-box">
+                                    <p>Ready-stock</p><span>200</span>
+                                </div>
+                                <a href="product-page(no-sidebar).html">
+                                    <p>Maecenas tortor porttitor tincidunt neque</p>
+                                </a>
+                            </div>
+                            <div class="chat-button text-center">
+                                <button type="button" class="btn btn-dark">
+                                    <strong class="pull-left">Call Now</strong>
+                                    <i class="fa fa-phone pull-right" aria-hidden="true"></i>
+                                </button>
+                            </div>  
+                        </div>
+    
+                        <div class="product-box product-wrap product-style-1">
+                            <div class="img-wrapper">
+                                <div class="front">
+                                    <a href="product-page(no-sidebar).html"><img src="assets/images/products/Image1.jpg"
+                                            class="img-fluid blur-up lazyload bg-img" alt=""></a>
+                                </div>
+                                <div class="cart-info cart-wrap">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#quick-view" title="Quick View"><i
+                                            class="ti-search" aria-hidden="true"></i></a>
+                                    <a href="compare.html" title="Compare"><i class="ti-reload" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="addtocart_btn">
+    
+                                    <div>
+                                        <h4>$100-200</h4>
+                                        <a href="javascript:void(0)" title="Add to Wishlist"><i class="fa fa-heart"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                    <p> Last updated on: <span>2-1-2021</span></p>
+                                </div>
+                            </div>
+                            <div class="product-detail text-center">
+                                <div class="quantity-box">
+                                    <p>Ready-stock</p><span>200</span>
+                                </div>
+                                <a href="product-page(no-sidebar).html">
+                                    <p>Maecenas tortor porttitor tincidunt neque</p>
+                                </a>
+                            </div>
+                            <div class="chat-button text-center">
+                                <button type="button" class="btn btn-dark">
+                                    <strong class="pull-left">Call Now</strong>
+                                    <i class="fa fa-phone pull-right" aria-hidden="true"></i>
+                                </button>
+                            </div>   
+                        </div>
+    
+                        <div class="product-box product-wrap product-style-1">
+                            <div class="img-wrapper">
+                                <div class="front">
+                                    <a href="product-page(no-sidebar).html"><img src="assets/images/products/Image1.jpg"
+                                            class="img-fluid blur-up lazyload bg-img" alt=""></a>
+                                </div>
+                                <div class="cart-info cart-wrap">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#quick-view" title="Quick View"><i
+                                            class="ti-search" aria-hidden="true"></i></a>
+                                    <a href="compare.html" title="Compare"><i class="ti-reload" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="addtocart_btn">
+    
+                                    <div>
+                                        <h4>$100-200</h4>
+                                        <a href="javascript:void(0)" title="Add to Wishlist"><i class="fa fa-heart"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                    <p> Last updated on: <span>2-1-2021</span></p>
+                                </div>
+                            </div>
+                            <div class="product-detail text-center">
+                                <div class="quantity-box">
+                                    <p>Ready-stock</p><span>200</span>
+                                </div>
+                                <a href="product-page(no-sidebar).html">
+                                    <p>Maecenas tortor porttitor tincidunt neque</p>
+                                </a>
+                            </div>
+                            <div class="chat-button text-center">
+                                <button type="button" class="btn btn-dark">
+                                    <strong class="pull-left">Call Now</strong>
+                                    <i class="fa fa-phone pull-right" aria-hidden="true"></i>
+                                </button>
+                            </div> 
+                        </div>
+    
+                        <div class="product-box product-wrap product-style-1">
+                            <div class="img-wrapper">
+                                <div class="front">
+                                    <a href="product-page(no-sidebar).html"><img src="assets/images/products/Image1.jpg"
+                                            class="img-fluid blur-up lazyload bg-img" alt=""></a>
+                                </div>
+                                <div class="cart-info cart-wrap">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#quick-view" title="Quick View"><i
+                                            class="ti-search" aria-hidden="true"></i></a>
+                                    <a href="compare.html" title="Compare"><i class="ti-reload" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="addtocart_btn">
+    
+                                    <div>
+                                        <h4>$100-200</h4>
+                                        <a href="javascript:void(0)" title="Add to Wishlist"><i class="fa fa-heart"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                    <p> Last updated on: <span>2-1-2021</span></p>
+                                </div>
+                            </div>
+                            <div class="product-detail text-center">
+                                <div class="quantity-box">
+                                    <p>Ready-stock</p><span>200</span>
+                                </div>
+                                <a href="product-page(no-sidebar).html">
+                                    <p>Maecenas tortor porttitor tincidunt neque</p>
+                                </a>
+                            </div>
+                            <div class="chat-button text-center">
+                                <button type="button" class="btn btn-dark">
+                                    <strong class="pull-left">Call Now</strong>
+                                    <i class="fa fa-phone pull-right" aria-hidden="true"></i>
+                                </button>
+                            </div>  
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- product deal section start -->
-
-
-
-        <!-- product deal section start -->
-        <section class="product-decription-wapper">
-            <div class="container">
-                
-                <div class="row">
-                    
-                    <div class="product-decription-tabs">
-                        <hr class="cstmprdthr">
-                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
-                                    type="button" role="tab" aria-controls="pills-home" aria-selected="true">Decription</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-                                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Technichal Specfication </button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
-                                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false"> Stock Details </button>
-                            </li>
-                        </ul>
-                        <hr>
-                        <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                                <div class="Decription-table">
-                                    <div class="Decription-table-title">
-                                        <h5><strong> Product Decription </strong></h5>
-                                        <hr class="mt-0">
-                                    </div>
-                                    <table class="table mt-4">
-                                        <thead>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="table-active"> <strong>Ready Stock Available: </strong></td>
-                                                <td colspan="2">10</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="table-active"> <strong>Manufacturer Date: </strong> </td>
-                                                <td colspan="2">N/A </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="table-active"> <strong>Expiry Date: </strong> </td>
-                                                <td colspan="2">10/3/3010 </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="table-active"> <strong>Production Capacity: </strong> </td>
-                                                <td colspan="2">2?weeks</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="table-active"> <strong>Price: </strong> </td>
-                                                <td colspan="2">$500 </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <strong>Bt-250 Is A High End Hospital Grade Monitor Designed For Multi-Bed Units With Central Station Yet Simple Enough For Private Practice, It Offers The Most Advanced Integrated Monitoring For The Delivery Room In Big Hospital; Private Obstetrician's Office; Antepartum Clinic
-
-                                    </strong>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                                <div class="technichal-specfication-table">
-                                    <div class="technichal-specfication-table-title">
-                                        <h5><strong>Technichal Specfication</strong></h5>
-                                        <hr>
-                                    </div>
-                                    <div class="technichal-specfication-disc">
-                                        <div class="technichal-details">
-                                           <div class="techsec1">
-                                            <h5>Feature</h5>
-                                          <p> 1.  Full table functions, full Articulation Capability,</p>
-                                          <p> 2.  Removable Leg Section.</p>
-                                          <p> 3.  Full Body imaging without special accessories.</p>
-                                          <p> 4.  Durable one-touch pendant control.</p>
-                                          <p> 5.  Electrically controlled Height, Backrest.</p>
-                                          <p> 6.  Trendelenburg/Reverse, </p>
-                                          <p> 7.  Lateral Tilt. </p>
-                                          <p> 8.  Radiolucent Table top</p>
-                                          <p> 9.  4 Section seamless molded mattress</P>
-                                         </div>
-
-                                         <div class="techsec2">
-                                            <h5>Technical Specifications</h5>
-                                          <p> <strong>Lateral tilt:</strong>  '+18 deg. / -18 deg.</p>
-                                          <p> <strong>Trendelenburg:</strong> '+35 deg. / -35 deg.</p>
-                                          <p><strong> Chair Position:</strong> '90 deg. / 45deg.</p>
-                                          <p><strong> Head Section:</strong>  '+/ -45 deg.</p>
-                                          <p><strong> Leg Section:</strong>  +55deg / -100deg.</p>
-                                          <p><strong> Kidney Elevator:</strong> 15cm manual operated.</p>
-
-                                         </div>  
-
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                                <div class="stock-table">
-                                    <div class="stock-table-title">
-                                        <h5><strong>Stock Table</strong></h5>
-                                        <hr>
-                                    </div>
-                                    <table class="table">
-                                        <thead>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="table-active"> <strong>Ready Stock Available: </strong></td>
-                                                <td colspan="2" >10</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="table-active"> <strong>Manufacturer Date: </strong> </td>
-                                                <td colspan="2" >N/A </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="table-active"> <strong>Expiry Date: </strong> </td>
-                                                <td colspan="2" >10/3/3010 </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="table-active"> <strong>Production Capacity: </strong> </td>
-                                                <td colspan="2">2?weeks</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="table-active"> <strong>Price: </strong> </td>
-                                                <td colspan="2">$500 </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="table-active"> <strong>Order MOQ: </strong> </td>
-                                                <td colspan="2">1211 </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="table-active"> <strong>Port of Loading: </strong</td>
-                                                <td colspan="2">Mumbai </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="table-active"> <strong>Price of Sample: </strong></td>
-                                                <td colspan="2">N/A </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="table-active"> <strong>Packging Details: </strong></td>
-                                                <td colspan="2">‎OnePlus, OnePlus Technology (Shenzhen) Ltd, Tai Ran Building C Tai Ran Road, Fu Tian District, Shen Zhen City. China,
-                                                Tel (86) 0755-61882366 </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="table-active"> <strong>Accpectble Payment Terms: </strong> </td>
-                                                <td colspan="2">Online Payment </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="table-active"> <strong>Certificate: </strong></td>
-                                                <td colspan="2">37.5 x 11 x 2.5 Centimeters </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-   <!-- footer start -->
-    <footer class="footer-light">
-        <div class="light-layout-footer-top">
-            <div class="container">
-                <section class="small-section border-section border-top-0">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="subscribe">
-                                
-                                    <p>Download Our App</p>
-                                    <a href="#" class="apple-button"><i class="fa fa-apple" aria-hidden="true"></i>App Store</a>
-                                    <a href="#" class="android-button"><i class="fa fa-android" aria-hidden="true"></i>Google Play</a>
-                                    <p>connect with us:</p>
-                                    <div class="footer-social">
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
-                                        </ul>
-                                    </div>
-                                
-                            </div>
-                        </div>
-                    
-                    </div>
-                </section>
             </div>
         </div>
-        <section class="section-b-space light-layout">
-            <div class="container">
-                <div class="row footer-theme partition-f">
-                    <div class="col">
-                        <div class="sub-title">
-                            <div class="footer-title">
-                                <h4>About us</h4>
-                            </div>
-                            <div class="footer-contant">
-                                <ul>
-                                    <li><a href="#">shipping & return</a></li>
-                                    <li><a href="#">secure shopping</a></li>
-                                    <li><a href="#">gallary</a></li>
-                                    <li><a href="#">affiliates</a></li>
-                                    <li><a href="#">contacts</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="sub-title">
-                            <div class="footer-title">
-                                <h4>Our Services</h4>
-                            </div>
-                            <div class="footer-contant">
-                                <ul>
-                                    <li><a href="#">shipping & return</a></li>
-                                    <li><a href="#">secure shopping</a></li>
-                                    <li><a href="#">gallary</a></li>
-                                    <li><a href="#">affiliates</a></li>
-                                    <li><a href="#">contacts</a></li>
-                                    <li><a href="#">secure shopping</a></li>
-                                    <li><a href="#">gallary</a></li>
-                                    <li><a href="#">affiliates</a></li>
-                                    <li><a href="#">contacts</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>         
-                    <div class="col">
-                        <div class="sub-title">
-                            <div class="footer-title">
-                                <h4>Buyer</h4>
-                            </div>
-                            <div class="footer-contant">
-                                <ul>
-                                    <li><a href="#">shipping & return</a></li>
-                                    <li><a href="#">secure shopping</a></li>
-                                    <li><a href="#">gallary</a></li>
-                                    <li><a href="#">affiliates</a></li>
-                                    <li><a href="#">contacts</a></li>
-                                </ul>
-                            </div>
-                            <div class="footer-title">
-                                <h4 style="margin: 24px 0px 0px 0px;" >Seller</h4>
-                            </div>
-                            <div class="footer-contant">
-                                <ul>
-                                    <li><a href="#">shipping & return</a></li>
-                                    <li><a href="#">secure shopping</a></li>
-                                    <li><a href="#">secure shopping</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="sub-title">
-                            <div class="footer-title">
-                                <h4>Directory</h4>
-                            </div>
-                            <div class="footer-contant">
-                                <ul>
-                                    <li><a href="#">shipping & return</a></li>
-                                    <li><a href="#">secure shopping</a></li>
-                                    <li><a href="#">gallary</a></li>
-                                    <li><a href="#">affiliates</a></li>
-                                    <li><a href="#">contacts</a></li>
-                                </ul>
+    </section>
+    <!-- product deal section start -->
+
+
+
+    <!-- product deal section start -->
+    <section class="product-decription-wapper">
+        <div class="container">
+            
+            <div class="row">
+                
+                <div class="product-decription-tabs">
+                    <hr class="cstmprdthr">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                                type="button" role="tab" aria-controls="pills-home" aria-selected="true">Decription</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                                type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Technichal Specfication </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                                type="button" role="tab" aria-controls="pills-contact" aria-selected="false"> Stock Details </button>
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <div class="Decription-table">
+                                <div class="Decription-table-title">
+                                    <h5><strong> Product Decription </strong></h5>
+                                    <hr class="mt-0">
+                                </div>
+                                <table class="table mt-4">
+                                    <thead>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="table-active"> <strong>Ready Stock Available: </strong></td>
+                                            <td colspan="2">10</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-active"> <strong>Manufacturer Date: </strong> </td>
+                                            <td colspan="2">N/A </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-active"> <strong>Expiry Date: </strong> </td>
+                                            <td colspan="2">10/3/3010 </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-active"> <strong>Production Capacity: </strong> </td>
+                                            <td colspan="2">2?weeks</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-active"> <strong>Price: </strong> </td>
+                                            <td colspan="2">$500 </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <strong>Bt-250 Is A High End Hospital Grade Monitor Designed For Multi-Bed Units With Central Station Yet Simple Enough For Private Practice, It Offers The Most Advanced Integrated Monitoring For The Delivery Room In Big Hospital; Private Obstetrician's Office; Antepartum Clinic
+
+                                </strong>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="sub-title">
-                            <div class="footer-contant">
-                                <a href="index.html"><img src="assets/images/icon/logo/stockmed-logo.png" class="img-fluid blur-up lazyloaded" alt=""></a>
-                            <p>Copyright © 2020 Stockmed All right Reserved</p>
-                            <div><a class="pv-footer" href="#">Privacy policy</a><a class="tm-footer"  href="#">Term of Use</a></div>
-                            
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <div class="technichal-specfication-table">
+                                <div class="technichal-specfication-table-title">
+                                    <h5><strong>Technichal Specfication</strong></h5>
+                                    <hr>
+                                </div>
+                                <div class="technichal-specfication-disc">
+                                    <div class="technichal-details">
+                                        <div class="techsec1">
+                                        <h5>Feature</h5>
+                                        <p> 1.  Full table functions, full Articulation Capability,</p>
+                                        <p> 2.  Removable Leg Section.</p>
+                                        <p> 3.  Full Body imaging without special accessories.</p>
+                                        <p> 4.  Durable one-touch pendant control.</p>
+                                        <p> 5.  Electrically controlled Height, Backrest.</p>
+                                        <p> 6.  Trendelenburg/Reverse, </p>
+                                        <p> 7.  Lateral Tilt. </p>
+                                        <p> 8.  Radiolucent Table top</p>
+                                        <p> 9.  4 Section seamless molded mattress</P>
+                                        </div>
+
+                                        <div class="techsec2">
+                                        <h5>Technical Specifications</h5>
+                                        <p> <strong>Lateral tilt:</strong>  '+18 deg. / -18 deg.</p>
+                                        <p> <strong>Trendelenburg:</strong> '+35 deg. / -35 deg.</p>
+                                        <p><strong> Chair Position:</strong> '90 deg. / 45deg.</p>
+                                        <p><strong> Head Section:</strong>  '+/ -45 deg.</p>
+                                        <p><strong> Leg Section:</strong>  +55deg / -100deg.</p>
+                                        <p><strong> Kidney Elevator:</strong> 15cm manual operated.</p>
+
+                                        </div>  
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                            <div class="stock-table">
+                                <div class="stock-table-title">
+                                    <h5><strong>Stock Table</strong></h5>
+                                    <hr>
+                                </div>
+                                <table class="table">
+                                    <thead>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="table-active"> <strong>Ready Stock Available: </strong></td>
+                                            <td colspan="2" >10</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-active"> <strong>Manufacturer Date: </strong> </td>
+                                            <td colspan="2" >N/A </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-active"> <strong>Expiry Date: </strong> </td>
+                                            <td colspan="2" >10/3/3010 </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-active"> <strong>Production Capacity: </strong> </td>
+                                            <td colspan="2">2?weeks</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-active"> <strong>Price: </strong> </td>
+                                            <td colspan="2">$500 </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-active"> <strong>Order MOQ: </strong> </td>
+                                            <td colspan="2">1211 </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-active"> <strong>Port of Loading: </strong</td>
+                                            <td colspan="2">Mumbai </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-active"> <strong>Price of Sample: </strong></td>
+                                            <td colspan="2">N/A </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-active"> <strong>Packging Details: </strong></td>
+                                            <td colspan="2">‎OnePlus, OnePlus Technology (Shenzhen) Ltd, Tai Ran Building C Tai Ran Road, Fu Tian District, Shen Zhen City. China,
+                                            Tel (86) 0755-61882366 </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-active"> <strong>Accpectble Payment Terms: </strong> </td>
+                                            <td colspan="2">Online Payment </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-active"> <strong>Certificate: </strong></td>
+                                            <td colspan="2">37.5 x 11 x 2.5 Centimeters </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </footer>
+        </div>
+    </section>
+
+<!-- footer start -->
+<footer class="footer-light">
+    <div class="light-layout-footer-top">
+        <div class="container">
+            <section class="small-section border-section border-top-0">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="subscribe">
+
+                            <p>Download Our App</p>
+                            <a href="#" class="apple-button"><i class="fa fa-apple" aria-hidden="true"></i>App Store</a>
+                            <a href="#" class="android-button"><i class="fa fa-android" aria-hidden="true"></i>Google
+                                Play</a>
+                            <p>connect with us:</p>
+                            <div class="footer-social">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </div>
+    <section class="section-b-space light-layout">
+        <div class="container">
+            <div class="row footer-theme partition-f">
+                <div class="col-md-2 col-sm-4">
+                    <div class="sub-title">
+                        <div class="footer-title">
+                            <h4>About us</h4>
+                        </div>
+                        <div class="footer-contant">
+                            <ul>
+                                <li><a href="#">shipping & return</a></li>
+                                <li><a href="#">secure shopping</a></li>
+                                <li><a href="#">gallary</a></li>
+                                <li><a href="#">affiliates</a></li>
+                                <li><a href="#">contacts</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <div class="sub-title">
+                        <div class="footer-title">
+                            <h4>Our Services</h4>
+                        </div>
+                        <div class="footer-contant">
+                            <ul>
+                                <li><a href="#">shipping & return</a></li>
+                                <li><a href="#">secure shopping</a></li>
+                                <li><a href="#">gallary</a></li>
+                                <li><a href="#">affiliates</a></li>
+                                <li><a href="#">contacts</a></li>
+                                <li><a href="#">secure shopping</a></li>
+                                <li><a href="#">gallary</a></li>
+                                <li><a href="#">affiliates</a></li>
+                                <li><a href="#">contacts</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <div class="sub-title">
+                        <div class="footer-title">
+                            <h4>Buyer</h4>
+                        </div>
+                        <div class="footer-contant">
+                            <ul>
+                                <li><a href="#">shipping & return</a></li>
+                                <li><a href="#">secure shopping</a></li>
+                                <li><a href="#">gallary</a></li>
+                                <li><a href="#">affiliates</a></li>
+                                <li><a href="#">contacts</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-title">
+                            <h4 style="margin: 24px 0px 0px 0px;">Seller</h4>
+                        </div>
+                        <div class="footer-contant">
+                            <ul>
+                                <li><a href="#">shipping & return</a></li>
+                                <li><a href="#">secure shopping</a></li>
+                                <li><a href="#">secure shopping</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <div class="sub-title">
+                        <div class="footer-title">
+                            <h4>Directory</h4>
+                        </div>
+                        <div class="footer-contant">
+                            <ul>
+                                <li><a href="#">shipping & return</a></li>
+                                <li><a href="#">secure shopping</a></li>
+                                <li><a href="#">gallary</a></li>
+                                <li><a href="#">affiliates</a></li>
+                                <li><a href="#">contacts</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="sub-title">
+                        <div class="footer-contant">
+                            <a href="index.html"><img src="assets/images/icon/logo/stockmed-logo.png"
+                                    class="img-fluid blur-up lazyloaded" alt=""></a>
+                            <p>Copyright © 2020 Stockmed All right Reserved</p>
+                            <div><a class="pv-footer" href="#">Privacy policy</a><a class="tm-footer" href="#">Term of
+                                    Use</a></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
 <!-- footer end -->
 
 
-    <!--modal popup start
+<!--modal popup start
     <div class="modal fade bd-example-modal-lg theme-modal" id="exampleModal" tabindex="-1" role="dialog"
         aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
@@ -1287,120 +1354,133 @@
     modal popup end-->
 
 
-    <!-- Quick-view modal popup start-->
-    <div class="modal fade bd-example-modal-lg theme-modal" id="quick-view" tabindex="-1" role="dialog"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-            <div class="modal-content quick-view-modal">
-                <div class="modal-body">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true">&times;</span></button>
-                    <div class="row">
-                        <div class="col-lg-6 col-xs-12">
-                            <div class="quick-view-img"><img src="assets/images/pro3/1.jpg" alt=""
-                                    class="img-fluid blur-up lazyload"></div>
-                        </div>
-                        <div class="col-lg-6 rtl-text">
-                            <div class="product-right">
-                                <h2>Women Pink Shirt</h2>
-                                <h3>$32.96</h3>
-                                <ul class="color-variant">
-                                    <li class="bg-light0"></li>
-                                    <li class="bg-light1"></li>
-                                    <li class="bg-light2"></li>
-                                </ul>
-                                <div class="border-product">
-                                    <h6 class="product-title">product details</h6>
-                                    <p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium
-                                        doloremque laudantium</p>
-                                </div>
-                                <div class="product-description border-product">
-                                    <div class="size-box">
-                                        <ul>
-                                            <li class="active"><a href="javascript:void(0)">s</a></li>
-                                            <li><a href="javascript:void(0)">m</a></li>
-                                            <li><a href="javascript:void(0)">l</a></li>
-                                            <li><a href="javascript:void(0)">xl</a></li>
-                                        </ul>
-                                    </div>
-                                    <h6 class="product-title">quantity</h6>
-                                    <div class="qty-box">
-                                        <div class="input-group"><span class="input-group-prepend"><button type="button"
-                                                    class="btn quantity-left-minus" data-type="minus" data-field=""><i
-                                                        class="ti-angle-left"></i></button> </span>
-                                            <input type="text" name="quantity" class="form-control input-number"
-                                                value="1">
-                                            <span class="input-group-prepend"><button type="button"
-                                                    class="btn quantity-right-plus" data-type="plus" data-field=""><i
-                                                        class="ti-angle-right"></i></button></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-buttons"><a href="#" class="btn btn-solid">add to cart</a> <a
-                                        href="#" class="btn btn-solid">view detail</a></div>
+<!-- Quick-view modal popup start-->
+<div class="modal fade bd-example-modal-lg theme-modal" id="quick-view" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content quick-view-modal">
+            <div class="modal-body">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <div class="row">
+                    <div class="col-lg-6 col-xs-12">
+                        <div class="quick-view-img"><img src="assets/images/pro3/1.jpg" alt=""
+                                class="img-fluid blur-up lazyload"></div>
+                    </div>
+                    <div class="col-lg-6 rtl-text">
+                        <div class="product-right">
+                            <h2>Women Pink Shirt</h2>
+                            <h3>$32.96</h3>
+                            <ul class="color-variant">
+                                <li class="bg-light0"></li>
+                                <li class="bg-light1"></li>
+                                <li class="bg-light2"></li>
+                            </ul>
+                            <div class="border-product">
+                                <h6 class="product-title">product details</h6>
+                                <p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium</p>
                             </div>
+                            <div class="product-description border-product">
+                                <div class="size-box">
+                                    <ul>
+                                        <li class="active"><a href="javascript:void(0)">s</a></li>
+                                        <li><a href="javascript:void(0)">m</a></li>
+                                        <li><a href="javascript:void(0)">l</a></li>
+                                        <li><a href="javascript:void(0)">xl</a></li>
+                                    </ul>
+                                </div>
+                                <h6 class="product-title">quantity</h6>
+                                <div class="qty-box">
+                                    <div class="input-group"><span class="input-group-prepend"><button type="button"
+                                                class="btn quantity-left-minus" data-type="minus" data-field=""><i
+                                                    class="ti-angle-left"></i></button> </span>
+                                        <input type="text" name="quantity" class="form-control input-number" value="1">
+                                        <span class="input-group-prepend"><button type="button"
+                                                class="btn quantity-right-plus" data-type="plus" data-field=""><i
+                                                    class="ti-angle-right"></i></button></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-buttons"><a href="#" class="btn btn-solid">add to cart</a> <a href="#"
+                                    class="btn btn-solid">view detail</a></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Quick-view modal popup end-->
+</div>
+<!-- Quick-view modal popup end-->
 
 
-    <!-- tap to top -->
-    <div class="tap-top top-cls">
-        <div>
-            <i class="fa fa-angle-double-up"></i>
-        </div>
+<!-- tap to top -->
+<div class="tap-top top-cls">
+    <div>
+        <i class="fa fa-angle-double-up"></i>
     </div>
-    <!-- tap to top end -->
+</div>
+<!-- tap to top end -->
 
 
-    <!-- latest jquery-->
-    <script src="assets/js/jquery-3.3.1.min.js"></script>
+<!-- latest jquery-->
+<script src="assets/js/jquery-3.3.1.min.js"></script>
 
-    <!-- slick js-->
-    <script src="assets/js/slick.js"></script>
-    <script src="assets/js/slick-animation.min.js"></script>
+<!-- slick js-->
+<script src="assets/js/slick.js"></script>
+<script src="assets/js/slick-animation.min.js"></script>
 
-    <!-- menu js-->
-    <script src="assets/js/menu.js"></script>
+<!-- menu js-->
+<script src="assets/js/menu.js"></script>
 
-    <!-- lazyload js-->
-    <script src="assets/js/lazysizes.min.js"></script>
+<!-- lazyload js-->
+<script src="assets/js/lazysizes.min.js"></script>
 
-    <!-- Timer js-->
-    <script src="assets/js/timer.js"></script>
+<!-- Timer js-->
+<script src="assets/js/timer.js"></script>
 
-    <!-- Bootstrap js-->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap js-->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Bootstrap Notification js-->
-    <script src="assets/js/bootstrap-notify.min.js"></script>
-    <!-- Zoom js-->
-    <script src="assets/js/jquery.elevatezoom.js"></script>
+<!-- Bootstrap Notification js-->
+<script src="assets/js/bootstrap-notify.min.js"></script>
 
-    <!-- Theme js-->
-    <script src="assets/js/theme-setting.js"></script>
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/custom-slick-animated.js"></script>
+<!-- Theme js-->
+<script src="assets/js/theme-setting.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/custom-slick-animated.js"></script>
 
 
-    <script>
-        $(window).on('load', function () {
-            setTimeout(function () {
-                $('#exampleModal').modal('show');
-            }, 2500);
-        });
-        function openSearch() {
-            document.getElementById("search-overlay").style.display = "block";
-        }
+<script>
+    $(window).on('load', function () {
+        setTimeout(function () {
+            $('#exampleModal').modal('show');
+        }, 2500);
+    });
+    function openSearch() {
+        document.getElementById("search-overlay").style.display = "block";
+    }
 
-        function closeSearch() {
-            document.getElementById("search-overlay").style.display = "none";
-        }
-    </script>
+    function closeSearch() {
+        document.getElementById("search-overlay").style.display = "none";
+    }
+</script>
+<script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
+<script>
+    $("#testimonial-slider").owlCarousel({
+        items: 2,
+        itemsDesktop: [1000, 2],
+        itemsDesktopSmall: [990, 2],
+        itemsTablet: [768, 1],
+        pagination: true,
+        navigation: false,
+        navigationText: ["", ""],
+        slideSpeed: 1000,
+        autoPlay: true
+    });
+
+</script>
 
 </body>
 

@@ -99,7 +99,12 @@
     .addtocart_count .title-basic a {
         width: 135px;
     }
+
+    .ratio_square .right-part {
+        margin-top: 10px;
+    }
 }
+
 
 
 @media (max-width: 946px) {
@@ -152,6 +157,13 @@
         margin-bottom: 2rem;
     }
 
+    .nav-right-section {
+        display: none;
+    }
+
+    .breadcrumb-section {
+        margin-bottom: 10px;
+    }
 
     .small-slider .container,
     .addtocart_count.ratio_square .container,
@@ -188,5 +200,9 @@
 
     a.android-button {
         float: right;
+    }
+
+    .productstockdetail-wapper .horizontel-slider{
+        display: none;
     }
 }

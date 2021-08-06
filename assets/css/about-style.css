@@ -60,19 +60,21 @@
   background: white;
 }
 
-.about-page .abour-content-wapper h2{
-  text-transform:none;
+.about-page .abour-content-wapper h2 {
+  text-transform: none;
 }
+
 .about-cls section.service.small-section {
   margin: 0 auto;
   width: 75%;
   padding: 60px 0px;
 }
 
-.about-page .abour-content-wapper p{
- line-height: 19.8px;
- color: black;
- font-size: 16px;}
+.about-page .abour-content-wapper p {
+  line-height: 19.8px;
+  color: black;
+  font-size: 16px;
+}
 
 .service-block+.service-block {
   border-left: none;
@@ -82,18 +84,18 @@
   margin-right: 30px;
 }
 
-.about-cls .service-block .icon-vison h3{
+.about-cls .service-block .icon-vison h3 {
   color: #000000;
   font-weight: bold;
 }
 
 
-.about-cls .service-block .icon-vison p{
+.about-cls .service-block .icon-vison p {
   line-height: 19.8px;
- color: black;
- font-size: 14px;
- font-weight: 400;
- 
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+
 }
 
 .testimonial-slider .slick-slide .media {
@@ -104,7 +106,14 @@
 }
 
 .testimonial .testimonial-slider .slick-track .slick-slide:nth-child(even) .media {
-  padding-left: 1rem;
+  padding-left: 15px;
+}
+
+.testimonial .testimonial-slider .slick-track .slick-slide .media .text-center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .testimonial .testimonial-slider .media img {
@@ -116,7 +125,7 @@
 
 .testimonial .testimonial-slider .media .slider-content {
   float: left;
-  width: 70%;
+  width: 60%;
   display: inline-block;
   text-align: left;
   padding-left: 20px;
@@ -127,7 +136,7 @@
 }
 
 .testimonial .testimonialtext h2 {
-  color:#000000;
+  color: #000000;
   font-weight: 800;
   text-transform: none;
 }
@@ -152,67 +161,68 @@
   margin: 0px;
 }
 
-.about-page .about-page-bgimg{
- background-image: url(/assets/images/about/About-us-1.png);
+.about-page .about-page-bgimg {
+  background-image: url(/assets/images/about/About-us-1.png);
 }
 
-.about-page .about-page-bgimg2{
+.about-page .about-page-bgimg2 {
   background-image: url(/assets/images/about/About-us-2.png);
 }
 
-.mobilehide{
+.mobilehide {
   display: block;
 }
 
 
-@media (max-width: 992px) { 
+@media (max-width: 992px) {
 
-  .mobilehide{
+  .mobilehide {
     display: none;
   }
-  
-  .about-page-bgimg .abour-content-wapper {
-     padding: 0rem; 
-  
-}
 
-  
-  .about-page .about-page-bgimg{
- background-image: none;
+  .about-page-bgimg .abour-content-wapper {
+    padding: 0rem;
+
+  }
+
+
+  .about-page .about-page-bgimg {
+    background-image: none;
   }
 
   .about-page-bgimg {
     padding: 0rem 1rem;
   }
-  
-   .abour-content-wapper {
+
+  .abour-content-wapper {
     padding: 0rem;
     margin-bottom: 20px;
   }
 
- 
 
-  section, .section-t-space {
+
+  section,
+  .section-t-space {
     padding-top: 10px;
+  }
+
+  .about-page .about-page-bgimg2 {
+    background-image: none;
+    padding: 11px;
+    margin-top: 30px;
+  }
+
+  .about-cls section.service.small-section {
+
+    width: 100%;
+    padding: 10px 0px;
+  }
+
 }
 
-.about-page .about-page-bgimg2{
-background-image: none;
-padding: 11px;
-margin-top: 30px;
-}
 
-.about-cls section.service.small-section {
-  
-  width: 100%;
-  padding: 10px 0px;
-}
- 
- }
-
-
- @media (max-width: 575.98px) {
+@media (max-width: 575.98px) {
   .about-cls .service-block img {
     margin-right: 0px;
-}
   }
+}
