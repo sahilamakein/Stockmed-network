@@ -71,62 +71,73 @@
     color: black;
 }
 
-.productstockdetail-wapper .product-title-wapper h3{
+.productstockdetail-wapper .product-title-wapper h3 {
     font-size: 18px;
     font-weight: 800;
-    color: #070707;}
+    color: #070707;
+}
 
 
-.productstockdetail-wapper .product-price-wapper .price-section{
-font-size: 26px;
-font-weight: 800;}
+.productstockdetail-wapper .product-price-wapper .price-section {
+    font-size: 26px;
+    font-weight: 800;
+}
 
 
-.productstockdetail-wapper .product-price-wapper .price-section .cstmdollar{
-    color:#f35c51;}
+.productstockdetail-wapper .product-price-wapper .price-section .cstmdollar {
+    color: #f35c51;
+}
 
-.productstockdetail-wapper .product-price-wapper .share-section{
- font-size: 18px;
- font-weight: 400;}
+.productstockdetail-wapper .product-price-wapper .share-section {
+    font-size: 18px;
+    font-weight: 400;
+}
 
-.productstockdetail-wapper .product-price-wapper .share-section .fa.fa-share-alt{
+.productstockdetail-wapper .product-price-wapper .share-section .fa.fa-share-alt {
     font-size: 24px;
-    color:#f35c51;}
+    color: #f35c51;
+}
 
-.productstockdetail-wapper .product-price-wapper .cstmhr{
-    height: 0.5px;}
+.productstockdetail-wapper .product-price-wapper .cstmhr {
+    height: 0.5px;
+}
 
- .productstockdetail-wapper .product-qty-wapper .qty-heading p{
-     color: #333333;
- }
+.productstockdetail-wapper .product-qty-wapper .qty-heading p {
+    color: #333333;
+}
 
-.productstockdetail-wapper .product-qty-wapper .qty-main{
- width: 100%;
- display: inline-block;}
+.productstockdetail-wapper .product-qty-wapper .qty-main {
+    width: 100%;
+    display: inline-block;
+}
 
-.productstockdetail-wapper .product-qty-wapper .qty-main .qtynum{
- width:20%;
- display: inline-block;}
+.productstockdetail-wapper .product-qty-wapper .qty-main .qtynum {
+    width: 20%;
+    display: inline-block;
+}
 
-.productstockdetail-wapper .product-qty-wapper .qty-main .qtymum2{
-    width:30%; 
-    display: inline-block;}
+.productstockdetail-wapper .product-qty-wapper .qty-main .qtymum2 {
+    width: 30%;
+    display: inline-block;
+}
 
-.productstockdetail-wapper .product-qty-wapper .qty-main .qtybtn{
-    width:43%;
-    display: inline-block;}
+.productstockdetail-wapper .product-qty-wapper .qty-main .qtybtn {
+    width: 43%;
+    display: inline-block;
+}
 
-.productstockdetail-wapper .product-qty-wapper .qty-main .qtynum input{
-   width: 54%;
-   border: 1px solid #8080808a;
-   height: 33px;
+.productstockdetail-wapper .product-qty-wapper .qty-main .qtynum input {
+    width: 54%;
+    border: 1px solid #8080808a;
+    height: 33px;
 }
 
 .productstockdetail-wapper .product-qty-wapper .qty-main select.form-select.form-select-sm {
-width: 90%;
-height: 33px;
-border: 1px solid #8080808a;
-border-radius: 0px;}
+    width: 90%;
+    height: 33px;
+    border: 1px solid #8080808a;
+    border-radius: 0px;
+}
 
 .productstockdetail-wapper .product-qty-wapper .qty-main .qtybtn .btn {
     width: 48%;
@@ -135,67 +146,72 @@ border-radius: 0px;}
     font-size: 13px;
     border-radius: 3px;
     line-height: 12px;
-    height: 33px; }
+    height: 33px;
+}
 
- .productstockdetail-wapper .product-qty-wapper .qty-main .qtybtn .btn.btn-primary{
+.productstockdetail-wapper .product-qty-wapper .qty-main .qtybtn .btn.btn-primary {
     background-color: #073aab;
     border-color: #073aab;
     padding: 3px 9px;
- }
+}
 
- .productstockdetail-wapper .product-qty-wapper .qty-main .qtybtn .btn .cstmquote{
-     font-size: 10px;
- }
+.productstockdetail-wapper .product-qty-wapper .qty-main .qtybtn .btn .cstmquote {
+    font-size: 10px;
+}
 
- .productstockdetail-wapper .product-decription-wapper .product-decription .product-decription-heading{
+.productstockdetail-wapper .product-decription-wapper .product-decription .product-decription-heading {
     color: #a7a7a7;
     text-transform: uppercase;
- }
+}
 
 
- .productstockdetail-wapper .product-decription-wapper .product-decription .product-decription-content p{
- font-size: 14px;
- color: #1a1a1a;
- line-height: 19px;
- word-spacing: 2px;
- font-weight: 600; }
+.productstockdetail-wapper .product-decription-wapper .product-decription .product-decription-content p {
+    font-size: 14px;
+    color: #1a1a1a;
+    line-height: 19px;
+    word-spacing: 2px;
+    font-weight: 600;
+}
 
- .productstockdetail-wapper .inquery-wapper .profile-info {
- background-color: #f5f5f5;
- padding: 25px 14px;
- }
- .productstockdetail-wapper .inquery-wapper .profile-info .profile-img{
+.productstockdetail-wapper .inquery-wapper .profile-info {
+    background-color: #f5f5f5;
+    padding: 25px 14px;
+}
+
+.productstockdetail-wapper .inquery-wapper .profile-info .profile-img {
     max-width: 100%;
- }
+}
 
- .productstockdetail-wapper .inquery-wapper .profile-info .profile-phone p{
- font-size: 21px;
- color: #000000; }
+.productstockdetail-wapper .inquery-wapper .profile-info .profile-phone p {
+    font-size: 21px;
+    color: #000000;
+}
 
- .productstockdetail-wapper .inquery-wapper .profile-info .profile-phone p .fa.fa-phone{
-     color:#f35c51;
- }
+.productstockdetail-wapper .inquery-wapper .profile-info .profile-phone p .fa.fa-phone {
+    color: #f35c51;
+}
 
- .productstockdetail-wapper .inquery-wapper .profile-name h3{
-     font-size: 25px;
+.productstockdetail-wapper .inquery-wapper .profile-name h3 {
+    font-size: 25px;
     font-weight: 800;
     color: black;
-    margin-bottom:3px;
- }
+    margin-bottom: 3px;
+}
 
- .productstockdetail-wapper .inquery-wapper .profile-name p{
+.productstockdetail-wapper .inquery-wapper .profile-name p {
     font-size: 18px;
     color: #000000;
- }
+}
 
- .productstockdetail-wapper .inquery-wapper .profile-cta-buttons .enquery-button .fa{
+.productstockdetail-wapper .inquery-wapper .profile-cta-buttons .enquery-button .fa {
     font-size: 20px;
     color: white;
     background-color: #3c3c3c;
     border-radius: 50%;
-    padding: 7px 9px;}
+    padding: 7px 9px;
+}
 
-    .productstockdetail-wapper .inquery-wapper .profile-cta-buttons .enquery-button .btn1.btn{
+.productstockdetail-wapper .inquery-wapper .profile-cta-buttons .enquery-button .btn1.btn {
     line-height: 14px;
     font-size: 12px;
     text-transform: none;
@@ -203,167 +219,198 @@ border-radius: 0px;}
     margin-top: -7px;
     margin-left: -12px;
     padding: 5px 20px;
-    border-radius: 5px;}
+    border-radius: 5px;
+}
 
-    .productstockdetail-wapper .inquery-wapper .profile-cta-buttons .enquery-button .btn1.btn.btn-dark{
+.productstockdetail-wapper .inquery-wapper .profile-cta-buttons .enquery-button .btn1.btn.btn-dark {
     background-color: #3c3c3c;
-    border-color:#3c3c3c
+    border-color: #3c3c3c
 }
 
-.productstockdetail-wapper .inquery-wapper .profile-cta-buttons{
+.productstockdetail-wapper .inquery-wapper .profile-cta-buttons {
     width: 100%;
-    display: inline-block;}
-
-
-    .productstockdetail-wapper .inquery-wapper .profile-cta-buttons .enquery-button{
-        width: 45%;
-        display: inline-block;
-    }
-
-    .productstockdetail-wapper .inquery-wapper .profile-cta-buttons .enquery-button2{
-        width: 52%;
-        display: inline-block;
-    }
-
-    .productstockdetail-wapper .inquery-wapper .profile-cta-buttons .enquery-button2 .fa{
-        font-size: 20px;
-        color: white;
-        background-color: #6ac259;
-        border-radius: 50%;
-        padding: 8px 9px;}
-        
-        .productstockdetail-wapper .inquery-wapper .profile-cta-buttons .enquery-button2 .btn2.btn{
-            line-height: 14px;
-            font-size: 12px;
-            text-transform: none;
-            font-weight: 400;
-            margin-top: -7px;
-            margin-left: -12px;
-            padding: 5px 20px;
-            border-radius: 5px;}
-
-            .productstockdetail-wapper .inquery-wapper .profile-cta-buttons .enquery-button2 .btn2.btn.btn-dark{
-                background-color: #6ac259;
-                border-color:#6ac259;
-            }
-
-            .productstockdetail-wapper .inquery-wapper .profile-chat-buttons .chat-button .btn3.btn{
-                width: 80%;
-                border-radius: 5px;
-            }
- .productstockdetail-wapper .inquery-wapper .profile-chat-buttons .chat-button .btn3.btn.btn-dark{
-    background-color: #6ac259;
-    border-color:#6ac259;
+    display: inline-block;
 }
-.productstockdetail-wapper .inquery-wapper  .profile-chat-buttons .chat-button .fa {
+
+
+.productstockdetail-wapper .inquery-wapper .profile-cta-buttons .enquery-button {
+    width: 45%;
+    display: inline-block;
+}
+
+.productstockdetail-wapper .inquery-wapper .profile-cta-buttons .enquery-button2 {
+    width: 52%;
+    display: inline-block;
+}
+
+.productstockdetail-wapper .inquery-wapper .profile-cta-buttons .enquery-button2 .fa {
     font-size: 20px;
     color: white;
-    background-color: #6ac259;}
+    background-color: #6ac259;
+    border-radius: 50%;
+    padding: 8px 9px;
+}
 
-.addtocart_count .chat-button .btn{
+.productstockdetail-wapper .inquery-wapper .profile-cta-buttons .enquery-button2 .btn2.btn {
+    line-height: 14px;
+    font-size: 12px;
+    text-transform: none;
+    font-weight: 400;
+    margin-top: -7px;
+    margin-left: -12px;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+.productstockdetail-wapper .inquery-wapper .profile-cta-buttons .enquery-button2 .btn2.btn.btn-dark {
+    background-color: #6ac259;
+    border-color: #6ac259;
+}
+
+.productstockdetail-wapper .inquery-wapper .profile-chat-buttons .chat-button .btn3.btn {
+    width: 80%;
+    border-radius: 5px;
+}
+
+.productstockdetail-wapper .inquery-wapper .profile-chat-buttons .chat-button .btn3.btn.btn-dark {
+    background-color: #6ac259;
+    border-color: #6ac259;
+}
+
+.productstockdetail-wapper .inquery-wapper .profile-chat-buttons .chat-button .fa {
+    font-size: 20px;
+    color: white;
+    background-color: #6ac259;
+}
+
+.addtocart_count .chat-button .btn {
 
     line-height: 16px;
     font-size: 12px;
     width: 90%;
-    font-weight:normal;
+    font-weight: normal;
 }
 
-.addtocart_count .chat-button .btn.btn-dark{
+.addtocart_count .chat-button .btn.btn-dark {
     background-color: #40ba8e;
-    border-color:#40ba8e;
+    border-color: #40ba8e;
 
 }
-.addtocart_count .chat-button .fa{
+
+.addtocart_count .chat-button .fa {
     font-size: 17px;
 }
 
 
 
-.product-decription-tabs .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+.product-decription-tabs .nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
     color: #fff;
     background-color: #f88600;
 }
 
 .product-decription-tabs .nav-link {
     border: none;
-background-color: transparent;
+    background-color: transparent;
 
 }
 
-.product-decription-wapper .product-decription-tabs .cstmprdthr{
+.product-decription-wapper .product-decription-tabs .cstmprdthr {
     height: 0.5px;
 }
 
-.product-decription-wapper .product-decription-tabs .tab-content .Decription-table .table{
+.product-decription-wapper .product-decription-tabs .tab-content .Decription-table .table {
     border-color: #dee2e6;
     width: 64%;
 }
 
-.product-decription-wapper .product-decription-tabs .tab-content .Decription-table .Decription-table-title h5{
+.product-decription-wapper .product-decription-tabs .tab-content .Decription-table .Decription-table-title h5 {
     font-weight: 600px;
     text-transform: uppercase;
-} 
+}
 
-.product-decription-wapper .product-decription-tabs .tab-content .Decription-table .Decription-table-title hr{
-    height:3px;
+.product-decription-wapper .product-decription-tabs .tab-content .Decription-table .Decription-table-title hr {
+    height: 3px;
     color: #f88f12;
     opacity: 1;
 }
 
 
-.product-decription-wapper .product-decription-tabs .tab-content .Decription-table .table > :not(caption) > * > * {
+.product-decription-wapper .product-decription-tabs .tab-content .Decription-table .table> :not(caption)>*>* {
     border: 1px solid #d2d2d2;
     padding: 4px 10px;
 }
 
 .product-decription-wapper .product-decription-tabs .tab-content .Decription-table .table-active {
     --bs-table-accent-bg: #fff7ee;
-     width: 35%;
+    width: 35%;
 }
 
-.product-decription-wapper .product-decription-tabs .tab-content .technichal-specfication-table .technichal-specfication-table-title h5{
+.product-decription-wapper .product-decription-tabs .tab-content .technichal-specfication-table .technichal-specfication-table-title h5 {
     font-weight: 600px;
     text-transform: uppercase;
 }
 
-.product-decription-wapper .product-decription-tabs .tab-content .technichal-specfication-table hr{
-    height:3px;
+.product-decription-wapper .product-decription-tabs .tab-content .technichal-specfication-table hr {
+    height: 3px;
     color: #f88f12;
-    opacity: 1;}
+    opacity: 1;
+}
 
-.product-decription-wapper .product-decription-tabs .tab-content .technichal-specfication-table .technichal-specfication-disc .technichal-details .techsec1 h5{
-    font-weight: 600;
-    margin-bottom: 20px;}
-
-.product-decription-wapper .product-decription-tabs .tab-content .technichal-specfication-table .technichal-specfication-disc .technichal-details .techsec1 p{
-    color: black;}
-
-.product-decription-wapper .product-decription-tabs .tab-content .technichal-specfication-table .technichal-specfication-disc .technichal-details .techsec2 h5{
+.product-decription-wapper .product-decription-tabs .tab-content .technichal-specfication-table .technichal-specfication-disc .technichal-details .techsec1 h5 {
     font-weight: 600;
     margin-bottom: 20px;
-    margin-top: 30px;}
+}
 
-.product-decription-wapper .product-decription-tabs .tab-content .technichal-specfication-table .technichal-specfication-disc .technichal-details .techsec2 p{
-    color: black;}
+.product-decription-wapper .product-decription-tabs .tab-content .technichal-specfication-table .technichal-specfication-disc .technichal-details .techsec1 p {
+    color: black;
+}
+
+.product-decription-wapper .product-decription-tabs .tab-content .technichal-specfication-table .technichal-specfication-disc .technichal-details .techsec2 h5 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.product-decription-wapper .product-decription-tabs .tab-content .technichal-specfication-table .technichal-specfication-disc .technichal-details .techsec2 p {
+    color: black;
+}
 
 
-.product-decription-wapper .product-decription-tabs .tab-content .stock-table .stock-table-tittle h5{
+.product-decription-wapper .product-decription-tabs .tab-content .stock-table .stock-table-tittle h5 {
     font-weight: 600px;
-    text-transform: uppercase;}
+    text-transform: uppercase;
+}
 
-    .product-decription-wapper .product-decription-tabs .tab-content .stock-table hr{
-        height:3px;
-        color: #f88f12;
-        opacity: 1;}
+.product-decription-wapper .product-decription-tabs .tab-content .stock-table hr {
+    height: 3px;
+    color: #f88f12;
+    opacity: 1;
+}
 
-.product-decription-wapper .product-decription-tabs .tab-content .stock-table .table{
+.product-decription-wapper .product-decription-tabs .tab-content .stock-table .table {
     border-color: #dee2e6;
-    width: 90%;}
+    width: 90%;
+}
 
-    .product-decription-wapper .product-decription-tabs .tab-content .stock-table .table > :not(caption) > * > * {
-        border: 1px solid #d2d2d2;
-        padding: 4px 10px;}
-    
-    .product-decription-wapper .product-decription-tabs .tab-content .stock-table .table-active {
-        --bs-table-accent-bg: #fff7ee;}
-    
+.product-decription-wapper .product-decription-tabs .tab-content .stock-table .table> :not(caption)>*>* {
+    border: 1px solid #d2d2d2;
+    padding: 4px 10px;
+}
+
+.product-decription-wapper .product-decription-tabs .tab-content .stock-table .table-active {
+    --bs-table-accent-bg: #fff7ee;
+}
+
+
+
+@media (max-width: 991px) {
+    /* .header-style-5 .bottom-part {
+        display: none;
+    } */
+
+    .banner-wapper .breadcrumb-section .container {
+        max-width: 98%;
+        padding: 0px 10px;
+    }
+}
