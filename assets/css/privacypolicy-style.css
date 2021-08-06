@@ -27,3 +27,45 @@
     color: black;
     font-size: 17px;
 }
+
+
+.about-page.privacypolicy .about-page-bgimg {
+  background-image: none;
+  padding: 20px 60px;
+}
+
+@media (max-width: 768px) { 
+  
+  .about-page.privacypolicy .about-page-bgimg {
+    padding: 0px; 
+}
+
+.about-page.privacypolicy .abour-content-wapper p {
+text-align: left;
+}
+
+.about-page.privacypolicy .about-page-bgimg .abour-content-wapper h2 {
+text-align: left;
+}
+
+.banner-wapper.privacypoli .breadcrumb-section .container {
+  padding: 0px 73px;
+}
+
+.banner-wapper.privacypoli .breadcrumb-section.title-wpper .page-title h2 {
+
+  font-size: 35px;
+}
+
+}
+
+@media (max-width: 576px) { 
+   .banner-wapper.privacypoli .breadcrumb-section.title-wpper .page-title h2 {
+    font-size: 32px;
+    text-align: left;
+}
+
+.banner-wapper .breadcrumb-section.title-wpper {
+  padding: 30px 0px 20px 0px;
+}
+ }

@@ -113,3 +113,48 @@
     font-size: 13px;
     font-weight: 600;
 }
+
+
+
+@media (max-width: 992px) { 
+
+    .purchasedlist-page .product .secondsec .right-sec .buttons-wapper .btn {
+        padding: 6px 9px;
+        font-size: 8.5px;
+        align-items: center;
+        margin-top: 0px;
+    }
+    
+    
+    .purchasedlist-page .product .livechat-wapper {
+        right: -5px;
+    }
+
+    .purchasedlist-page .product .firstsec .left-sec .livechat-wapper .livechat-ofline img{
+        width: 50%;
+    }
+    .purchasedlist-page .product .firstsec .left-sec .livechat-wapper .livechat-online img{
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 576px) { 
+
+    .purchasedlist-page .product .firstsec .imagewrapper img {
+     width: auto;
+       
+    }
+
+    .purchasedlist-page .product .firstsec .imagewrapper {
+        text-align: center;
+    }
+ 
+    .purchasedlist-page .product .firstsec .left-sec{
+        padding: 20px !important;
+    }
+
+    .purchasedlist-page .product .firstsec .iconwrapper .fa.fa-heart {
+        margin-right: 10px;
+    }
+ }

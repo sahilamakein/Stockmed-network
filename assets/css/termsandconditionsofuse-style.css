@@ -9,3 +9,14 @@
 .about-page.termsandconditionsofuse .about-page-bgimg .abour-content-wapper h2 {
   padding-top: 2rem;
 }
+
+.about-page .abour-content-wapper.termandcond p{
+  line-height: 19.8px;
+  font-size: 17px;
+  margin-bottom: 15px;
+
+}
+
+.about-page.termsandconditionsofuse .about-page-bgimg {
+  background-image: none;
+}
