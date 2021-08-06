@@ -70,6 +70,17 @@
   padding: 60px 0px;
 }
 
+.theme-color-11.abt{
+  background-color: white;
+
+}
+.about-page.abtclr{
+  background-color: white;
+}
+
+.about-cls.iconss {
+  background-color: white;
+}
 .about-page .abour-content-wapper p {
   line-height: 19.8px;
   color: black;
