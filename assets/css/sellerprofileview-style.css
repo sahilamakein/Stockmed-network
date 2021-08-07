@@ -353,3 +353,59 @@
 .breadcrumb-section .tagright p{
   color: black;
 }
+
+
+.about-page .about-page-bgimg.profilereview{
+  background-image: none;
+}
+
+@media (max-width: 992px) { 
+
+  .breadcrumb-section .tagright {
+    border-radius: 37px;
+    margin-top: 30%;
+    right: 0px;
+}
+ }
+
+
+ @media (max-width: 768px) { 
+  .breadcrumb-section .cstmpdng1 {
+     margin-bottom: 0px;
+  }
+
+  .breadcrumb-section .tagright {
+    margin-top: 0%;
+  float: none;
+}
+.review-form-wapper .sellerprofile-bottom {
+  margin-bottom: 15px;
+}
+}
+
+
+@media (max-width: 578px) { 
+
+  .breadcrumb-section .cstprofileview{
+    text-align: center;
+  }
+  .breadcrumb-section .tagright {
+    position: inherit;
+ }
+ .breadcrumb-section .tagright.pull-right {
+ 
+  margin-top: 10px;
+}
+
+.about-page-bgimg.profilereview .abour-content-wapper {
+  margin-top: 15px;
+}
+
+.breadcrumb-section .profile-info .location-wapper .location-address p {
+  text-align: center;
+}
+
+.breadcrumb-section .profile-info .contact-info-wapper {
+  text-align: center;
+}
+}

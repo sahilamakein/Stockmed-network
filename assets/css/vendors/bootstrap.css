@@ -7630,7 +7630,7 @@
  .container-lg,
  .container-xl,
  .container-xxl {
-   width: 100%;
+   width: 99.7%;
    padding-right: var(--bs-gutter-x, 0.75rem);
    padding-left: var(--bs-gutter-x, 0.75rem);
    margin-right: auto;

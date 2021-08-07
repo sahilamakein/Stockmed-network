@@ -20,3 +20,23 @@
 .about-page.termsandconditionsofuse .about-page-bgimg {
   background-image: none;
 }
+
+
+@media (max-width: 768px) { 
+  .about-page.termsandconditionsofuse .about-page-bgimg .abour-content-wapper h2 {
+    text-align: left;
+}
+
+.about-page .abour-content-wapper.termandcond p {
+  text-align: left;
+}
+
+ }
+
+ @media (max-width: 576px) { 
+
+ .banner-wapper .breadcrumb-section.title-wpper .page-title h2 {
+   text-align: left;
+ }
+  
+  }

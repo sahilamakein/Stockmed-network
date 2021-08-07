@@ -39181,3 +39181,24 @@ li.onhover-div.mobile-search {
   }
 
 }
+
+
+
+/*
+
+@media only screen and (max-width: 1200px)  and (min-width: 992px) { 
+
+ .header-style-5 .main-menu .menu-center .form.form_search{
+     width: 400px !important; 
+     margin-left: 25px;
+  }
+ .header-style-5 .main-menu .menu-center .form-right {
+      width: 33% !important;
+    }
+  
+ .header-style-5 .main-menu .menu-center select#s-category {
+      margin-left: 17px!important;
+  }
+  
+  }
+*/

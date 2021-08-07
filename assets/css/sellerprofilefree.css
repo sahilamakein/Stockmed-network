@@ -1,0 +1,406 @@
+
+  .about-page-bgimg .abour-content-wapper {
+    padding: 0rem;
+    background: white;
+    width: 81%;
+    margin: 0px auto;
+  }
+  
+  .about-page.privacypolicy .abour-content-wapper p {
+    line-height: 19.8px;
+    color: black;
+    font-size: 17px;
+  }
+  
+  .banner-wapper .breadcrumb-section.title-wpper {
+    padding: 5px 0px 50px 0px;
+  }
+  
+  .sellerpdfslider .sellerpdfslider-wrap {
+    padding: 10px;
+    background: #ebecee;
+  }
+  
+  .sellerpdfslider .sellerpdfslider-wrap .img-wrapper {
+    border: 2px solid #bdbdbd;
+    padding: 10px;
+  }
+  .sellerpdfslider .sellerpdfslider-box .img-wrapper .front {
+    text-align: center;
+  }
+  
+  .sellerpdfslider .sellerpdfslider-box .img-wrapper .front i {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 55px;
+  }
+  
+  .sellerpdfslider .sellerpdfslider-box .img-wrapper .sellerpdfslider_link a {
+    font-size: 17px;
+    color: black;
+    margin-top: 5px;
+    display: block;
+    font-weight: 500;
+  }
+  
+  .breadcrumb-section .profile-info .srat-rating-wapper .startxt {
+    color:white;
+    font-size: 16px;
+  }
+  
+  .breadcrumb-section .profile-info .srat-rating-wapper .fa.fa-star{
+    color:yellow;
+    font-size: 16px;
+  }
+  
+  .breadcrumb-section .profile-info .page-title h3{
+    color:white;
+    font-weight: bold;
+    font-size: 35px;
+  }
+  
+   .breadcrumb-section .profile-info .location-wapper .location-address p {
+      color: white;
+      font-size: 18px;
+   }
+  
+  .breadcrumb-section .profile-info .contact-info-wapper ul li {
+      color: white;
+      font-size: 18px;
+    }
+  
+  .breadcrumb-section .cstmpdng1{
+   margin-bottom: -106px ;
+   margin-top: 20px;
+    }
+  
+  .account-info-wapper .account-info-item .fa.fa-building-o{
+   font-size: 20px;
+   color:#0646a5;
+   background-color: #d7e7ff;
+   padding: 15px 17px;
+   border-radius: 30px;
+  }
+  
+  .account-info-wapper .account-info-item .fa.fa-usd{
+    font-size: 20px;
+    background-color: #fdecd0;
+    border-radius: grayscale;
+    padding: 14px 19px;
+    border-radius: 44px 50px;
+    color: #986b20;
+    }
+  
+      
+  .account-info-wapper .account-info-item .fa.fa-users{
+      font-size: 20px;
+      background-color: #ffe1e2;
+      border-radius: grayscale;
+      padding: 16px 16px;
+      border-radius: 46px 44px;
+      color: #9c484b;
+      }
+  
+    .account-info-wapper .account-info-item .fa.fa-percent{
+    font-size: 20px;
+    background-color: #defad1;
+    border-radius: grayscale;
+    padding: 17px 18px;
+    border-radius: 46px 44px;
+    color: #598f40;
+    }
+   
+    .account-info-wapper .account-info-item .fa.fa-calendar{
+    font-size: 20px;
+    background-color: #dcd5f4;
+    border-radius: grayscale;
+    padding: 17px 18px;
+    border-radius: 46px 44px;
+    color: #6856a3;
+    }
+  
+  .account-info-wapper .account-info-item .fa.fa-trophy{
+      font-size: 20px;
+      background-color: #d5eff4;
+      border-radius: grayscale;
+      padding: 17px 18px;
+      border-radius: 46px 44px;
+      color: #528994;
+      }
+  
+   .account-info-wapper .account-info-item .fa.fa-check{
+        font-size: 20px;
+        background-color: #d5eff4;
+        border-radius: grayscale;
+        padding: 17px 18px;
+        border-radius: 42px 44px;
+        color: #528994;
+        }
+  
+   .account-info-wapper .account-info-item .account-item-discription p{
+    color: #000000;
+    margin-bottom: 1px;
+    margin-top: 10px;
+   }
+  
+   .account-info-wapper .account-info-item .account-item-discription h6{
+     color:#f35c51;
+   }
+  
+   .about-page .about-page-bgimg.profilereview{
+    padding: 0rem 0rem;
+  
+   }
+  
+   .about-page .cstmabt{
+    display: flex;
+    align-items: center;
+   }
+  
+   .about-page-bgimg.profilereview .abour-content-wapper {
+    padding: 0rem;
+    background: white;
+    width: 100%; 
+    
+  }
+  
+  .video-wapper .testimonialtext h2{
+    text-transform: none;
+  }
+  
+  .addtocart_count .sellerprofilesec{
+    border:1px solid #e4e4e4;
+    box-shadow: 0px 0px 4px 1px rgba(140, 140, 140, 0.1);
+  }
+  
+  .addtocart_count.sellerproflieprdt{
+   background-color: transparent;
+  }
+  
+  .sellerpdfslider .sellerpdfslider-wrap {
+    padding: 10px;
+    background: #ebecee;
+  }
+  
+  .sellerpdfslider .sellerpdfslider-wrap .img-wrapper {
+    border: 2px solid #bdbdbd;
+    padding: 10px;
+  }
+  
+  .sellerpdfslider .sellerpdfslider-wrap .img-wrapper:hover .sellerpdfslider_link a {
+    color: #fff;
+  }
+  
+  .sellerpdfslider .sellerpdfslider-wrap .img-wrapper:hover {
+    background-color: #e7372b;
+    border-color: #e7372b;
+  }
+  
+  .sellerpdfslider .sellerpdfslider-box .img-wrapper:hover .front i {
+    background-color: white;
+    color: #e7372b;
+  }
+  
+  .sellerpdfslider .sellerpdfslider-box .img-wrapper .front {
+    text-align: center;
+  }
+  
+  .sellerpdfslider .sellerpdfslider-box .img-wrapper .front i {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 55px;
+  }
+  
+  .sellerpdfslider .sellerpdfslider-box .img-wrapper .sellerpdfslider_link a {
+    font-size: 17px;
+    color: black;
+    margin-top: 5px;
+    display: block;
+    font-weight: 500;
+  }
+  
+  .review-form-wapper .form-wapper{
+    padding: 5px;
+    border:2px solid #cccccc;
+    border-top: 8px solid #2874f0;
+    display: inline-block;
+    width: 100%;
+    padding: 15px 30px;
+  }
+  
+  .review-form-wapper .form-wapper .form-control {
+    border-radius: 0;
+    border: 2px solid #808080;
+  }
+  
+  .review-form-wapper .form-wapper .from-heading h3{
+    font-weight: 900;
+      color: #000000;
+  }
+  
+  .review-form-wapper .form-wapper .btn{
+    text-transform: none;
+    border-radius: 3px;
+  }
+  
+  .formcontainer {
+    width: 77%;
+    margin: 0px auto;
+  }
+  
+  .review-form-wapper .sellerprofile-info-wapper .star-rating-wapper .fa{
+    color: #e8d500;
+  }
+  
+  .review-form-wapper .sellerprofile-info-wapper .sellerprofile-top .sellerprofile-contact-heading h2{
+    font-size: 22px;
+    text-transform: none;
+    font-weight: 900;
+  }
+  
+  .review-form-wapper .sellerprofile-info-wapper .sellerprofile-mid h4 {
+    color: #2874f0;
+    font-weight: bold;
+  }
+  
+  .review-form-wapper .sellerprofile-info-wapper .sellerprofile-mid .page-title h2{
+    font-size: 26px;
+    text-transform: none;
+    font-weight: 900;
+  }
+  .review-form-wapper .sellerprofile-info-wapper .sellerprofile-mid .location-wapper .phone-icon{
+    color: #000000;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  
+  .review-form-wapper .sellerprofile-info-wapper .sellerprofile-mid .location-wapper .phone-icon .fa.fa-phone{
+    font-size: 22px;
+    color: #2874f0;
+  }
+  
+  .review-form-wapper .sellerprofile-info-wapper .sellerprofile-mid .location-wapper .location-icon {
+    color: #000000;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  
+  .review-form-wapper .sellerprofile-info-wapper .sellerprofile-mid .location-wapper .location-icon .fa.fa-map-marker{
+    font-size: 22px;
+    color: #2874f0;
+  }
+  
+  .review-form-wapper .sellerprofile-info-wapper .sellerprofile-mid .location-wapper .location-address{
+    font-size: 17px;
+    margin-left: 35px;
+  }
+  
+  
+  .review-form-wapper .sellerprofile-bottom{
+    background-color: #f4f4f4;
+    padding: 22px 30px;
+      border: 1px solid #cccccc;
+      margin-top: 0px;
+  }
+  
+  .review-form-wapper .sellerprofile-info-wapper{
+    padding: 5px;
+    border:2px solid #cccccc;
+    border-top: 8px solid #2874f0;
+    border-bottom: 0px;
+    display: inline-block;
+    width: 100%;
+    padding: 15px 30px;
+  }
+  
+  .review-form-wapper .sellerprofile-bottom .btn{
+    text-transform: none;
+    width: 40%;
+    border-radius: 3px;
+  }
+  
+  
+  .testimonial.newseller {
+    background-color: transparent;
+  }
+  
+  .breadcrumb-section .tagright {
+    background-color: #ffea01;
+    border-radius: 37px 0px 0px 37px;
+    padding: 15px 25px;
+    margin-top: 8%;
+    right: -11rem;
+    position: absolute;
+  }
+  
+  .breadcrumb-section .tagright p{
+    color: black;
+  }
+  
+  
+  .about-page .about-page-bgimg.profilereview{
+    background-image: none;
+  }
+  
+  @media (max-width: 992px) { 
+  
+    .breadcrumb-section .tagright {
+      border-radius: 37px;
+      margin-top: 30%;
+      right: 0px;
+  }
+   }
+  
+  
+   @media (max-width: 768px) { 
+    .breadcrumb-section .cstmpdng1 {
+       margin-bottom: 0px;
+    }
+  
+    .breadcrumb-section .tagright {
+      margin-top: 0%;
+    float: none;
+  }
+  .review-form-wapper .sellerprofile-bottom {
+    margin-bottom: 15px;
+}
+
+  }
+  
+  
+  @media (max-width: 578px) { 
+  
+    .breadcrumb-section .cstprofileview{
+      text-align: center;
+    }
+    .breadcrumb-section .tagright {
+      position: inherit;
+   }
+   .breadcrumb-section .tagright.pull-right {
+   
+    margin-top: 10px;
+  }
+
+  .breadcrumb-section .cstmpdng1 {
+    margin-bottom: 0px;
+    text-align: center;
+ }
+
+ .breadcrumb-section .tagright p{
+    color: black;
+    text-align: center;
+  }
+
+  .about-page-bgimg.profilereview .abour-content-wapper {
+    margin-top: 15px;
+  }
+  
+
+  
+  }
