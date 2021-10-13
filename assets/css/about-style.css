@@ -153,7 +153,7 @@
 }
 
 .about-page .about-page-bgimg2 {
-  background-image: url(/assets/images/about/About-us-2.png);
+  background-image: url(../../assets/images/about/About-us-2.png);
   padding: 5rem 1rem;
   background-position: center;
   background-size: 100%;
@@ -173,11 +173,12 @@
 }
 
 .about-page .about-page-bgimg {
-  background-image: url(/assets/images/about/About-us-1.png);
+  /* background-image: url(../../assets\images\about\About-us-1.png); */
+  background-image: url(../../assets/images/about/About-us-1.png);
 }
 
 .about-page .about-page-bgimg2 {
-  background-image: url(/assets/images/about/About-us-2.png);
+  background-image: url(../../assets/images/about/About-us-2.png);
 }
 
 .mobilehide {
