@@ -85,6 +85,7 @@
   line-height: 19.8px;
   color: black;
   font-size: 16px;
+
 }
 
 .service-block+.service-block {
@@ -113,7 +114,8 @@
   flex-direction: column;
   padding: 1rem;
   margin: 1rem;
-  border: 1px solid #dddddd;
+  border: 2px solid #d2cfcc;
+  border-radius: 6px;
 }
 
 .testimonial .testimonial-slider .slick-track .slick-slide:nth-child(even) .media {

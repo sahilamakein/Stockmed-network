@@ -18380,7 +18380,7 @@ section.ratio_square.promotion-home-section {
 }
 
 .testimonial {
-  background-color: #f0f1f3;
+  background-color: #fff;
 }
 
 .testimonial .testimonial-slider .media img {
@@ -18413,7 +18413,7 @@ section.ratio_square.promotion-home-section {
 }
 
 .testimonial .testimonial-slider .slick-track .slick-slide:nth-child(even) .media {
-  border-left: 1px solid #dddddd;
+  border-left: 2px solid #dddddd;
   padding-left: 15px;
 }
 

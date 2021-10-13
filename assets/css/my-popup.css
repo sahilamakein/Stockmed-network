@@ -3,14 +3,14 @@
 .login-popup .modal .leftside{
 
     background-color: #0197da;
-    padding-top: 50px;
-    padding-bottom:30px;
+    padding-top: 35px;
+    padding-bottom:20px;
 }
 
 .login-popup .modal .rightside{
 
     background-color:none;
-    padding: 21px;
+    padding: 15px 21px;
 }
 
 
@@ -24,6 +24,7 @@
     .login-popup .modal .leftside .login-text h5{
         color: white;
         font-weight: 800;
+        font-size: 22px;
     }
     .login-popup .modal .leftside .login-text hr{
         
@@ -64,7 +65,7 @@
         height: 2px;
         background: #c0c0c0;
         left: 58px;
-        top: 68%;
+        top: 74%;
         position: absolute;
       }
 
@@ -76,7 +77,7 @@
         height: 2px;
         background: #c0c0c0;
         right: 58px;
-        top: 68%;
+        top: 74%;
         position: absolute;
     }
    
