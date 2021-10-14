@@ -9,6 +9,8 @@
 
 .about-page.privacypolicy .about-page-bgimg .abour-content-wapper h2 {
   padding-top: 2rem;
+  font-weight: 900;
+  margin-bottom: 30px;
 }
 
 .banner-wapper .breadcrumb-section .container{
@@ -24,9 +26,11 @@
 }
 
 .about-page.privacypolicy .abour-content-wapper p {
-    line-height: 19.8px;
-    color: black;
+  line-height: 24.8px;
+  color: #5a5858;
     font-size: 17px;
+    font-size: 17px;
+    font-weight: 600;
 }
 
 

@@ -4,7 +4,7 @@
 }
 
 .banner-wapper .breadcrumb-section.title-wpper {
-  padding: 40px 0px 50px 0px;
+  padding: 65px 0px 65px 0px;
 }
 
 .breadcrumb-section {
@@ -18,7 +18,8 @@
 
 .banner-wapper .breadcrumb-section.title-wpper .page-title h2 {
   color: #dddddd;
-  font-size: 50px;
+  font-size: 60px;
+    font-weight: 900;
   width: 100%;
   display: inline-block;
   text-transform: capitalize;

@@ -64,8 +64,8 @@
         width: 120px;
         height: 2px;
         background: #c0c0c0;
-        left: 58px;
-        top: 74%;
+        left: 55px;
+        top: 71%;
         position: absolute;
       }
 
@@ -76,8 +76,8 @@
         width: 120px;
         height: 2px;
         background: #c0c0c0;
-        right: 58px;
-        top: 74%;
+        right: 55px;
+        top: 71%;
         position: absolute;
     }
    
@@ -256,14 +256,14 @@
         .Seller-login-popup .modal .leftside{
 
             background-color: #f35f51;
-            padding-top: 50px;
-            padding-bottom:30px;
+            padding-top: 35px;
+            padding-bottom:20px;
         }
 
         .Seller-login-popup .modal .rightside{
 
             background-color:none;
-            padding: 21px;
+            padding:15px 21px;
         }
 
 
@@ -583,7 +583,7 @@ padding: 2px 4px;
     content: "\f005";
     font-family: fontAwesome;
     position: absolute;
-    top: 16px;
+    top: 0px;
     font-size: 32px;
     color: gold;
     opacity: 0;

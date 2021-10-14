@@ -18329,11 +18329,12 @@ section.ratio_square.promotion-home-section {
   -ms-flex-pack: end;
   justify-content: flex-end;
   text-transform: none;
-  font-size: 10px;
+  font-size: 13px;
   color: #969696;
   font-weight: 600;
   margin: 0;
   padding-right: 0;
+  text-transform: uppercase;
 }
 
 .breadcrumb-section .breadcrumb a {
