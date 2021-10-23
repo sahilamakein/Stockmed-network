@@ -16,6 +16,11 @@
   width: 81%;
   margin: 0px auto;
 }
+.about-page-bgimg.profilereview .abour-content-wapper p{
+  font-weight:600;}
+
+  .about-page-bgimg.profilereview .abour-content-wapper h2{
+    font-weight:800;}
 
 .about-page.privacypolicy .abour-content-wapper p {
   line-height: 19.8px;
@@ -315,7 +320,7 @@
 
 .review-form-wapper .sellerprofile-bottom{
   background-color: #f4f4f4;
-  padding: 22px 30px;
+  padding: 16px 30px;
     border: 1px solid #cccccc;
     margin-top: 0px;
 }
@@ -358,6 +363,8 @@
 .about-page .about-page-bgimg.profilereview{
   background-image: none;
 }
+
+
 
 @media (max-width: 992px) { 
 

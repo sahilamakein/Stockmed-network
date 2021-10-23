@@ -2,18 +2,28 @@
   padding-top: 0px !important;
 }
 
+.banner-wapper .breadcrumb-section .container {
+  max-width: 1400px;
+  padding: 0px 150px;
+}
+
 .about-page.termsandconditionsofuse .about-page-bgimg {
   padding: 1rem 0rem;
 }
 
+.about-page-bgimg .abour-content-wapper.termandcond {
+  padding: 0rem 8rem;
+}
 .about-page.termsandconditionsofuse .about-page-bgimg .abour-content-wapper h2 {
   padding-top: 2rem;
+  font-weight: 900;
 }
 
 .about-page .abour-content-wapper.termandcond p{
-  line-height: 19.8px;
+  line-height: 24.8px;
+  color: #5a5858;
   font-size: 17px;
-  margin-bottom: 15px;
+  font-weight: 600;
 
 }
 
@@ -31,6 +41,10 @@
   text-align: left;
 }
 
+.about-page-bgimg .abour-content-wapper.termandcond {
+  padding: 0rem 4rem;
+}
+
  }
 
  @media (max-width: 576px) { 
@@ -38,5 +52,9 @@
  .banner-wapper .breadcrumb-section.title-wpper .page-title h2 {
    text-align: left;
  }
+
+ .about-page-bgimg .abour-content-wapper.termandcond {
+  padding: 0rem 2rem;
+}
   
   }

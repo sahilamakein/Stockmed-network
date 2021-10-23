@@ -7209,7 +7209,7 @@
    opacity: 0.25; }
  
  hr:not([size]) {
-   height: 1px; }
+   height: 2px; }
  
  h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
    margin-top: 0;
@@ -7630,7 +7630,7 @@
  .container-lg,
  .container-xl,
  .container-xxl {
-   width: 99.7%;
+   width: 99.6%;
    padding-right: var(--bs-gutter-x, 0.75rem);
    padding-left: var(--bs-gutter-x, 0.75rem);
    margin-right: auto;

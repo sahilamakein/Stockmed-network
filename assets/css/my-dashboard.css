@@ -207,6 +207,8 @@
 
 .tab-pane .dashboard-box .row.mid-sec .custom-colorpara {
     color: #00239b;
+    font-size: 13px;
+    font-weight: 900;
 }
 
 .tab-pane .dashboard-box .row.mid-sec .custom-line {
@@ -561,6 +563,7 @@ select.list-dt:focus {
 .dashboard-section .top-sec {
     justify-content: space-between;
     align-items: flex-end;
+    padding: 15px 38px;
 }
 
 .search-form-wapper .form-inline .form-control.mr-sm-2 {
@@ -568,15 +571,6 @@ select.list-dt:focus {
     height: 38px;
 }
 
-.dashboard-section .top-sec .btn {
-    width: 100%;
-    height: 38px;
-    padding: 7px;
-    background-color: #3dae4c;
-    border: none;
-    color: white;
-    font-size: 17px;
-}
 
 .dashboard-section .dashboard-table .table td {
     text-align: left;
@@ -863,3 +857,12 @@ select.list-dt:focus {
     font-size: 12px;
     padding: 5px 15px;
 }
+
+
+
+ #msform  .cstmprofilenxtbtn .action-button {
+    width: 250px !important;}
+
+  .mydasboardcard  .fa.fa-user-circle.cstm {
+      color: red;
+  }

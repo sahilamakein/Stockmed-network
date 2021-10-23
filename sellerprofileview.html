@@ -525,7 +525,7 @@
 
                             <div class="nav-right-section col-xl-4">
                                 <a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i>Post Your
-                                    Recruitment</a>
+                                    Requirement</a>
                                 <a href="#"><i class="fa fa-camera" aria-hidden="true"></i>Sell Your Products</a>
                             </div>
                         </nav>
@@ -558,7 +558,7 @@
                             <img src="assets/images/profileimg.jpg" alt="" class="img-fluid">
                         </div>
                     </div>
-                    <div class="col-lg-5 col-md-5 col-sm-12 cstmpdng2">
+                    <div class="col-lg-5 col-md-5 col-sm-12 mt-3 cstmpdng2">
                         <div class="profile-info">
                             
                                 <div class="srat-rating-wapper">
@@ -708,12 +708,12 @@
                 <div class="row ">
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="banner-section">
-                            <img src="/assets/images/about/Profileabout.jpg" alt="">
+                            <img src="assets/images/about/Profileabout.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-lg-8 col-md-8 col-sm-12 cstmabt">
                         <div class="abour-content-wapper">
-                            <h2>About <span style="color:#f35c51">Seller</span>
+                            <h2 class="mb-3">About <span style="color:#f35c51">Seller</span>
                             </h2>
     
                             <p class="mb-4">Stockmed.in is an online B2B Platform of Stockmed Network Private Limited
@@ -1171,7 +1171,16 @@
         </div>
     </div>
 </section>
-<!-- product deal section start -->
+<!-- product deal section End -->
+
+
+<!-- Certificate section Start -->
+
+
+
+
+<!-- Certificate section End -->
+
 
     <!--Testimonial start-->
     <section class="testimonial newseller small-section">
@@ -1339,7 +1348,7 @@
     
 
     <!-- product deal section start -->
-    <section class="review-form-wapper pt-0">
+    <section class="review-form-wapper pt-4 pb-5">
         <div class="formcontainer">
         <div class="container ">
             <div class="row">
@@ -1353,7 +1362,7 @@
                                 <input type="text" placeholder="Name" class="form-control" id="exampleInputName" aria-describedby="textHelp">
                             </div>
                             <div class="mb-3">
-                                <input type="text" placeholder="Phome" class="form-control" id="exampleInputPhone">
+                                <input type="text" placeholder="Phone" class="form-control" id="exampleInputPhone">
                             </div>
                             <div class="mb-3">
                                 <textarea class="form-control" placeholder="Requirment Details" id="exampleFormControlTextarea1" rows="3"></textarea>
@@ -1473,7 +1482,7 @@
                             <ul>
                                 <li><a href="#">shipping & return</a></li>
                                 <li><a href="#">secure shopping</a></li>
-                                <li><a href="#">gallary</a></li>
+                                <li><a href="#">gallery</a></li>
                                 <li><a href="#">affiliates</a></li>
                                 <li><a href="#">contacts</a></li>
                             </ul>
@@ -1489,11 +1498,11 @@
                             <ul>
                                 <li><a href="#">shipping & return</a></li>
                                 <li><a href="#">secure shopping</a></li>
-                                <li><a href="#">gallary</a></li>
+                                <li><a href="#">gallery</a></li>
                                 <li><a href="#">affiliates</a></li>
                                 <li><a href="#">contacts</a></li>
                                 <li><a href="#">secure shopping</a></li>
-                                <li><a href="#">gallary</a></li>
+                                <li><a href="#">gallery</a></li>
                                 <li><a href="#">affiliates</a></li>
                                 <li><a href="#">contacts</a></li>
                             </ul>
@@ -1509,7 +1518,7 @@
                             <ul>
                                 <li><a href="#">shipping & return</a></li>
                                 <li><a href="#">secure shopping</a></li>
-                                <li><a href="#">gallary</a></li>
+                                <li><a href="#">gallery</a></li>
                                 <li><a href="#">affiliates</a></li>
                                 <li><a href="#">contacts</a></li>
                             </ul>
@@ -1535,7 +1544,7 @@
                             <ul>
                                 <li><a href="#">shipping & return</a></li>
                                 <li><a href="#">secure shopping</a></li>
-                                <li><a href="#">gallary</a></li>
+                                <li><a href="#">gallery</a></li>
                                 <li><a href="#">affiliates</a></li>
                                 <li><a href="#">contacts</a></li>
                             </ul>
@@ -1710,6 +1719,12 @@
         function closeSearch() {
             document.getElementById("search-overlay").style.display = "none";
         }
+
+
+        $('input').on('change', function() {
+  $('body').toggleClass('blue');
+});
+
     </script>
 
 </body>

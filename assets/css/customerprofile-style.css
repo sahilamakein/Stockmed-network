@@ -69,7 +69,7 @@
   color: black;
   margin-top: 5px;
   display: block;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .breadcrumb-section .breadcrumb {
@@ -88,11 +88,10 @@
 .breadcrumb-section .breadcrumb-item.active {
   color: #fff;
   font-size: 12px;
-  /* margin-top: 3px; */
 }
 
 .banner-wapper .breadcrumb-section.title-wpper {
-  height: 250px;
+  height: 210px;
 }
 
 .customerprofile-main {
@@ -105,6 +104,10 @@
   max-width: 75%;
 }
 
+.customerprofile-img-wapper {
+  width:70%;
+}
+
 .customerprofile-main .customerprofile-top-wapper {
   margin-bottom: 4rem;
 }
@@ -113,6 +116,7 @@
   color: #fff;
   font-size: 25px;
   margin-top: 1.5rem;
+  text-transform: none;
 }
 
 .customerprofile-main .customerprofile-info .customerprofile-bottom-wapper {
@@ -128,6 +132,15 @@
 .customerprofile-main .customerprofile-info .customerprofile-bottom-wapper .table th {
   width: 40%;
 }
+
+
+.customerprofile-main .customerprofile-mid-wapper h2{
+  text-transform: none;
+  margin-bottom: 25px;
+}
+
+
+
 
 .customerprofile-main .customerprofile-info .customerprofile-bottom-wapper .table-striped>tbody>tr {
   border: none;

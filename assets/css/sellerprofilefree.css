@@ -13,7 +13,7 @@
   }
   
   .banner-wapper .breadcrumb-section.title-wpper {
-    padding: 5px 0px 50px 0px;
+    padding: 5px 0px 22px 0px;
   }
   
   .sellerpdfslider .sellerpdfslider-wrap {
@@ -304,10 +304,17 @@
   
   .review-form-wapper .sellerprofile-bottom{
     background-color: #f4f4f4;
-    padding: 22px 30px;
+    padding: 16px 30px;
       border: 1px solid #cccccc;
       margin-top: 0px;
   }
+
+  .about-page-bgimg.profilereview .abour-content-wapper p{
+    font-weight:600;}
+
+    .about-page-bgimg.profilereview .abour-content-wapper h2{
+      font-weight:800;}
+    
   
   .review-form-wapper .sellerprofile-info-wapper{
     padding: 5px;

@@ -9947,6 +9947,7 @@ header.header-style .onhover-dropdown:before {
   display: inline-block;
   padding-top: 5px;
   padding-bottom: 5px;
+  padding-left: 15%;
 }
 
 .main-menu .menu-left {
@@ -12597,7 +12598,7 @@ header.stickycls {
 .pixelstrap a:active {
   padding-right: 45px;
   color: #222222;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 23px;
   text-decoration: none;
@@ -18381,7 +18382,7 @@ section.ratio_square.promotion-home-section {
 }
 
 .testimonial {
-  background-color: #fff;
+  background-color: #f0f1f3;
 }
 
 .testimonial .testimonial-slider .media img {
